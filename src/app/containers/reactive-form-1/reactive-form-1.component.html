@@ -1,0 +1,25 @@
+<form grace-form [formGroup]="aliasForm" novalidate>
+  <div class="input-wrapper alias-wrapper">
+    <label for="aliasForm-alias">Nombre de usuario</label>
+    <br>
+    <br>
+    <span class="sub-label">Debe contener al menos una letra</span>
+    <input type="text" id="aliasForm-alias" maxlength="40" formControlName="alias">
+    <span *ngIf="showError(aliasForm.get('alias'))" class="error-msg">{{getError(aliasForm.get('alias'))}}</span>
+  </div>
+  <div>
+    <br>
+    <button type="button" class="btn btn_primary"
+      (click)="sendForm(aliasForm.get('neverAgain').value ? 'neverAgain' : 'setAlias')"
+      [disabled]="aliasForm.invalid && !aliasForm.get('neverAgain').value">
+      {{(aliasForm.get('neverAgain').value ? 'Omitir' : 'Crear')}}
+    </button>
+    <button type="button" *ngIf="!aliasForm.get('neverAgain').value" (click)="goToIndex()"
+      class="btn btn_secondary">Ahora no
+    </button>
+  </div>
+  <div class="input-inline-wrapper">
+    <input type="checkbox" name="aliasForm-never_again" id="aliasForm-never_again" formControlName="neverAgain">
+    <label for="aliasForm-never_again">No volver a mostrar este mensaje</label>
+  </div>
+</form>

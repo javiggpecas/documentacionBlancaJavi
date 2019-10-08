@@ -1,0 +1,12 @@
+<div id="main">
+  <nav>
+    <ul>
+      <!-- Sistema de enrutado routerLinkActive y routerLink -->
+      <li routerLinkActive='activated-tab'><a [routerLink]="['/forms']">Formularios</a></li>
+      <li routerLinkActive='activated-tab'><a [routerLink]="['/prueba-uno']">Servicios</a></li>
+      <li routerLinkActive='activated-tab'><a [routerLink]="['/prueba-dos']">Contacto</a></li>
+    </ul>
+  </nav>
+</div>
+
+<router-outlet></router-outlet>
