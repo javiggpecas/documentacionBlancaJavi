@@ -9,66 +9,17 @@ body {
   text-align: center;
 }
 
-nav {
+.loader-background {
   width: 100%;
-  ul {
-    margin: 0px;
-    background-color: #c5c0c1;
-    border-radius: 2px;
-
-    li {
-      width: auto;
-      display: inline-block;
-    }
-  }
+  height: 100%;
+  background-color: #eaeaea4a;
+  z-index: 9999;
 }
-
-.nav-link {
-  display: inline-block;
-  padding: 18px 30px;
-  color: white;
-  font-weight: bold;
-  font-size: 12px;
-  text-decoration: none !important;
-  text-transform: uppercase;
-  background-color: transparent;
-  &.htmlColor {
-    &:hover{
-      color: #E44D26;
-    }
-  }
-  &.angColor {
-    &:hover{
-      color: #b52e31;
-    }
-  }
-  &.jsColor {
-    &:hover{
-      color: #F0DB4F;
-    }
-  }
-  &.cssColor {
-    &:hover{
-      color: #2965f1;
-    }
-  }
-  &.activated-tab {
-    background-color: #0a1612;
-    &.htmlColorActive {
-      color: #E44D26;
-    }
-    &.angColorActive {
-      color: #b52e31;
-    }
-    &.jsColorActive {
-      color: #F0DB4F;
-    }
-    &.cssColorActive {
-      color: #2965f1;
-    }
-  }
-}
-
-.red-color {
-  color: red !important;
+mat-progress-spinner {
+  position: absolute;
+  left: 0;
+  bottom: 0; 
+  right: 0; 
+  top: 0;
+  margin: auto;
 }
