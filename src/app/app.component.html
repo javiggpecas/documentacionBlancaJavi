@@ -1,14 +1,10 @@
 
 <header>
-  <nav>
-    <ul>
-      <li><a [routerLink]="['/home']" class="nav-link" routerLinkActive='activated-tab'><fa-icon [icon]="faHome"></fa-icon></a></li>
-      <li ><a [routerLink]="['/angular']" class="nav-link angColor" routerLinkActive='activated-tab angColorActive'><fa-icon [icon]="faAngular"></fa-icon></a></li>
-      <li><a [routerLink]="['/html']" class="nav-link htmlColor" routerLinkActive='activated-tab htmlColorActive'><fa-icon [icon]="faHTML"></fa-icon></a></li>
-      <li><a [routerLink]="['/css']" class="nav-link cssColor" routerLinkActive='activated-tab cssColorActive'><fa-icon [icon]="faCSS"></fa-icon></a></li>
-      <li><a [routerLink]="['/js']" class="nav-link jsColor" routerLinkActive='activated-tab jsColorActive'><fa-icon [icon]="faJs"></fa-icon></a></li>
-    </ul>
-  </nav>
+  <app-nav-bar [navData]="navBarData"></app-nav-bar>
 </header>
 
 <router-outlet></router-outlet>
+<div class="loader-background" *ngIf="isShowingRouteLoadIndicator">
+  <mat-progress-spinner color="acent" mode="indeterminate">
+  </mat-progress-spinner>
+</div>

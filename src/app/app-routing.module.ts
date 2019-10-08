@@ -32,7 +32,8 @@ const routes: Routes = [
     // hacer el routing con lazy loading, importo el modulo que contiene todo lo referente al componente de forms
     path: 'js',
     loadChildren: () => import('./containers/js/js.module').then(m => m.JsModule)
-  }
+  },
+  { path: '**', redirectTo: '/home' }
 ];
 
 @NgModule({
