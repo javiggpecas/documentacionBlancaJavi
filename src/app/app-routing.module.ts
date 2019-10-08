@@ -5,22 +5,34 @@ const routes: Routes = [
   {
     path: '',
     // por defecto, va a formularios
-    redirectTo: '/forms',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
   {
     // hacer el routing con lazy loading, importo el modulo que contiene todo lo referente al componente de forms
-    path: 'forms',
-    loadChildren: () => import('./containers/formularios/formularios.module').then(m => m.FormulariosModule)
+    path: 'home',
+    loadChildren: () => import('./containers/home/home.module').then(m => m.HomeModule)
   },
   {
-    path: 'prueba-uno',
-    loadChildren: () => import('./containers/prueba-uno/prueba-uno.module').then(m => m.PruebaUnoModule)
+    // hacer el routing con lazy loading, importo el modulo que contiene todo lo referente al componente de forms
+    path: 'angular',
+    loadChildren: () => import('./containers/angular/angular.module').then(m => m.AngularModule)
   },
   {
-    path: 'prueba-dos',
-    loadChildren: () => import('./containers/reactive-form-1/reactive-form-1.module').then(m => m.ReactiveForm1Module)
+    // hacer el routing con lazy loading, importo el modulo que contiene todo lo referente al componente de forms
+    path: 'html',
+    loadChildren: () => import('./containers/html/html.module').then(m => m.HtmlModule)
   },
+  {
+    // hacer el routing con lazy loading, importo el modulo que contiene todo lo referente al componente de forms
+    path: 'css',
+    loadChildren: () => import('./containers/css/css.module').then(m => m.CssModule)
+  },
+  {
+    // hacer el routing con lazy loading, importo el modulo que contiene todo lo referente al componente de forms
+    path: 'js',
+    loadChildren: () => import('./containers/js/js.module').then(m => m.JsModule)
+  }
 ];
 
 @NgModule({

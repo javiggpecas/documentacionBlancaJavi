@@ -1,0 +1,35 @@
+nav {
+    // width: max-content;
+    width: 100%;
+    ul {
+      margin: 0px;
+      background-color: #c5c0c1;
+      border-radius: 2px;
+  
+      li {
+        width: auto;
+        display: inline-block;
+        
+        a {
+          display: inline-block;
+          padding: 18px 30px;
+          color: white;
+          font-weight: bold;
+          font-size: 12px;
+          text-decoration: none !important;
+          text-transform: uppercase;
+          background-color: transparent;
+        }
+      }
+    }
+  
+  }
+  
+  .red-color {
+    color: red !important;
+  }
+  
+  .activated-tab {
+    background-color: #0a1612;
+  }
+  
