@@ -20,33 +20,38 @@ export class AppComponent implements OnInit {
   navBarData: Array<NavData> = [
     {
       link: '/home',
-      class: 'nav-link',
+      class: 'nav-enlace',
       activateClass: 'activated-tab',
-      icon: 'faHome'
+      icon: 'faHome',
+      title: 'Home'
     },
     {
       link: '/angular',
-      class: 'nav-link angColor',
+      class: 'nav-enlace angColor',
       activateClass: 'activated-tab angColorActive',
-      icon: 'faAngular'
+      icon: 'faAngular',
+      title: 'Angular'
     },
     {
       link: '/html',
-      class: 'nav-link htmlColor',
+      class: 'nav-enlace htmlColor',
       activateClass: 'activated-tab htmlColorActive',
-      icon: 'faHTML'
+      icon: 'faHTML',
+      title: 'HTML'
     },
     {
       link: '/css',
-      class: 'nav-link cssColor',
+      class: 'nav-enlace cssColor',
       activateClass: 'activated-tab cssColorActive',
-      icon: 'faCSS'
+      icon: 'faCSS',
+      title: 'CSS'
     },
     {
       link: '/js',
-      class: 'nav-link jsColor',
+      class: 'nav-enlace jsColor',
       activateClass: 'activated-tab jsColorActive',
-      icon: 'faJs'
+      icon: 'faJs',
+      title: 'JavaScript'
     }
   ];
 

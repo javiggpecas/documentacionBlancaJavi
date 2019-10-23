@@ -1,58 +1,51 @@
 <mat-accordion>
-    <mat-expansion-panel class="expansion-panel">
-        <mat-expansion-panel-header>
-            <mat-panel-title>Datepicker</mat-panel-title>
-            <mat-panel-description>Funcionamiento datepicker</mat-panel-description>
-        </mat-expansion-panel-header>
-        <mat-form-field>
-            <input matInput placeholder="Seleccione una fecha" [matDatepickerFilter]="myFilter" [matDatepicker]="picker"
-                [min]="minDate" [max]="maxDate">
-            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-            <mat-datepicker #picker></mat-datepicker>
-        </mat-form-field>
-    </mat-expansion-panel>
-
-    <mat-expansion-panel class="expansion-panel">
-        <mat-expansion-panel-header>
-            <mat-panel-title>Radio button</mat-panel-title>
-            <mat-panel-description>Suscripción al radio button</mat-panel-description>
-        </mat-expansion-panel-header>
-        <form class="accordion" [formGroup]="cancelAnRequestForm">
-            <fieldset>
-                <span class="step-content__title">Indique la razón de la pérdida de la tarjeta</span>
-                <div class="step-content__radio">
-                    <input id="indAnulacionPerdida" type="radio" formControlName="indAnulacion" value="1"><span for="indAnulacionPerdida">Pérdida</span>
-                    <input id="indAnulacionRobo" type="radio" formControlName="indAnulacion" value="2"><span for="indAnulacionRobo">Robo</span>
-                </div>
-                <span class="step-content__title">¿Desea una nueva tarjeta?</span>
-                <div class="step-content__radio">
-                    <input type="radio" formControlName="indRenovacion" value="1"><span>Si</span>
-                    <input type="radio" formControlName="indRenovacion" value="0"><span>Más tarde</span>
-                </div>
-                <div *ngIf="cancelAnRequestForm.value.indRenovacion === '1'">
-                    <p class="step-content__subtitle">Dirección: Calle Félix Candela 81</p>
-                </div>
-            </fieldset>
-        </form>
-    </mat-expansion-panel>
-
-    <mat-expansion-panel class="expansion-panel">
-        <mat-expansion-panel-header>
-            <mat-panel-title>Campo numérico</mat-panel-title>
-            <mat-panel-description>Validaciones campo numérico</mat-panel-description>
-        </mat-expansion-panel-header>
-        <div class="modal-body">
-            <form action="" [formGroup]="confirmForm" autocomplete="off">
+    <app-accordion [title]="'Datepicker'" [description]="'Funcionamiento datepicker'">
+        <ng-container class="accordion-body">
+            <mat-form-field>
+                <input matInput placeholder="Seleccione una fecha" [matDatepickerFilter]="myFilter" [matDatepicker]="picker"
+                    [min]="minDate" [max]="maxDate">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+        </ng-container>
+    </app-accordion>
+    <app-accordion [title]="'Radio Button'" [description]="'Suscripción al radio button'">
+        <ng-container class="accordion-body">
+            <form class="accordion" [formGroup]="cancelAnRequestForm">
                 <fieldset>
-                    <span class="modal-body--confirm-text">Introduzca la clave enviada al móvil</span>
-                    <span class="modal-body--phone">*** *** *54</span>
-                    <div class="modal-body__input input-wrapper">
-                        <input id="confirm-code" type="password" name="codesms" #codesms maxlength="4"
-                            formControlName="code" autocomplete="off" [value]="" class="modal-edit-transfer__input" />
+                    <span class="step-content__title">Indique la razón de la pérdida de la tarjeta</span>
+                    <div class="step-content__radio">
+                        <input id="indAnulacionPerdida" type="radio" label formControlName="indAnulacion" value="perdida"/><label for="indAnulacionPerdida">Pérdida</label>
+                        <input id="indAnulacionRobo" type="radio" formControlName="indAnulacion" value="robo"><label for="indAnulacionRobo">Robo</label>
                     </div>
-                    <span class="notification__text" *ngIf="confirmForm.invalid">La clave tiene que ser numérica y de 4 números</span>
+                    <span class="step-content__title">¿Desea una nueva tarjeta?</span>
+                    <div class="step-content__radio">
+                        <input id="indNewCardYes" type="radio" formControlName="indRenovacion" value="1"><label for="indNewCardYes">Si</label>
+                        <input id="indNewCardLater" type="radio" formControlName="indRenovacion" value="0"><label for="indNewCardLater">Más tarde</label>
+                    </div>
+                    <div *ngIf="cancelAnRequestForm.value.indRenovacion === '1'">
+                        <p class="step-content__subtitle">Dirección: Calle Félix Candela 81</p>
+                    </div>
                 </fieldset>
             </form>
-        </div>
-    </mat-expansion-panel>
+        </ng-container>
+    </app-accordion>
+
+    <app-accordion [title]="'Campo numérico'" [description]="'Validaciones campo numérico'">
+        <ng-container class="accordion-body">
+            <div class="modal-body">
+                <form action="" [formGroup]="confirmForm" autocomplete="off">
+                    <fieldset>
+                        <span class="modal-body--confirm-text">Introduzca la clave enviada al móvil</span>
+                        <span class="modal-body--phone">*** *** *54</span>
+                        <div class="modal-body__input input-wrapper">
+                            <input id="confirm-code" type="password" name="codesms" #codesms maxlength="4"
+                                formControlName="code" autocomplete="off" [value]="" class="modal-edit-transfer__input" />
+                        </div>
+                        <span class="notification__text" *ngIf="confirmForm.invalid">La clave tiene que ser numérica y de 4 números</span>
+                    </fieldset>
+                </form>
+            </div>
+        </ng-container>
+    </app-accordion>
 </mat-accordion>

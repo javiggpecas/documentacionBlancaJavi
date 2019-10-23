@@ -24,21 +24,24 @@ export class AngularComponent implements OnInit {
   navBarData: Array<NavData> = [
     {
       link: '/angular/forms',
-      class: 'nav-link',
+      class: 'nav-enlace',
       activateClass: 'activated-tab',
-      text: 'Formularios'
+      text: 'Formularios',
+      title: 'Formularios'
     },
     {
       link: '/angular/prueba-uno',
-      class: 'nav-link',
+      class: 'nav-enlace',
       activateClass: 'activated-tab',
-      text: 'Servicios'
+      text: 'Servicios',
+      title: 'Servicios'
     },
     {
       link: '/angular/prueba-dos',
-      class: 'nav-link',
+      class: 'nav-enlace',
       activateClass: 'activated-tab',
-      text: 'Contacto'
+      text: 'Contacto',
+      title: 'Contacto'
     }
   ];
 

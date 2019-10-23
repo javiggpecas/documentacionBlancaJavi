@@ -7,6 +7,7 @@ import { MatExpansionModule, MatButtonModule, MatFormFieldModule, MatInputModule
 import { FormulariosComponent } from './formularios.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from '../../../../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [ // importo lo que vaya a usar en este componente
     CommonModule,
+    SharedModule,
     FormulariosRoutingModule,
     MatExpansionModule,
     MatButtonModule,

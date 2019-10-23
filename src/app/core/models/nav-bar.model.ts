@@ -4,6 +4,7 @@ export interface NavData {
     activateClass: string;
     icon?: string;
     text?: string;
+    title: string;
 }
 
 export interface IconsFa {

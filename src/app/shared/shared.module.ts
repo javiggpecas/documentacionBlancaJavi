@@ -6,21 +6,26 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { ModuleWithProviders } from '@angular/compiler/src/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { AccordionComponent } from './components/accordion/accordion.component';
+import { MatExpansionModule } from '@angular/material';
 
 @NgModule({
   imports: [
     CommonModule,
     FontAwesomeModule,
     MatProgressSpinnerModule,
+    MatExpansionModule,
     RouterModule
   ],
   declarations: [
-    NavBarComponent // importa el componente principal
+    NavBarComponent,
+    AccordionComponent // importa el componente principal
   ],
   providers: [],
   bootstrap: [],
   exports: [
-    NavBarComponent
+    NavBarComponent,
+    AccordionComponent
   ]
 })
 export class SharedModule {
