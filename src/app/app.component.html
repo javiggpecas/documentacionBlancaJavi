@@ -3,7 +3,7 @@
   <app-nav-bar [navData]="navBarData"></app-nav-bar>
 </header>
 
-<router-outlet></router-outlet>
+<router-outlet *ngIf="!isShowingRouteLoadIndicator"></router-outlet>
 <div class="loader-background" *ngIf="isShowingRouteLoadIndicator">
   <mat-progress-spinner color="acent" mode="indeterminate">
   </mat-progress-spinner>

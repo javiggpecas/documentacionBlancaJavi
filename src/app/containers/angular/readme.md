@@ -2,7 +2,7 @@
 app-angular
 
 ### Uso:
-
+Página donde estará toda la documentación relacionada con Angular®
 
 ### Propiedades de app-angular:
 | **Nombre**      | **Tipo**        | **Descripción** |
@@ -13,3 +13,4 @@ app-angular
 ### Dependencies
 - Component
 - OnInit
+- SharedModule

@@ -53,19 +53,24 @@ export class AppComponent implements OnInit {
   public isShowingRouteLoadIndicator: boolean;
 
   constructor(
-    router: Router
+    private router: Router
   ) {
-    this.isShowingRouteLoadIndicator = false;
-    router.events.subscribe(( event: RouterEvent ): void => {
-        if ( event instanceof RouteConfigLoadStart ) {
-          this.isShowingRouteLoadIndicator = true;
-        } else if ( event instanceof RouteConfigLoadEnd ) {
-          this.isShowingRouteLoadIndicator = false;
-        }
-      }
-    );
+    this.isPageLoading();
   }
 
   ngOnInit() { }
 
+  /**
+   * @description Subscribe and detect when is loading on change route
+  */
+  isPageLoading(): void {
+    this.isShowingRouteLoadIndicator = false;
+    this.router.events.subscribe(( event: RouterEvent ): void => {
+      if ( event instanceof RouteConfigLoadStart ) {
+        this.isShowingRouteLoadIndicator = true;
+      } else if ( event instanceof RouteConfigLoadEnd ) {
+        this.isShowingRouteLoadIndicator = false;
+      }
+    });
+  }
 }
