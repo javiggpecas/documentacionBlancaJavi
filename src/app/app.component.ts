@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, RouterEvent, RouteConfigLoadStart, RouteConfigLoadEnd } from '@angular/router';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5, faCss3Alt, faAngular, faJsSquare } from '@fortawesome/free-brands-svg-icons';
-import { NavData } from './shared/models/nav-bar.model';
+import { NavData } from './core/models/nav-bar.model';
 
 @Component({
   selector: 'app-root',

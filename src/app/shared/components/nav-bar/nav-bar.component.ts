@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5, faCss3Alt, faAngular, faJsSquare } from '@fortawesome/free-brands-svg-icons';
-import { NavData, IconsFa } from '../../models/nav-bar.model';
+import { NavData, IconsFa } from '../../../core/models/nav-bar.model';
 
 @Component({
   selector: 'app-nav-bar',
