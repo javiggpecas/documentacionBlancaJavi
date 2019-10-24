@@ -12,7 +12,7 @@ export class FormulariosComponent implements OnInit {
   public cancelAnRequestForm: FormGroup;
   public minDate = Date.now();
   // public minDate = '1568980850000';
-  // public maxDate = '1569672050000';
+  public maxDate = '1569672050000';
   public confirmForm: FormGroup;
   public errorSms = false;
   private subscriptions: Array<Subscription>;
