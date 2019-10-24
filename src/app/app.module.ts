@@ -6,6 +6,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   imports: [
@@ -13,7 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FontAwesomeModule,
     MatProgressSpinnerModule,
     SharedModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   declarations: [
     AppComponent
