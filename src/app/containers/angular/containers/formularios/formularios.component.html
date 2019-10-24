@@ -2,8 +2,8 @@
     <app-accordion [title]="'Datepicker'" [description]="'Funcionamiento datepicker'">
         <ng-container class="accordion-body">
             <mat-form-field>
-                <input matInput placeholder="Seleccione una fecha" [matDatepickerFilter]="myFilter" [matDatepicker]="picker"
-                    [min]="minDate" [max]="maxDate">
+                <input matInput placeholder="Seleccione una fecha" [matDatepickerFilter]="myFilter"
+                    [matDatepicker]="picker" [min]="minDate" [max]="maxDate">
                 <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
             </mat-form-field>
@@ -15,13 +15,17 @@
                 <fieldset>
                     <span class="step-content__title">Indique la razón de la pérdida de la tarjeta</span>
                     <div class="step-content__radio">
-                        <input id="indAnulacionPerdida" type="radio" label formControlName="indAnulacion" value="perdida"/><label for="indAnulacionPerdida">Pérdida</label>
-                        <input id="indAnulacionRobo" type="radio" formControlName="indAnulacion" value="robo"><label for="indAnulacionRobo">Robo</label>
+                        <input id="indAnulacionPerdida" type="radio" formControlName="indAnulacion"
+                            value="perdida" /><label for="indAnulacionPerdida">Pérdida</label>
+                        <input id="indAnulacionRobo" type="radio" formControlName="indAnulacion" value="robo"><label
+                            for="indAnulacionRobo">Robo</label>
                     </div>
                     <span class="step-content__title">¿Desea una nueva tarjeta?</span>
                     <div class="step-content__radio">
-                        <input id="indNewCardYes" type="radio" formControlName="indRenovacion" value="1"><label for="indNewCardYes">Si</label>
-                        <input id="indNewCardLater" type="radio" formControlName="indRenovacion" value="0"><label for="indNewCardLater">Más tarde</label>
+                        <input id="indNewCardYes" type="radio" formControlName="indRenovacion" value="1"><label
+                            for="indNewCardYes">Si</label>
+                        <input id="indNewCardLater" type="radio" formControlName="indRenovacion" value="0"><label
+                            for="indNewCardLater">Más tarde</label>
                     </div>
                     <div *ngIf="cancelAnRequestForm.value.indRenovacion === '1'">
                         <p class="step-content__subtitle">Dirección: Calle Félix Candela 81</p>
@@ -40,12 +44,41 @@
                         <span class="modal-body--phone">*** *** *54</span>
                         <div class="modal-body__input input-wrapper">
                             <input id="confirm-code" type="password" name="codesms" #codesms maxlength="4"
-                                formControlName="code" autocomplete="off" [value]="" class="modal-edit-transfer__input" />
+                                formControlName="code" autocomplete="off" [value]=""
+                                class="modal-edit-transfer__input" />
                         </div>
-                        <span class="notification__text" *ngIf="confirmForm.invalid">La clave tiene que ser numérica y de 4 números</span>
+                        <span class="notification__text" *ngIf="confirmForm.invalid">La clave tiene que ser numérica y
+                            de 4 números</span>
                     </fieldset>
                 </form>
             </div>
+        </ng-container>
+    </app-accordion>
+    <app-accordion [title]="'Validaciones'" [description]="'Comprobación datos introducidos'">
+        <ng-container class="accordion-body">
+            <form grace-form [formGroup]="aliasForm" novalidate>
+                <div>
+                    <label for="aliasForm-alias">Nombre de usuario (debe contener al menos una letra): </label>
+                    <input id="aliasForm-alias" type="text" maxlength="40" formControlName="alias">
+                    <span *ngIf="showError(aliasForm.get('alias'))"
+                        class="error-msg">{{getError(aliasForm.get('alias'))}}</span>
+                </div>
+                <div>
+                    <br>
+                    <button type="button"
+                        (click)="sendForm(aliasForm.get('neverAgain').value ? 'neverAgain' : 'setAlias')"
+                        [disabled]="aliasForm.invalid && !aliasForm.get('neverAgain').value">
+                        {{(aliasForm.get('neverAgain').value ? 'Omitir' : 'Crear')}}
+                    </button>
+                    <button type="button" *ngIf="!aliasForm.get('neverAgain').value" (click)="goToIndex()">Ahora no
+                    </button>
+                </div>
+                <div>
+                    <input type="checkbox" name="aliasForm-never_again" id="aliasForm-never_again"
+                        formControlName="neverAgain">
+                    <label for="aliasForm-never_again">No volver a mostrar este mensaje</label>
+                </div>
+            </form>
         </ng-container>
     </app-accordion>
 </mat-accordion>

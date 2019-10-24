@@ -1,8 +1,3 @@
-
-/* .expansion-panel {
-  background-color: #DEE7DC;
-} */
-
 .step-content {
   padding: 30px 30px 35px 30px;
   display: flex;
@@ -22,6 +17,7 @@
     }
 
   }
+
   &__title {
     color: #4D4C4C;
     font-weight: 600px;
@@ -59,23 +55,52 @@
   display: flex;
   flex-direction: column;
   justify-items: center;
+
   form {
-      display: flex;
-      flex-direction: column;
-      justify-items: center;
-  }
-  &--confirm-text {
-      color: #4D4C4C;
-      padding-top: 15px;
-      padding-bottom: 15px;
-  }
-  &--phone {
-      color: #4D4C4C;
-      padding-bottom: 30px;
-  }
-  &__input {
-      padding-bottom: 30px;
-      margin-bottom: 0px !important;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
   }
 
+  &--confirm-text {
+    color: #4D4C4C;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &--phone {
+    color: #4D4C4C;
+    padding-bottom: 30px;
+  }
+
+  &__input {
+    padding-bottom: 30px;
+    margin-bottom: 0px !important;
+  }
+
+  .error-msg {
+    display: block;
+    color: red;
+  }
+
+  .input-inline-wrapper {
+    padding-top: 1em;
+
+    label {
+      color: #A39E98;
+    }
+  }
+}
+
+.error-msg {
+  display: block;
+  color: red;
+}
+
+.input-inline-wrapper {
+  padding-top: 1em;
+
+  label {
+    color: #A39E98;
+  }
 }
