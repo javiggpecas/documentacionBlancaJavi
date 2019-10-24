@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ReactiveForm1Component } from './reactive-form-1.component';
+import { OthersComponent } from './others.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: ReactiveForm1Component
+    component: OthersComponent
   }
 ];
 

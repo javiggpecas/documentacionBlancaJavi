@@ -3,11 +3,11 @@ import { FormGroup, FormControl, Validators, FormBuilder, AbstractControl } from
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-formularios',
-  templateUrl: './formularios.component.html',
-  styleUrls: ['./formularios.component.scss']
+  selector: 'app-form-components',
+  templateUrl: './form-components.component.html',
+  styleUrls: ['./form-components.component.scss']
 })
-export class FormulariosComponent implements OnInit {
+export class FormComponentsComponent implements OnInit {
 
   public cancelAnRequestForm: FormGroup;
   public minDate = Date.now();

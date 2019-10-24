@@ -8,16 +8,16 @@ const routes: Routes = [
     component: AngularComponent,
     children: [
       {
-        path: 'forms',
-        loadChildren: () => import('./containers/formularios/formularios.module').then(m => m.FormulariosModule)
+        path: 'form-components',
+        loadChildren: () => import('./containers/form-components/form-components.module').then(m => m.FormComponentsModule)
       },
       {
-        path: 'prueba-uno',
-        loadChildren: () => import('./containers/prueba-uno/prueba-uno.module').then(m => m.PruebaUnoModule)
+        path: 'form',
+        loadChildren: () => import('./containers/form/form.module').then(m => m.FormsModule)
       },
       {
-        path: 'prueba-dos',
-        loadChildren: () => import('./containers/reactive-form-1/reactive-form-1.module').then(m => m.ReactiveForm1Module)
+        path: 'others',
+        loadChildren: () => import('./containers/others/others.module').then(m => m.OthersModule)
       }
     ]
   }
