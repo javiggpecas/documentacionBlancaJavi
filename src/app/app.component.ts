@@ -67,13 +67,13 @@ export class AppComponent implements OnInit {
 
   /**
    * @description Subscribe and detect when is loading on change route
-  */
+   */
   isPageLoading(): void {
     this.isShowingRouteLoadIndicator = false;
     this.router.events.subscribe(( event: RouterEvent ): void => {
-      if ( event instanceof RouteConfigLoadStart ) {
+      if ( event instanceof RouteConfigLoadStart ) { // Modifica la variable del spinner a true cuando inicia la carga de la pagina
         this.isShowingRouteLoadIndicator = true;
-      } else if ( event instanceof RouteConfigLoadEnd ) {
+      } else if ( event instanceof RouteConfigLoadEnd ) { // Lo modifica a false cuando finaliza la carga de la pagina
         this.isShowingRouteLoadIndicator = false;
       }
     });
