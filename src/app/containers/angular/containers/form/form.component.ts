@@ -3,11 +3,11 @@ import { FormBuilder, FormGroup, Validators, FormControl, AbstractControl, FormA
 import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'app-prueba-uno',
-  templateUrl: './prueba-uno.component.html',
-  styleUrls: ['./prueba-uno.component.scss']
+  selector: 'app-form',
+  templateUrl: './form.component.html',
+  styleUrls: ['./form.component.scss']
 })
-export class PruebaUnoComponent implements OnInit {
+export class FormComponent implements OnInit {
 
   constructor() { }
 

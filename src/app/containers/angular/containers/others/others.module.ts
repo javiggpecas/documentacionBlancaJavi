@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveForm1Component } from './reactive-form-1.component';
+import { OthersComponent } from './others.component';
 import { MatFormFieldModule, MatExpansionModule, MatButtonModule, MatDatepickerModule,
   MatInputModule, MatNativeDateModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ReactiveForm1RoutingModule } from './reactive-form-1-routing.module';
+import { ReactiveForm1RoutingModule } from './others-routing.module';
 
 @NgModule({
-  declarations: [ReactiveForm1Component],
+  declarations: [OthersComponent],
   imports: [
     CommonModule,
     ReactiveForm1RoutingModule,
@@ -22,4 +22,4 @@ import { ReactiveForm1RoutingModule } from './reactive-form-1-routing.module';
     ReactiveFormsModule
   ]
 })
-export class ReactiveForm1Module { }
+export class OthersModule { }

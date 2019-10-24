@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { FormulariosRoutingModule } from './formularios-routing.module';
+import { FormulariosRoutingModule } from './form-components-routing.module';
 import { MatExpansionModule, MatButtonModule, MatFormFieldModule, MatInputModule,
   MatNativeDateModule } from '@angular/material';
-import { FormulariosComponent } from './formularios.component';
+import { FormComponentsComponent } from './form-components.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../../../../shared/shared.module';
 
 @NgModule({
   declarations: [
-    FormulariosComponent
+    FormComponentsComponent
   ],
   imports: [ // importo lo que vaya a usar en este componente
     CommonModule,
@@ -29,4 +29,4 @@ import { SharedModule } from '../../../../shared/shared.module';
     ReactiveFormsModule
   ]
 })
-export class FormulariosModule { }
+export class FormComponentsModule { }
