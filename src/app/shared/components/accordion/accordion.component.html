@@ -1,0 +1,7 @@
+<mat-expansion-panel>
+    <mat-expansion-panel-header>
+        <mat-panel-title *ngIf="title">{{title}}</mat-panel-title>
+        <mat-panel-description *ngIf="description">{{description}}</mat-panel-description>
+    </mat-expansion-panel-header>
+    <ng-content select=".accordion-body"></ng-content>
+</mat-expansion-panel>
