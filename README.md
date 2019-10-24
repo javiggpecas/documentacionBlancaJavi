@@ -1,7 +1,7 @@
 # Documentacion Blanca Javi
 Página con documentación sobre tecnologías FRONT
 
-![Front Logo](./src/assets/images/logo-font.png?raw=true "Front Logo")
+![Front Logo](https://github.com/javiggpecas/documentacionBlancaJavi/blob/PWA_WORK/src/assets/images/logo-front.png "Front Logo")
 
 ## Authors
 
