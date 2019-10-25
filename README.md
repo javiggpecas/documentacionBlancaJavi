@@ -18,7 +18,7 @@ Ejecute `ng serve` para iniciar el servidor de desarrollo y navege a `http://loc
 Ejecute `ng build` para obtener un compilado del proyecto. El proyecto generado se almacenará en la carpeta `/dist`. Use la flag `-prod` para realizar la compilación en modo producción.
 
 ### HTTP-SERVER instalar PWA
-Es necesario tener instalado [http-server](https://www.npmjs.com/package/http-server) npm i http-server y haber compilado el proyecto anteriormente contado.
+Es necesario tener instalado [http-server](https://www.npmjs.com/package/http-server) `npm i http-server` y haber compilado el proyecto anteriormente contado.
 
 En la carpeta creada en `/dist/nombre-proyecto` se ejecuta el siguiente comando para crear un servidor en el pc capaz de ejecutar el compilado:
 
