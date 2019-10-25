@@ -59,6 +59,9 @@
               ],
               "serviceWorker": true,
               "ngswConfigPath": "ngsw-config.json"
+            },
+            "es5": {
+              "tsConfig": "./tsconfig.es5.json"
             }
           }
         },
@@ -70,6 +73,9 @@
           "configurations": {
             "production": {
               "browserTarget": "proyecto-pruebas:build:production"
+            },
+            "es5": {
+              "browserTarget": "proyecto-pruebas:build:es5"
             }
           }
         },

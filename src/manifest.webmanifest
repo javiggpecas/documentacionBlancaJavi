@@ -1,8 +1,8 @@
 {
-  "name": "proyecto-pruebas",
-  "short_name": "proyecto-pruebas",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "name": "Documentación Blanca/Javi",
+  "short_name": "Documentación Blanca/Javi",
+  "theme_color": "#575757",
+  "background_color": "#575757",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
