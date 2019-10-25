@@ -19,7 +19,7 @@ Ejecute `ng build` para obtener un compilado del proyecto. El proyecto generado 
 
 ## Internet Explorer
 
-Estan habilitados tos los polyfills necesarios para que la PWA funcione en IE.
+Estan habilitados todos los polyfills necesarios para que la PWA funcione en IE.
 
 Para poder iniciar la aplicacion en Internet Explorer es necesario ejecutarla en ECMAScript 5 (ES5) mediante el comando:
     
