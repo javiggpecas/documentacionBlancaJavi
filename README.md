@@ -1,5 +1,5 @@
 # Documentacion Blanca Javi
-> ### Página con documentación sobre tecnologías FRONT
+> ### Página con documentación sobre tecnologías FRONT 
 
 ![Front Logo](./src/assets/images/logo-front.png "Front Logo")
 
@@ -7,6 +7,10 @@
 
 * **Blanca Ros San Juan** - [BlancaRos](https://github.com/BlancaRos)
 * **Javier García González** - [javiggpecas](https://github.com/javiggpecas)
+
+## URL Web Site
+
+La web se encuentra alojada en un servidor propio de este repositorio (GitHub) la url es la siguiente: [DocumetnacionBlancaJavi](https://javiggpecas.github.io/documentacionBlancaJavi)
 
 ## Empezando
 
@@ -36,4 +40,21 @@ Para poder iniciar la aplicacion en Internet Explorer es necesario ejecutarla en
     
     ng serve --configuration es5
 
+## Compilar y subir a Web Site
 
+Para poder realizar la subida y despliegue de la aplicación en la ruta [DocumetnacionBlancaJavi](https://javiggpecas.github.io/documentacionBlancaJavi) es necesario modificar el archivo `manifest.webmanifest` y modificar 
+`"start_url": "/",` resultando `"start_url": "/documentacionBlancaJavi/",` .
+
+A continuacón se compila el proyecto Angular mediante el comando:
+
+    ng build --prod --base-href="#"
+
+Para realizar la subida a la rama que contiene el proyecto compilado (`gh-pages`) y realizar el despliegue es necesario tener instalado `angular-cli-ghpages` con el siguiete comando
+
+    npm install -g angular-cli-ghpages
+
+Entonces se sube el compilado a la rama con el soguiente comando:
+
+    ngh --dir=dist/proyecto-pruebas
+
+Para ver el estado del despliegue se tiene que estar en la pagina de github del proyecto en la pestaña `environment`.
