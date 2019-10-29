@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1572375622844,
+  "timestamp": 1572378142748,
   "index": "#/index.html",
   "assetGroups": [
     {
@@ -64,7 +64,19 @@
       "patterns": []
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "headlines",
+      "patterns": [
+        "https:\\/\\/javiggpecas\\.github\\.io\\/documentacionBlancaJavi\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 10,
+      "maxAge": 86400000,
+      "timeoutMs": 5000,
+      "version": 1
+    }
+  ],
   "hashTable": {
     "#/1-es2015.cf60582586fa19fcfb26.js": "96a9aade5e9bb2723b13ffe41749c0057a35fa77",
     "#/1-es5.cf60582586fa19fcfb26.js": "e13deaeecdfa495d63db72339c351ea4ebf8de32",
