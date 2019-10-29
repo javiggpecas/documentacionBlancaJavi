@@ -1,0 +1,132 @@
+{
+  "configVersion": 1,
+  "timestamp": 1572366080759,
+  "index": "documentacionBlancaJavi/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "documentacionBlancaJavi/1-es2015.cf60582586fa19fcfb26.js",
+        "documentacionBlancaJavi/1-es5.cf60582586fa19fcfb26.js",
+        "documentacionBlancaJavi/10-es2015.0c2de01338095342f5e8.js",
+        "documentacionBlancaJavi/10-es5.0c2de01338095342f5e8.js",
+        "documentacionBlancaJavi/11-es2015.1adca85d4fcdbcdf9daa.js",
+        "documentacionBlancaJavi/11-es5.1adca85d4fcdbcdf9daa.js",
+        "documentacionBlancaJavi/12-es2015.4cbe8469380e8029ed60.js",
+        "documentacionBlancaJavi/12-es5.4cbe8469380e8029ed60.js",
+        "documentacionBlancaJavi/13-es2015.91cc6963b8c711c5ecc3.js",
+        "documentacionBlancaJavi/13-es5.91cc6963b8c711c5ecc3.js",
+        "documentacionBlancaJavi/14-es2015.1c6eca2b0aef9706f8ec.js",
+        "documentacionBlancaJavi/14-es5.1c6eca2b0aef9706f8ec.js",
+        "documentacionBlancaJavi/2-es2015.c0424f0455e4839b10c2.js",
+        "documentacionBlancaJavi/2-es5.c0424f0455e4839b10c2.js",
+        "documentacionBlancaJavi/7-es2015.f8c3cc3f933c833fd8d8.js",
+        "documentacionBlancaJavi/7-es5.f8c3cc3f933c833fd8d8.js",
+        "documentacionBlancaJavi/8-es2015.c90fb1fbe5a959564cd1.js",
+        "documentacionBlancaJavi/8-es5.c90fb1fbe5a959564cd1.js",
+        "documentacionBlancaJavi/9-es2015.4aee125efc307d3492aa.js",
+        "documentacionBlancaJavi/9-es5.4aee125efc307d3492aa.js",
+        "documentacionBlancaJavi/favicon.ico",
+        "documentacionBlancaJavi/index.html",
+        "documentacionBlancaJavi/main-es2015.4412389301267e43de32.js",
+        "documentacionBlancaJavi/main-es5.4412389301267e43de32.js",
+        "documentacionBlancaJavi/polyfills-es2015.24bab4ac483fe374b71c.js",
+        "documentacionBlancaJavi/polyfills-es5.0e26730735030785a732.js",
+        "documentacionBlancaJavi/runtime-es2015.26aaeb45a684bf15301f.js",
+        "documentacionBlancaJavi/runtime-es5.26aaeb45a684bf15301f.js",
+        "documentacionBlancaJavi/styles.8731b70683f137bfbca3.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "documentacionBlancaJavi/assets/icons/icon-128x128.png",
+        "documentacionBlancaJavi/assets/icons/icon-144x144.png",
+        "documentacionBlancaJavi/assets/icons/icon-152x152.png",
+        "documentacionBlancaJavi/assets/icons/icon-192x192.png",
+        "documentacionBlancaJavi/assets/icons/icon-384x384.png",
+        "documentacionBlancaJavi/assets/icons/icon-512x512.png",
+        "documentacionBlancaJavi/assets/icons/icon-72x72.png",
+        "documentacionBlancaJavi/assets/icons/icon-96x96.png",
+        "documentacionBlancaJavi/assets/images/CSS3_logo.svg",
+        "documentacionBlancaJavi/assets/images/HTML5_logo_black.svg",
+        "documentacionBlancaJavi/assets/images/angular.svg",
+        "documentacionBlancaJavi/assets/images/install-chrome-pwa.jpg",
+        "documentacionBlancaJavi/assets/images/javascript-1.svg",
+        "documentacionBlancaJavi/assets/images/logo-front.png",
+        "documentacionBlancaJavi/assets/images/solobombilla.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "documentacionBlancaJavi/1-es2015.cf60582586fa19fcfb26.js": "96a9aade5e9bb2723b13ffe41749c0057a35fa77",
+    "documentacionBlancaJavi/1-es5.cf60582586fa19fcfb26.js": "e13deaeecdfa495d63db72339c351ea4ebf8de32",
+    "documentacionBlancaJavi/10-es2015.0c2de01338095342f5e8.js": "c15ffa24f79220c1c76236a7c085df10e5579688",
+    "documentacionBlancaJavi/10-es5.0c2de01338095342f5e8.js": "65490469545a3ee933ce61a969b73019ae2a6611",
+    "documentacionBlancaJavi/11-es2015.1adca85d4fcdbcdf9daa.js": "aaa8fa15cf44ec72531e89502e98407fe95ede7b",
+    "documentacionBlancaJavi/11-es5.1adca85d4fcdbcdf9daa.js": "fc6413bfa6c7331b4dfa99d03882092a37378fd0",
+    "documentacionBlancaJavi/12-es2015.4cbe8469380e8029ed60.js": "5a0e8ec76dbaea54b48613c4d4185f189913c386",
+    "documentacionBlancaJavi/12-es5.4cbe8469380e8029ed60.js": "28978b9f2761a48e03bfded4911e3f1ec37e2f2a",
+    "documentacionBlancaJavi/13-es2015.91cc6963b8c711c5ecc3.js": "10ff77ed5ac4a28bf5ad5c1c34e249050244a522",
+    "documentacionBlancaJavi/13-es5.91cc6963b8c711c5ecc3.js": "f8d9a8f53656885dd7a7c606cfe0cf02c2b66d9a",
+    "documentacionBlancaJavi/14-es2015.1c6eca2b0aef9706f8ec.js": "dfdb815d5a2481cb91f8a500f57905cbc46e4574",
+    "documentacionBlancaJavi/14-es5.1c6eca2b0aef9706f8ec.js": "67f0993ca7355d5cfc5ed257129e4dca9b3f945a",
+    "documentacionBlancaJavi/2-es2015.c0424f0455e4839b10c2.js": "818b63cfa5883757fee93a09506ac16359d58800",
+    "documentacionBlancaJavi/2-es5.c0424f0455e4839b10c2.js": "5f30d6face4d9a5d60130acc590edfabd8118078",
+    "documentacionBlancaJavi/7-es2015.f8c3cc3f933c833fd8d8.js": "0aa208fd9ab4664b9b5c00bd2faafa799711b74a",
+    "documentacionBlancaJavi/7-es5.f8c3cc3f933c833fd8d8.js": "e7c2fe7eeb4334396df31af99d1380d67179e30f",
+    "documentacionBlancaJavi/8-es2015.c90fb1fbe5a959564cd1.js": "0fb8cddc3e259e3e131c188391ac395c6b3b51f2",
+    "documentacionBlancaJavi/8-es5.c90fb1fbe5a959564cd1.js": "c3f358da20fb41daadcc42cdc2d8d453f947d014",
+    "documentacionBlancaJavi/9-es2015.4aee125efc307d3492aa.js": "dfba612943bce1660ca6cc22363cac90510817e5",
+    "documentacionBlancaJavi/9-es5.4aee125efc307d3492aa.js": "f8e2150b86d7d58639c0a88bb0f0db0e9ee140f5",
+    "documentacionBlancaJavi/assets/icons/icon-128x128.png": "5d33f582e1cdb8250de847db1bdd9c99bcd7ed94",
+    "documentacionBlancaJavi/assets/icons/icon-144x144.png": "32f7eea1fbfe546809faa95673eaf1e50ea7ca3a",
+    "documentacionBlancaJavi/assets/icons/icon-152x152.png": "6ac7b2abcdb1b44a1a7f41fd7ebf97ccfbcb4c34",
+    "documentacionBlancaJavi/assets/icons/icon-192x192.png": "c461808991cca63d082189ae4af71eb9cb463792",
+    "documentacionBlancaJavi/assets/icons/icon-384x384.png": "7d2d6a04a15b31e9d709e32b602b3ae3e25a9962",
+    "documentacionBlancaJavi/assets/icons/icon-512x512.png": "9abb62019be72a5bbc2112908194f649b1f120af",
+    "documentacionBlancaJavi/assets/icons/icon-72x72.png": "c44f56a70cb2da3b3e0629fde65140c5a141f283",
+    "documentacionBlancaJavi/assets/icons/icon-96x96.png": "38161a5edd12aef68f75c51c872bd495b0960550",
+    "documentacionBlancaJavi/assets/images/CSS3_logo.svg": "782e5d2ddede185fd4bc8c58bface3cc007274c6",
+    "documentacionBlancaJavi/assets/images/HTML5_logo_black.svg": "56b1f19ddb514a8d6335643f6f638d674317a09e",
+    "documentacionBlancaJavi/assets/images/angular.svg": "a1553676bc6ac570e04bf4a6e377c1be320a41d7",
+    "documentacionBlancaJavi/assets/images/install-chrome-pwa.jpg": "d94d06640d6af7b6686415be2265c65f8bed1340",
+    "documentacionBlancaJavi/assets/images/javascript-1.svg": "b18ea414b87b0b8b885560c2387cb6f453947c68",
+    "documentacionBlancaJavi/assets/images/logo-front.png": "920201a76c3a0aa3c88c61d96f5ae90b445d149f",
+    "documentacionBlancaJavi/assets/images/solobombilla.png": "010a07febf00add54f3b48245a17747d8cb2c65b",
+    "documentacionBlancaJavi/favicon.ico": "9b742f8796d555f8219e658afbf8b256d469f137",
+    "documentacionBlancaJavi/index.html": "5c24b7c693a89f9afe8abc455cdec9bff859086c",
+    "documentacionBlancaJavi/main-es2015.4412389301267e43de32.js": "6ffb72cb815ff9796975a8411c0bb9bb97e52760",
+    "documentacionBlancaJavi/main-es5.4412389301267e43de32.js": "8a831120e2ef0b88a8d1bda5d35a135b034984d2",
+    "documentacionBlancaJavi/polyfills-es2015.24bab4ac483fe374b71c.js": "cedfa69d74606f8e238583c77805aee643f3ba95",
+    "documentacionBlancaJavi/polyfills-es5.0e26730735030785a732.js": "bbc8228bbffcf3569266be1110a367d68d188a97",
+    "documentacionBlancaJavi/runtime-es2015.26aaeb45a684bf15301f.js": "14c05b883d636ccff8eee556b301d2248a0264e8",
+    "documentacionBlancaJavi/runtime-es5.26aaeb45a684bf15301f.js": "b4a5a6f4ae0c9b348f2015d5969c8b563242cbd3",
+    "documentacionBlancaJavi/styles.8731b70683f137bfbca3.css": "f2b575c54a0167f817876ba2c7ca9895d68a8bcf"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
