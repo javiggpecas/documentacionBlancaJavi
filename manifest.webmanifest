@@ -4,8 +4,8 @@
   "theme_color": "#575757",
   "background_color": "#575757",
   "display": "standalone",
-  "scope": "/",
-  "start_url": "/documentacionBlancaJavi/",
+  "scope": "#",
+  "start_url": "/documentacionBlancaJavi/#/home",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
