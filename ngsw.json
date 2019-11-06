@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1573055617680,
+  "timestamp": 1573056104935,
   "index": "#/index.html",
   "assetGroups": [
     {
@@ -39,18 +39,7 @@
         "#/runtime-es5.9ef54860f6c41bef789a.js",
         "#/styles.8731b70683f137bfbca3.css"
       ],
-      "patterns": [
-        "https:\\/\\/javiggpecas\\.github\\.io\\/documentacionBlancaJavi\\/",
-        "https:\\/\\/javiggpecas\\.github\\.io\\/documentacionBlancaJavi\\/#\\/",
-        "https:\\/\\/javiggpecas\\.github\\.io\\/documentacionBlancaJavi\\/#\\/home",
-        "https:\\/\\/javiggpecas\\.github\\.io\\/documentacionBlancaJavi\\/#\\/html",
-        "https:\\/\\/javiggpecas\\.github\\.io\\/documentacionBlancaJavi\\/#\\/angular",
-        "https:\\/\\/javiggpecas\\.github\\.io\\/documentacionBlancaJavi\\/#\\/html",
-        "https:\\/\\/javiggpecas\\.github\\.io\\/documentacionBlancaJavi\\/#\\/css",
-        "https:\\/\\/javiggpecas\\.github\\.io\\/documentacionBlancaJavi\\/#\\/angular\\/form",
-        "https:\\/\\/javiggpecas\\.github\\.io\\/documentacionBlancaJavi\\/#\\/angular\\/form-components",
-        "https:\\/\\/javiggpecas\\.github\\.io\\/documentacionBlancaJavi\\/#\\/angular\\/others"
-      ]
+      "patterns": []
     },
     {
       "name": "assets",
@@ -76,7 +65,19 @@
       "patterns": []
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "Todos",
+      "patterns": [
+        "https:\\/\\/javiggpecas\\.github\\.io\\/documentacionBlancaJavi"
+      ],
+      "strategy": "freshness",
+      "maxSize": 10,
+      "maxAge": 604800000,
+      "timeoutMs": 10000,
+      "version": 1
+    }
+  ],
   "hashTable": {
     "#/1-es2015.cf60582586fa19fcfb26.js": "96a9aade5e9bb2723b13ffe41749c0057a35fa77",
     "#/1-es5.cf60582586fa19fcfb26.js": "e13deaeecdfa495d63db72339c351ea4ebf8de32",
