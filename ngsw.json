@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1573052829046,
+  "timestamp": 1573055617680,
   "index": "#/index.html",
   "assetGroups": [
     {
@@ -39,7 +39,18 @@
         "#/runtime-es5.9ef54860f6c41bef789a.js",
         "#/styles.8731b70683f137bfbca3.css"
       ],
-      "patterns": []
+      "patterns": [
+        "https:\\/\\/javiggpecas\\.github\\.io\\/documentacionBlancaJavi\\/",
+        "https:\\/\\/javiggpecas\\.github\\.io\\/documentacionBlancaJavi\\/#\\/",
+        "https:\\/\\/javiggpecas\\.github\\.io\\/documentacionBlancaJavi\\/#\\/home",
+        "https:\\/\\/javiggpecas\\.github\\.io\\/documentacionBlancaJavi\\/#\\/html",
+        "https:\\/\\/javiggpecas\\.github\\.io\\/documentacionBlancaJavi\\/#\\/angular",
+        "https:\\/\\/javiggpecas\\.github\\.io\\/documentacionBlancaJavi\\/#\\/html",
+        "https:\\/\\/javiggpecas\\.github\\.io\\/documentacionBlancaJavi\\/#\\/css",
+        "https:\\/\\/javiggpecas\\.github\\.io\\/documentacionBlancaJavi\\/#\\/angular\\/form",
+        "https:\\/\\/javiggpecas\\.github\\.io\\/documentacionBlancaJavi\\/#\\/angular\\/form-components",
+        "https:\\/\\/javiggpecas\\.github\\.io\\/documentacionBlancaJavi\\/#\\/angular\\/others"
+      ]
     },
     {
       "name": "assets",
