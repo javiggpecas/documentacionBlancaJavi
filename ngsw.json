@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1573142449597,
+  "timestamp": 1573143270030,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -103,7 +103,7 @@
     "/assets/images/logo-front.png": "920201a76c3a0aa3c88c61d96f5ae90b445d149f",
     "/assets/images/solobombilla.png": "010a07febf00add54f3b48245a17747d8cb2c65b",
     "/favicon.ico": "9b742f8796d555f8219e658afbf8b256d469f137",
-    "/index.html": "27c52b6b7cb98d6eb1ff2fc903f5d22c966c94cd",
+    "/index.html": "596befeafaaec1c9315e5d40bc8420743b9eaa99",
     "/main-es2015.7716e100a5c3a9f15f76.js": "60e3119fbcdc926d99d9bed1087e71aecea49c49",
     "/main-es5.7716e100a5c3a9f15f76.js": "64c264c8a7a6985813c16a015cbc68d2f1370e03",
     "/manifest.webmanifest": "df44ea0512c6839da1dbfd720829de4cb5cbb2ef",
