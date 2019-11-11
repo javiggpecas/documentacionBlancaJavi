@@ -5,7 +5,7 @@
   "background_color": "#575757",
   "display": "standalone",
   "scope": "/",
-  "start_url": "/documentacionBlancaJavi/",
+  "start_url": "/documentacionBlancaJavi/#/",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
