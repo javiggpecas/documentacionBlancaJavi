@@ -22,35 +22,35 @@ export class AppComponent implements OnInit {
       link: '/home',
       class: 'nav-enlace',
       activateClass: 'activated-tab',
-      icon: 'faHome',
+      icon: 'faHomeLanding',
       title: 'Home'
     },
     {
-      link: '/angular',
+      link: '/angular-landing',
       class: 'nav-enlace angColor',
       activateClass: 'activated-tab angColorActive',
-      icon: 'faAngular',
+      icon: 'faAngularLanding',
       title: 'Angular'
     },
     {
-      link: '/html',
+      link: '/html-landing',
       class: 'nav-enlace htmlColor',
       activateClass: 'activated-tab htmlColorActive',
-      icon: 'faHTML',
+      icon: 'faHTMLLanding',
       title: 'HTML'
     },
     {
-      link: '/css',
+      link: '/css-landing',
       class: 'nav-enlace cssColor',
       activateClass: 'activated-tab cssColorActive',
-      icon: 'faCSS',
+      icon: 'faCSSLanding',
       title: 'CSS'
     },
     {
-      link: '/js',
+      link: '/js-landing',
       class: 'nav-enlace jsColor',
       activateClass: 'activated-tab jsColorActive',
-      icon: 'faJs',
+      icon: 'faJsLanding',
       title: 'JavaScript'
     }
   ];

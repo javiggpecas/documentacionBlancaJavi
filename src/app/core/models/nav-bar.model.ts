@@ -8,9 +8,9 @@ export interface NavData {
 }
 
 export interface IconsFa {
-    faHome: any;
-    faHTML: any;
-    faCSS: any;
-    faAngular: any;
-    faJs: any;
+    faHomeLanding: any;
+    faHTMLLanding: any;
+    faCSSLanding: any;
+    faAngularLanding: any;
+    faJsLanding: any;
 }

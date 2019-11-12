@@ -11,11 +11,11 @@ import { NavData, IconsFa } from '../../../core/models/nav-bar.model';
 export class NavBarComponent implements OnInit {
   @Input() navData: Array<NavData>;
   icons: IconsFa = {
-    'faHome': faHome,
-    'faHTML': faHtml5,
-    'faCSS': faCss3Alt,
-    'faAngular': faAngular,
-    'faJs': faJsSquare
+    faHomeLanding: faHome,
+    faHTMLLanding: faHtml5,
+    faCSSLanding: faCss3Alt,
+    faAngularLanding: faAngular,
+    faJsLanding: faJsSquare
   };
 
   constructor() { }

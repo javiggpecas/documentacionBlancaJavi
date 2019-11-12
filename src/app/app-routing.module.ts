@@ -15,23 +15,23 @@ const routes: Routes = [
   },
   {
     // hacer el routing con lazy loading, importo el modulo que contiene todo lo referente al componente de angular
-    path: 'angular',
-    loadChildren: () => import('./containers/angular/angular.module').then(m => m.AngularModule)
+    path: 'angular-landing',
+    loadChildren: () => import('./containers/angular-landing/angular-landing.module').then(m => m.AngularLandingModule)
   },
   {
     // hacer el routing con lazy loading, importo el modulo que contiene todo lo referente al componente de html
-    path: 'html',
-    loadChildren: () => import('./containers/html/html.module').then(m => m.HtmlModule)
+    path: 'html-landing',
+    loadChildren: () => import('./containers/html-landing/html-landing.module').then(m => m.HtmlLandingModule)
   },
   {
     // hacer el routing con lazy loading, importo el modulo que contiene todo lo referente al componente de css
-    path: 'css',
-    loadChildren: () => import('./containers/css/css.module').then(m => m.CssModule)
+    path: 'css-landing',
+    loadChildren: () => import('./containers/css-landing/css-landing.module').then(m => m.CssLandingModule)
   },
   {
     // hacer el routing con lazy loading, importo el modulo que contiene todo lo referente al componente de js
-    path: 'js',
-    loadChildren: () => import('./containers/js/js.module').then(m => m.JsModule)
+    path: 'js-landing',
+    loadChildren: () => import('./containers/js-landing/js-landing.module').then(m => m.JsLandingModule)
   },
   { path: '**', redirectTo: 'home' }
 ];
