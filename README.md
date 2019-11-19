@@ -60,7 +60,7 @@ Entonces se sube el compilado a la rama con el soguiente comando:
 
 Para ver el estado del despliegue se tiene que estar en la pagina de github del proyecto en la pestaña `environment`.
 
-## [<img src="https://github.com/javiggpecas/documentacionBlancaJavi/blob/master/src/assets/images/compodoc-vectorise.png?raw=true" data-canonical-src="https://github.com/javiggpecas/documentacionBlancaJavi/blob/master/src/assets/images/compodoc-vectorise.png?raw=true" alt="Compodoc" title="Compodoc" width="150"/>](https://javiggpecas.github.io/documentacionBlancaJavi) 
+## [<img src="https://github.com/javiggpecas/documentacionBlancaJavi/blob/master/src/assets/images/compodoc-vectorise.png?raw=true" data-canonical-src="https://github.com/javiggpecas/documentacionBlancaJavi/blob/master/src/assets/images/compodoc-vectorise.png?raw=true" alt="Compodoc" title="Compodoc" width="150"/>](https://compodoc.app/) 
 
 Compodoc es un generador de Documentación el cual va a leer los archivos de tu proyecto en Angular y va a generar una Documentación simple y elegante que va contener sus bloques de construcción junto con los comentarios que tengas en los mismos. [Fuente: NG ClassRoom](https://blog.ng-classroom.com/blog/ionic/compodoc-documentacion_ionic_apps/)
 
