@@ -51,7 +51,7 @@
 <p>Es necesario tener instalado <a href="https://www.npmjs.com/package/http-server">http-server</a> <code>npm i http-server -g</code> y haber compilado el proyecto en modo producción <code>ng build --prod</code>.</p>
 <p>En la carpeta creada en <code>/dist/nombre-proyecto</code> se ejecuta el siguiente comando para crear un servidor en el pc capaz de ejecutar el compilado:</p>
 <div><pre class="line-numbers"><code class="language-none">http-server -p 8080</code></pre></div><p>Una vez iniciado google chrome se selecciona la opccion intalar en la barra de navegación:</p>
-<p><img src="./src/assets/images/install-chrome-pwa.jpg" alt="Ejemplo boton instalar google chrome" class="img-responsive" title="Boton Instalar Chrome"></p>
+<p><img src="./src/assets/images/install-chrome-pwa.jpg" alt="Ejemplo instalar Google Chrome" class="img-responsive" title="Boton Instalar Chrome"></p>
 <h2 id="internet-explorer">Internet Explorer</h2>
 <p>Estan habilitados todos los polyfills necesarios para que la PWA funcione en IE.</p>
 <p>Para poder iniciar la aplicacion en Internet Explorer es necesario ejecutarla en ECMAScript 5 (ES5) mediante el comando:</p>
@@ -62,7 +62,7 @@
 <div><pre class="line-numbers"><code class="language-none">ng build --prod --base-href=&quot;#&quot;</code></pre></div><p>Para realizar la subida a la rama que contiene el proyecto compilado (<code>gh-pages</code>) y realizar el despliegue es necesario tener instalado <code>angular-cli-ghpages</code> con el siguiete comando</p>
 <div><pre class="line-numbers"><code class="language-none">npm install -g angular-cli-ghpages</code></pre></div><p>Entonces se sube el compilado a la rama con el soguiente comando:</p>
 <div><pre class="line-numbers"><code class="language-none">ngh --dir=dist/documentacion-blanca-javi</code></pre></div><p>Para ver el estado del despliegue se tiene que estar en la pagina de github del proyecto en la pestaña <code>environment</code>.</p>
-<h2 id="img-srcdocumentationimagescompodoc-vectorisesvg-data-canonical-srcimagescompodoc-vectorisesvg-altcompodoc-width150"><img src="./documentation/images/compodoc-vectorise.svg" data-canonical-src="./images/compodoc-vectorise.svg" alt="Compodoc" width="150"/></h2>
+<h2 id="img-srcsrcassetsimagescompodoc-vectorisesvg-data-canonical-srcsrcassetsimagescompodoc-vectorisesvg-altcompodoc-width150"><img src="./src/assets/images/compodoc-vectorise.svg" data-canonical-src="./src/assets/images/compodoc-vectorise.svg" alt="Compodoc" width="150"/></h2>
 <p>Compodoc es un generador de Documentación el cual va a leer los archivos de tu proyecto en Angular y va a generar una Documentación simple y elegante que va contener sus bloques de construcción junto con los comentarios que tengas en los mismos. <a href="https://blog.ng-classroom.com/blog/ionic/compodoc-documentacion_ionic_apps/">Fuente: NG ClassRoom</a></p>
 <p>Para poder realizar la documentación es necesario instalar la librería. (De manera global se instalará para poder usarlo en otros proyectos a futuro)</p>
 <div><pre class="line-numbers"><code class="language-none">npm install -g &#64;compodoc/compodoc</code></pre></div><p>Una vez instalado se ejecuta para generar la documentacion con el comando:</p>
