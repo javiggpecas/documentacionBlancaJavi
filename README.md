@@ -40,9 +40,10 @@ Para poder iniciar la aplicacion en Internet Explorer es necesario ejecutarla en
     
     ng serve --configuration es5
 
-## Compilar y subir a Web Site
+## Compilar y subir a Web Site 
+<img src="https://github.com/javiggpecas/documentacionBlancaJavi/blob/master/src/assets/images/githubpageslogo.png?raw=true" data-canonical-src="https://github.com/javiggpecas/documentacionBlancaJavi/blob/master/src/assets/images/githubpageslogo.png?raw=true" alt="GitHub Pages" title="GitHub Pages" width="100"/>
 
-Para poder realizar la subida y despliegue de la aplicación en la ruta [DocumetnacionBlancaJavi](https://javiggpecas.github.io/documentacionBlancaJavi) es necesario modificar el archivo `manifest.webmanifest` y modificar 
+Para poder realizar la subida y despliegue de la aplicación en la ruta [DocumentacionBlancaJavi](https://javiggpecas.github.io/documentacionBlancaJavi) es necesario modificar el archivo `manifest.webmanifest` y modificar 
 `"start_url": "/",` resultando `"start_url": "/documentacionBlancaJavi/",` .
 
 A continuacón se compila el proyecto Angular mediante el comando:
