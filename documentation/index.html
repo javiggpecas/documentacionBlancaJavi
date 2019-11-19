@@ -50,7 +50,7 @@
 <h3 id="http-server-instalar-pwa">HTTP-SERVER instalar PWA</h3>
 <p>Es necesario tener instalado <a href="https://www.npmjs.com/package/http-server">http-server</a> <code>npm i http-server -g</code> y haber compilado el proyecto en modo producción <code>ng build --prod</code>.</p>
 <p>En la carpeta creada en <code>/dist/nombre-proyecto</code> se ejecuta el siguiente comando para crear un servidor en el pc capaz de ejecutar el compilado:</p>
-<div><pre class="line-numbers"><code class="language-none">http-server -p 8080</code></pre></div><p>Una vez iniciado google chrome se selecciona la opccion intalar en la barra de navegación:</p>
+<div><pre class="line-numbers"><code class="language-none">http-server -p 8080</code></pre></div><p>Una vez iniciado google chrome se selecciona la opccion instalar en la barra de navegación:</p>
 <p><img src="https://github.com/javiggpecas/documentacionBlancaJavi/blob/master/src/assets/images/install-chrome-pwa.jpg?raw=true" alt="Ejemplo instalar Google Chrome" class="img-responsive" title="Boton Instalar Chrome"></p>
 <h2 id="internet-explorer">Internet Explorer</h2>
 <p>Estan habilitados todos los polyfills necesarios para que la PWA funcione en IE.</p>
@@ -58,7 +58,7 @@
 <div><pre class="line-numbers"><code class="language-none">ng serve --configuration es5</code></pre></div><h2 id="compilar-y-subir-a-web-site">Compilar y subir a Web Site</h2>
 <img src="https://github.com/javiggpecas/documentacionBlancaJavi/blob/master/src/assets/images/githubpageslogo.png?raw=true" data-canonical-src="https://github.com/javiggpecas/documentacionBlancaJavi/blob/master/src/assets/images/githubpageslogo.png?raw=true" alt="GitHub Pages" title="GitHub Pages" width="100"/>
 
-<p>Para poder realizar la subida y despliegue de la aplicación en la ruta <a href="https://javiggpecas.github.io/documentacionBlancaJavi">DocumetnacionBlancaJavi</a> es necesario modificar el archivo <code>manifest.webmanifest</code> y modificar 
+<p>Para poder realizar la subida y despliegue de la aplicación en la ruta <a href="https://javiggpecas.github.io/documentacionBlancaJavi">DocumentacionBlancaJavi</a> es necesario modificar el archivo <code>manifest.webmanifest</code> y modificar 
 <code>&quot;start_url&quot;: &quot;/&quot;,</code> resultando <code>&quot;start_url&quot;: &quot;/documentacionBlancaJavi/&quot;,</code> .</p>
 <p>A continuacón se compila el proyecto Angular mediante el comando:</p>
 <div><pre class="line-numbers"><code class="language-none">ng build --prod --base-href=&quot;#&quot;</code></pre></div><p>Para realizar la subida a la rama que contiene el proyecto compilado (<code>gh-pages</code>) y realizar el despliegue es necesario tener instalado <code>angular-cli-ghpages</code> con el siguiete comando</p>
@@ -69,7 +69,15 @@
 <p>Para poder realizar la documentación es necesario instalar la librería. (De manera global se instalará para poder usarlo en otros proyectos a futuro)</p>
 <div><pre class="line-numbers"><code class="language-none">npm install -g &#64;compodoc/compodoc</code></pre></div><p>Una vez instalado se ejecuta para generar la documentacion con el comando:</p>
 <div><pre class="line-numbers"><code class="language-none">compodoc -p src/tsconfig.app.json -s</code></pre></div><p>En la carpeta <code>documentation</code> se generará una página con toda la documentación generada por la herramienta compodoc.</p>
-
+<p>Hay 7 tipos de temas en compodoc (<a href="https://compodoc.app/guides/themes.html">Temas Compodoc</a>):</p>
+<div><pre class="line-numbers"><code class="language-none">- Default (gitbook)
+- Material design
+- Laravel
+- Readthedocs
+- Stripe
+- Vagrant
+- Postmark (postmark)
+- Original (first theme of 2016)    </code></pre></div>
 
 
 

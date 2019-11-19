@@ -28,7 +28,7 @@ En la carpeta creada en `/dist/nombre-proyecto` se ejecuta el siguiente comando 
 
     http-server -p 8080
 
-Una vez iniciado google chrome se selecciona la opccion intalar en la barra de navegación:
+Una vez iniciado google chrome se selecciona la opccion instalar en la barra de navegación:
 
 ![Ejemplo instalar Google Chrome](https://github.com/javiggpecas/documentacionBlancaJavi/blob/master/src/assets/images/install-chrome-pwa.jpg?raw=true "Boton Instalar Chrome")
 
@@ -73,3 +73,12 @@ Una vez instalado se ejecuta para generar la documentacion con el comando:
     compodoc -p src/tsconfig.app.json -s
 
 En la carpeta `documentation` se generará una página con toda la documentación generada por la herramienta compodoc.
+
+Hay 6 tipos de temas en compodoc ([Temas Compodoc](https://compodoc.app/guides/themes.html)):
+
+    - Gitbook (default)
+    - Laravel (--theme laravel)
+    - Readthedocs (--theme readthedocs)
+    - Stripe (--theme stripe)
+    - Vagrant (--theme vagrant)
+    - Postmark (--theme postmark)  
