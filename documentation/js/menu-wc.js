@@ -118,13 +118,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/FormComponentsModule.html" data-type="entity-link">FormComponentsModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-FormComponentsModule-13712f63a0f7fc87178a94bad21d3359"' : 'data-target="#xs-components-links-module-FormComponentsModule-13712f63a0f7fc87178a94bad21d3359"' }>
+                                            'data-target="#components-links-module-FormComponentsModule-6f4434794e66ce33c89bde11c038dfc9"' : 'data-target="#xs-components-links-module-FormComponentsModule-6f4434794e66ce33c89bde11c038dfc9"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-FormComponentsModule-13712f63a0f7fc87178a94bad21d3359"' :
-                                            'id="xs-components-links-module-FormComponentsModule-13712f63a0f7fc87178a94bad21d3359"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-FormComponentsModule-6f4434794e66ce33c89bde11c038dfc9"' :
+                                            'id="xs-components-links-module-FormComponentsModule-6f4434794e66ce33c89bde11c038dfc9"' }>
                                             <li class="link">
                                                 <a href="components/FormComponentsComponent.html"
                                                     data-type="entity-link" data-context="sub-entity" data-context-id="modules">FormComponentsComponent</a>
@@ -302,7 +302,7 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                     <li class="divider"></li>
                     <li class="copyright">
                         Documentation generated using <a href="https://compodoc.app/" target="_blank">
-                            <img data-src="images/compodoc-vectorise.png" class="img-responsive" data-type="compodoc-logo">
+                            <img data-src="images/compodoc-vectorise-inverted.png" class="img-responsive" data-type="compodoc-logo">
                         </a>
                     </li>
             </ul>

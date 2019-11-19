@@ -9,6 +9,7 @@
 
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/readthedocs.css">
     </head>
     <body>
 
@@ -169,19 +170,15 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
 import { CommonModule } from &#x27;@angular/common&#x27;;
-
 import { FormComponentsRoutingModule } from &#x27;./form-components-routing.module&#x27;;
-import { MatExpansionModule, MatButtonModule, MatFormFieldModule, MatInputModule,
-  MatNativeDateModule } from &#x27;@angular/material&#x27;;
+import { MatExpansionModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatNativeDateModule } from &#x27;@angular/material&#x27;;
 import { FormComponentsComponent } from &#x27;./form-components.component&#x27;;
 import { MatDatepickerModule } from &#x27;@angular/material/datepicker&#x27;;
 import { FormsModule, ReactiveFormsModule } from &#x27;@angular/forms&#x27;;
 import { SharedModule } from &#x27;../../../../shared/shared.module&#x27;;
 
 @NgModule({
-  declarations: [
-    FormComponentsComponent
-  ],
+  declarations: [FormComponentsComponent],
   imports: [ // importo lo que vaya a usar en este componente
     CommonModule,
     FormComponentsRoutingModule,

@@ -76,9 +76,9 @@ En la carpeta `documentation` se generará una página con toda la documentació
 
 Hay 6 tipos de temas en compodoc ([Temas Compodoc](https://compodoc.app/guides/themes.html)):
 
-    - Gitbook (default)
-    - Laravel (--theme laravel)
-    - Readthedocs (--theme readthedocs)
-    - Stripe (--theme stripe)
-    - Vagrant (--theme vagrant)
-    - Postmark (--theme postmark)  
+- Gitbook (default)
+- Laravel (--theme laravel)
+- Readthedocs (--theme readthedocs)
+- Stripe (--theme stripe)
+- Vagrant (--theme vagrant)
+- Postmark (--theme postmark)  
