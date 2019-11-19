@@ -1,15 +1,21 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5, faCss3Alt, faAngular, faJsSquare } from '@fortawesome/free-brands-svg-icons';
 import { NavData, IconsFa } from '../../../core/models/nav-bar.model';
 
+/**
+ * Nav Bar component contains the navigation bar of the web page
+ * @example <app-nav-bar [navData]="navBarData"></app-nav-bar>
+ */
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.scss']
 })
-export class NavBarComponent implements OnInit {
+export class NavBarComponent {
+  /** Object to build the link to the web sites */
   @Input() navData: Array<NavData>;
+  /** cons from FontAwesome */
   icons: IconsFa = {
     faHomeLanding: faHome,
     faHTMLLanding: faHtml5,
@@ -18,9 +24,9 @@ export class NavBarComponent implements OnInit {
     faJsLanding: faJsSquare
   };
 
+  /**
+   * The "constructor"
+   */
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }

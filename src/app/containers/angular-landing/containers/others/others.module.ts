@@ -4,13 +4,13 @@ import { OthersComponent } from './others.component';
 import { MatFormFieldModule, MatExpansionModule, MatButtonModule, MatDatepickerModule,
   MatInputModule, MatNativeDateModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ReactiveForm1RoutingModule } from './others-routing.module';
+import { OthersRoutingModule } from './others-routing.module';
 
 @NgModule({
   declarations: [OthersComponent],
   imports: [
     CommonModule,
-    ReactiveForm1RoutingModule,
+    OthersRoutingModule,
     MatExpansionModule,
     MatButtonModule,
     MatFormFieldModule,

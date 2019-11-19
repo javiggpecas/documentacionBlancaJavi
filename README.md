@@ -30,7 +30,7 @@ En la carpeta creada en `/dist/nombre-proyecto` se ejecuta el siguiente comando 
 
 Una vez iniciado google chrome se selecciona la opccion intalar en la barra de navegación:
 
-![Front Logo](./src/assets/images/install-chrome-pwa.jpg "Front Logo")
+![Ejemplo instalar Google Chrome](./src/assets/images/install-chrome-pwa.jpg "Boton Instalar Chrome")
 
 ## Internet Explorer
 
@@ -55,6 +55,20 @@ Para realizar la subida a la rama que contiene el proyecto compilado (`gh-pages`
 
 Entonces se sube el compilado a la rama con el soguiente comando:
 
-    ngh --dir=dist/proyecto-pruebas
+    ngh --dir=dist/documentacion-blanca-javi
 
 Para ver el estado del despliegue se tiene que estar en la pagina de github del proyecto en la pestaña `environment`.
+
+## <img src="./src/assets/images/compodoc-vectorise.svg" data-canonical-src="./src/assets/images/compodoc-vectorise.svg" alt="Compodoc" width="150"/>
+
+Compodoc es un generador de Documentación el cual va a leer los archivos de tu proyecto en Angular y va a generar una Documentación simple y elegante que va contener sus bloques de construcción junto con los comentarios que tengas en los mismos. [Fuente: NG ClassRoom](https://blog.ng-classroom.com/blog/ionic/compodoc-documentacion_ionic_apps/)
+
+Para poder realizar la documentación es necesario instalar la librería. (De manera global se instalará para poder usarlo en otros proyectos a futuro)
+
+    npm install -g @compodoc/compodoc
+
+Una vez instalado se ejecuta para generar la documentacion con el comando:
+
+    compodoc -p src/tsconfig.app.json -s
+
+En la carpeta `documentation` se generará una página con toda la documentación generada por la herramienta compodoc.

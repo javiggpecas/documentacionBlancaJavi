@@ -1,0 +1,355 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>documentacion-blanca-javi documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">documentacion-blanca-javi documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>HomeComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+        <li >
+            <a href="#example" role="tab" id="example-tab" data-toggle="tab" data-link="example">Examples</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/containers/home/home.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Home Landing contains a navigation to the diferent  web sites
+<example-url><a href="https://javiggpecas.github.io/documentacionBlancaJavi/#/home">https://javiggpecas.github.io/documentacionBlancaJavi/#/home</a></example-url></p>
+
+    </p>
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-home</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./home.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./home.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/containers/home/home.component.ts:12</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>The &quot;constructor&quot;</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+
+/**
+ * Home Landing contains a navigation to the diferent  web sites
+ * &lt;example-url&gt;https://javiggpecas.github.io/documentacionBlancaJavi/#/home&lt;/example-url&gt;
+ */
+@Component({
+  selector: &#x27;app-home&#x27;,
+  templateUrl: &#x27;./home.component.html&#x27;,
+  styleUrls: [&#x27;./home.component.scss&#x27;]
+})
+export class HomeComponent {
+
+  /**
+   * The &quot;constructor&quot;
+   */
+  constructor() { }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;main&gt;
+    &lt;div class&#x3D;&quot;front-logo&quot;&gt;
+        &lt;figure&gt;
+            &lt;img src&#x3D;&quot;./assets/images/logo-front.png&quot; alt&#x3D;&quot;Front Logo&quot;&gt;
+        &lt;/figure&gt;   
+    &lt;/div&gt;
+    
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;
+                &lt;a [routerLink]&#x3D;&quot;[&#x27;/angular-landing&#x27;]&quot; title&#x3D;&quot;Angular&quot;&gt;
+                    &lt;figure&gt;
+                        &lt;img class&#x3D;&quot;img-home&quot; src&#x3D;&quot;./assets/images/angular.svg&quot; alt&#x3D;&quot;Angular&quot;&gt;
+                    &lt;/figure&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a [routerLink]&#x3D;&quot;[&#x27;/html-landing&#x27;]&quot; title&#x3D;&quot;HTML5&quot;&gt;
+                    &lt;figure&gt;
+                        &lt;img class&#x3D;&quot;img-home&quot; src&#x3D;&quot;./assets/images/HTML5_logo_black.svg&quot; alt&#x3D;&quot;HTML5&quot;&gt;
+                    &lt;/figure&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a [routerLink]&#x3D;&quot;[&#x27;/js-landing&#x27;]&quot; title&#x3D;&quot;JavaScript&quot;&gt;
+                    &lt;figure&gt;
+                        &lt;img class&#x3D;&quot;img-home&quot; src&#x3D;&quot;./assets/images/javascript-1.svg&quot; alt&#x3D;&quot;JavaScript&quot;&gt;
+                    &lt;/figure&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a [routerLink]&#x3D;&quot;[&#x27;/css-landing&#x27;]&quot; title&#x3D;&quot;CSS3&quot;&gt;
+                    &lt;figure&gt;
+                        &lt;img class&#x3D;&quot;img-home&quot; src&#x3D;&quot;./assets/images/CSS3_logo.svg&quot; alt&#x3D;&quot;CSS3&quot;&gt;
+                    &lt;/figure&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/main&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./home.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.img-home {
+    height: 150px;
+}
+.front-logo {
+    width: 100%;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    width: 100%;
+    ul {
+        margin: 0px;
+        border-radius: 2px;
+        padding: 0px;
+        li {
+        width: auto;
+        display: inline-block;
+        }
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane fade " id="c-example">
+            <iframe class="exampleContainer" src="https://javiggpecas.github.io/documentacionBlancaJavi/#/home">
+                <p>no-iframes</p>
+            </iframe>
+    </div>
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><main>    <div class="front-logo">        <figure>            <img src="./assets/images/logo-front.png" alt="Front Logo">        </figure>       </div>        <nav>        <ul>            <li>                <a [routerLink]="[\'/angular-landing\']" title="Angular">                    <figure>                        <img class="img-home" src="./assets/images/angular.svg" alt="Angular">                    </figure>                </a>            </li>            <li>                <a [routerLink]="[\'/html-landing\']" title="HTML5">                    <figure>                        <img class="img-home" src="./assets/images/HTML5_logo_black.svg" alt="HTML5">                    </figure>                </a>            </li>            <li>                <a [routerLink]="[\'/js-landing\']" title="JavaScript">                    <figure>                        <img class="img-home" src="./assets/images/javascript-1.svg" alt="JavaScript">                    </figure>                </a>            </li>            <li>                <a [routerLink]="[\'/css-landing\']" title="CSS3">                    <figure>                        <img class="img-home" src="./assets/images/CSS3_logo.svg" alt="CSS3">                    </figure>                </a>            </li>        </ul>    </nav></main></div>'
+    var COMPONENTS = [{'name': 'AccordionComponent', 'selector': 'app-accordion'},{'name': 'AngularLandingComponent', 'selector': 'app-angular-landing'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CssLandingComponent', 'selector': 'app-css-landing'},{'name': 'FormComponent', 'selector': 'app-form'},{'name': 'FormComponentsComponent', 'selector': 'app-form-components'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'HtmlLandingComponent', 'selector': 'app-html-landing'},{'name': 'JsLandingComponent', 'selector': 'app-js-landing'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'OthersComponent', 'selector': 'app-others'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'HomeComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'HomeComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

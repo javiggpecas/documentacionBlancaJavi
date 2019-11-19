@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { FormulariosRoutingModule } from './form-components-routing.module';
+import { FormComponentsRoutingModule } from './form-components-routing.module';
 import { MatExpansionModule, MatButtonModule, MatFormFieldModule, MatInputModule,
   MatNativeDateModule } from '@angular/material';
 import { FormComponentsComponent } from './form-components.component';
@@ -15,8 +15,8 @@ import { SharedModule } from '../../../../shared/shared.module';
   ],
   imports: [ // importo lo que vaya a usar en este componente
     CommonModule,
+    FormComponentsRoutingModule,
     SharedModule,
-    FormulariosRoutingModule,
     MatExpansionModule,
     MatButtonModule,
     MatFormFieldModule,

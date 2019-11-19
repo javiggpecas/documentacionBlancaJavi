@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder, AbstractControl } from '@angular/forms';
 import { Subscription } from 'rxjs';
 
+/**
+ * Angular Form Compete and single example
+ * <example-url>https://javiggpecas.github.io/documentacionBlancaJavi/#/angular-landing/form-components</example-url>
+ */
 @Component({
   selector: 'app-form-components',
   templateUrl: './form-components.component.html',
@@ -9,17 +13,28 @@ import { Subscription } from 'rxjs';
 })
 export class FormComponentsComponent implements OnInit {
 
+  /** Cancel and request form */
   public cancelAnRequestForm: FormGroup;
+  /** Min date can be selected */
   public minDate = Date.now();
   // public minDate = '1568980850000';
+  /** Max date can be selected */
   public maxDate = '1569672050000';
+  /** Form confirm data */
   public confirmForm: FormGroup;
+  /** Boolean  error sms if there are an error will be true */
   public errorSms = false;
+  /** Var contains the subscriptions to unsubscribe on destroy */
   private subscriptions: Array<Subscription>;
+  /** Form alias data */
   public aliasForm: FormGroup;
 
   // @Output() submitForm: EventEmitter<any> = new EventEmitter<any>();
 
+  /**
+   * The "constructor" init the forms obtejct and the subscriptions
+   * @param formBuilder Need to build Angular® Forms
+   */
   constructor(private formBuilder: FormBuilder) {
     this.confirmForm = this.formBuilder.group({
       code: new FormControl('', [Validators.required, Validators.pattern('^[0-9]*$'), Validators.minLength(4)])
@@ -52,6 +67,9 @@ export class FormComponentsComponent implements OnInit {
     );
   }
 
+  /**
+   * Init the proyect
+   */
   ngOnInit() {
     // RADIO BUTTON
     this.cancelAnRequestForm = new FormGroup({
@@ -65,11 +83,18 @@ export class FormComponentsComponent implements OnInit {
 
   }
 
+  /**
+   * Filter the day selected
+   */
   myFilter = (d: Date): boolean => {
     const day = d.getDay();
     return day !== 0 && day !== 6;
   }
 
+  /**
+   * Check the type of the completed form TODO
+   * @param type Type of the form recibed
+   */
   sendForm(type: string) {
     // if (type === 'setAlias') {
     //   this.submitForm.emit({
@@ -91,6 +116,9 @@ export class FormComponentsComponent implements OnInit {
     }
   }
 
+  /**
+   * Redirect to index TODO
+   */
   goToIndex() {
     alert('Ir al index');
     // this.submitForm.emit({
@@ -99,11 +127,21 @@ export class FormComponentsComponent implements OnInit {
     // });
   }
 
-  showError(formControl: AbstractControl) {
+  /**
+   * Check if you have to show error
+   * @param formControl Object of the angular form
+   * @returns boolean if it's a valid form
+   */
+  showError(formControl: AbstractControl): boolean {
     return formControl.invalid && formControl.dirty;
   }
 
-  getError(formControl: AbstractControl) {
+  /**
+   * Return the estring with the error
+   * @param formControl Object of the angular form
+   * @returns string of the error to show
+   */
+  getError(formControl: AbstractControl): string {
     const formError = Object.keys(formControl.errors)[0];
     switch (formError) {
       case 'minlength':

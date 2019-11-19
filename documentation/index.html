@@ -1,0 +1,138 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>documentacion-blanca-javi documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	      <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="./" class="navbar-brand">documentacion-blanca-javi documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content getting-started">
+                   <div class="content-data">
+
+<h1 id="documentacion-blanca-javi">Documentacion Blanca Javi</h1>
+<blockquote>
+<h3 id="página-con-documentación-sobre-tecnologías-front">Página con documentación sobre tecnologías FRONT</h3>
+</blockquote>
+<p><img src="./src/assets/images/logo-front.png" alt="Front Logo" class="img-responsive" title="Front Logo"></p>
+<h2 id="authors">Authors</h2>
+<ul>
+<li><strong>Blanca Ros San Juan</strong> - <a href="https://github.com/BlancaRos">BlancaRos</a></li>
+<li><strong>Javier García González</strong> - <a href="https://github.com/javiggpecas">javiggpecas</a></li>
+</ul>
+<h2 id="url-web-site">URL Web Site</h2>
+<p>La web se encuentra alojada en un servidor propio de este repositorio (GitHub) la url es la siguiente: <a href="https://javiggpecas.github.io/documentacionBlancaJavi">DocumetnacionBlancaJavi</a></p>
+<h2 id="empezando">Empezando</h2>
+<p>Es necesario tener instalado <a href="https://nodejs.org/es/">Node JS</a>, luego se instala <a href="https://cli.angular.io/">Angular CLI</a> (<code>npm i @angular/cli</code>) y a continuacion se ejecuta <code>npm i</code> para instalar las librerias que necesita la PWA.</p>
+<p>Ejecute <code>ng serve</code> para iniciar el servidor de desarrollo y navege a <code>http://localhost:4200/</code>.</p>
+<h3 id="building-the-project">Building the project</h3>
+<p>Ejecute <code>ng build</code> para obtener un compilado del proyecto. El proyecto generado se almacenará en la carpeta <code>/dist</code>. Use la flag <code>-prod</code> para realizar la compilación en modo producción.</p>
+<h3 id="http-server-instalar-pwa">HTTP-SERVER instalar PWA</h3>
+<p>Es necesario tener instalado <a href="https://www.npmjs.com/package/http-server">http-server</a> <code>npm i http-server -g</code> y haber compilado el proyecto en modo producción <code>ng build --prod</code>.</p>
+<p>En la carpeta creada en <code>/dist/nombre-proyecto</code> se ejecuta el siguiente comando para crear un servidor en el pc capaz de ejecutar el compilado:</p>
+<div><pre class="line-numbers"><code class="language-none">http-server -p 8080</code></pre></div><p>Una vez iniciado google chrome se selecciona la opccion intalar en la barra de navegación:</p>
+<p><img src="./src/assets/images/install-chrome-pwa.jpg" alt="Ejemplo boton instalar google chrome" class="img-responsive" title="Boton Instalar Chrome"></p>
+<h2 id="internet-explorer">Internet Explorer</h2>
+<p>Estan habilitados todos los polyfills necesarios para que la PWA funcione en IE.</p>
+<p>Para poder iniciar la aplicacion en Internet Explorer es necesario ejecutarla en ECMAScript 5 (ES5) mediante el comando:</p>
+<div><pre class="line-numbers"><code class="language-none">ng serve --configuration es5</code></pre></div><h2 id="compilar-y-subir-a-web-site">Compilar y subir a Web Site</h2>
+<p>Para poder realizar la subida y despliegue de la aplicación en la ruta <a href="https://javiggpecas.github.io/documentacionBlancaJavi">DocumetnacionBlancaJavi</a> es necesario modificar el archivo <code>manifest.webmanifest</code> y modificar 
+<code>&quot;start_url&quot;: &quot;/&quot;,</code> resultando <code>&quot;start_url&quot;: &quot;/documentacionBlancaJavi/&quot;,</code> .</p>
+<p>A continuacón se compila el proyecto Angular mediante el comando:</p>
+<div><pre class="line-numbers"><code class="language-none">ng build --prod --base-href=&quot;#&quot;</code></pre></div><p>Para realizar la subida a la rama que contiene el proyecto compilado (<code>gh-pages</code>) y realizar el despliegue es necesario tener instalado <code>angular-cli-ghpages</code> con el siguiete comando</p>
+<div><pre class="line-numbers"><code class="language-none">npm install -g angular-cli-ghpages</code></pre></div><p>Entonces se sube el compilado a la rama con el soguiente comando:</p>
+<div><pre class="line-numbers"><code class="language-none">ngh --dir=dist/documentacion-blanca-javi</code></pre></div><p>Para ver el estado del despliegue se tiene que estar en la pagina de github del proyecto en la pestaña <code>environment</code>.</p>
+<h2 id="img-srcdocumentationimagescompodoc-vectorisesvg-data-canonical-srcimagescompodoc-vectorisesvg-altcompodoc-width150"><img src="./documentation/images/compodoc-vectorise.svg" data-canonical-src="./images/compodoc-vectorise.svg" alt="Compodoc" width="150"/></h2>
+<p>Compodoc es un generador de Documentación el cual va a leer los archivos de tu proyecto en Angular y va a generar una Documentación simple y elegante que va contener sus bloques de construcción junto con los comentarios que tengas en los mismos. <a href="https://blog.ng-classroom.com/blog/ionic/compodoc-documentacion_ionic_apps/">Fuente: NG ClassRoom</a></p>
+<p>Para poder realizar la documentación es necesario instalar la librería. (De manera global se instalará para poder usarlo en otros proyectos a futuro)</p>
+<div><pre class="line-numbers"><code class="language-none">npm install -g &#64;compodoc/compodoc</code></pre></div><p>Una vez instalado se ejecuta para generar la documentacion con el comando:</p>
+<div><pre class="line-numbers"><code class="language-none">compodoc -p src/tsconfig.app.json -s</code></pre></div><p>En la carpeta <code>documentation</code> se generará una página con toda la documentación generada por la herramienta compodoc.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
+            var COMPODOC_CURRENT_PAGE_URL = 'index.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="./js/libs/custom-elements.min.js"></script>
+       <script src="./js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="./js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="./js/menu-wc.js" defer></script>
+
+       <script src="./js/libs/bootstrap-native.js"></script>
+
+       <script src="./js/libs/es6-shim.min.js"></script>
+       <script src="./js/libs/EventDispatcher.js"></script>
+       <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
+
+       <script src="./js/compodoc.js"></script>
+
+       <script src="./js/tabs.js"></script>
+       <script src="./js/menu.js"></script>
+       <script src="./js/libs/clipboard.min.js"></script>
+       <script src="./js/libs/prism.js"></script>
+       <script src="./js/sourceCode.js"></script>
+          <script src="./js/search/search.js"></script>
+          <script src="./js/search/lunr.min.js"></script>
+          <script src="./js/search/search-lunr.js"></script>
+          <script src="./js/search/search_index.js"></script>
+       <script src="./js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

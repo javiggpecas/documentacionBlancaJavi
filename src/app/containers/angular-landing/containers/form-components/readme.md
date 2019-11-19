@@ -1,10 +1,10 @@
-## app-formularios - **container**
-app-formularios
+## app-form-components - **container**
+app-form-components
 
 ### Uso:
 Formulario Ángular de ejemplo
 
-### Propiedades de app-formularios:
+### Propiedades de app-form-components:
 | **Nombre**      | **Tipo**        | **Descripción** |
 | --------------- | --------------- | --------------- |
 | ngOnInit() | void | Funcion que se ejecuta al iniciar el componente. |

@@ -13,7 +13,7 @@ const routes: Routes = [
       },
       {
         path: 'form',
-        loadChildren: () => import('./containers/form/form.module').then(m => m.FormsModule)
+        loadChildren: () => import('./containers/form/form.module').then(m => m.FormModule)
       },
       {
         path: 'others',
@@ -27,4 +27,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AngularRoutingModule { }
+export class AngularLandingRoutingModule { }

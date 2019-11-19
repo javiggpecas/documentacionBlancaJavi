@@ -1,23 +1,40 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormControl, AbstractControl, FormArray } from '@angular/forms';
-import { Observable } from 'rxjs';
 
+/**
+ * Angular Form example
+ * <example-url>https://javiggpecas.github.io/documentacionBlancaJavi/#/angular-landing/form</example-url>
+ */
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.scss']
 })
 export class FormComponent implements OnInit {
+  /** Form data */
   public formExample: FormGroup;
+  /** The user segistred in the form */
   public user;
+  /** Boolean contains if the form was clicked */
   public isClicked = false;
 
+  /**
+   * The "constructor"
+   *
+   * @param formBuilder Need to build Angular® Forms
+   */
   constructor(private formBuilder: FormBuilder) { }
 
+  /**
+   * On app inicialized and init
+   */
   ngOnInit() {
     this.buildForm();
   }
 
+  /**
+   * Init the form
+   */
   private buildForm() {
     const dateLength = 10;
     const today = new Date().toISOString().substring(0, dateLength);
@@ -44,16 +61,28 @@ export class FormComponent implements OnInit {
     });
   }
 
+  /**
+   * Register the form on clicked in the sumbit
+   */
   public register() {
     this.isClicked = true;
     this.user = this.formExample.value;
     console.log(this.user);
   }
 
-  showError(formControl: AbstractControl) {
+  /**
+   * If the are an error in the form
+   * @param formControl Contains the form data
+   */
+  showError(formControl: AbstractControl): boolean {
     return formControl.invalid && formControl.dirty;
   }
 
+  /**
+   * Obtains the error text
+   * @param formControl Contains the form data
+   * @returns The error text to show
+   */
   public getError(formControl: AbstractControl): string {
 
     const formError = Object.keys(formControl.errors)[0];

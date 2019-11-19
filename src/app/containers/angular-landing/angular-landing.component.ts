@@ -1,7 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { NavData } from '../../core/models/nav-bar.model';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 
+/**
+ * Angular Landing contains Angular® documentation
+ * <example-url>https://javiggpecas.github.io/documentacionBlancaJavi/#/angular-landing</example-url>
+ */
 @Component({
   selector: 'app-angular-landing',
   templateUrl: './angular-landing.component.html',
@@ -19,8 +23,9 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
     ])
   ]
 })
-export class AngularLandingComponent implements OnInit {
+export class AngularLandingComponent {
 
+  /** Object to make the navigation bar */
   navBarData: Array<NavData> = [
     {
       link: '/angular-landing/form-components',
@@ -45,7 +50,9 @@ export class AngularLandingComponent implements OnInit {
     }
   ];
 
+  /**
+   * The "constructor"
+   */
   constructor() { }
 
-  ngOnInit() { }
 }

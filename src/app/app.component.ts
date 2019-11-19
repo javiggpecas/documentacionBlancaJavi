@@ -1,22 +1,32 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router, RouterEvent, RouteConfigLoadStart, RouteConfigLoadEnd } from '@angular/router';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5, faCss3Alt, faAngular, faJsSquare } from '@fortawesome/free-brands-svg-icons';
 import { NavData } from './core/models/nav-bar.model';
 
+/**
+ * Base and init app component
+ */
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
+  /** Home icon */
   faHome = faHome;
+  /** HTML5 icon */
   faHTML = faHtml5;
+  /** CSS3 icon */
   faCSS = faCss3Alt;
+  /** Angular icon */
   faAngular = faAngular;
+  /** JavaScript icon */
   faJs = faJsSquare;
-  title = 'Documentación Blanca Javi';
+  /** Title of the webpage */
+  title: string = 'Documentación Blanca Javi' as string;
 
+  /** Object to make the navigation bar */
   navBarData: Array<NavData> = [
     {
       link: '/home',
@@ -54,19 +64,22 @@ export class AppComponent implements OnInit {
       title: 'JavaScript'
     }
   ];
-
+  /** Booleano que indica si está mostrandose la url que se ha solicitado */
   public isShowingRouteLoadIndicator: boolean;
 
+  /**
+   * The "constructor"
+   *
+   * @param router Init angular routes
+   */
   constructor(
     private router: Router
   ) {
     this.isPageLoading();
   }
 
-  ngOnInit() { }
-
   /**
-   * @description Subscribe and detect when is loading on change route
+   * Subscribe and detect when is loading on change route
    */
   isPageLoading(): void {
     this.isShowingRouteLoadIndicator = false;
