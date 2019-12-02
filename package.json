@@ -4,10 +4,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start-ie": "ng serve --configuration es5",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "compodoc": "npx compodoc -p tsconfig.app.json",
+    "compodoc-server": "npx compodoc -p tsconfig.app.json -s"
   },
   "private": true,
   "dependencies": {

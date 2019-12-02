@@ -2,9 +2,7 @@
     <ul>
         <li *ngFor="let item of navData">
             <a routerLink="{{item.link}}" class="{{item.class}}" routerLinkActive="{{item.activateClass}}" title="{{item.title}}">
-                <figure>
-                    <fa-icon *ngIf="item.icon" [icon]="icons[item.icon]"></fa-icon>
-                </figure>
+                <fa-icon *ngIf="item.icon" [icon]="icons[item.icon]"></fa-icon>
                 <span *ngIf="item.text">{{item.text}}</span>
             </a>
         </li>

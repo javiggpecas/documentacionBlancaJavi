@@ -43,7 +43,8 @@
 <h2 id="url-web-site">URL Web Site</h2>
 <p>La web se encuentra alojada en un servidor propio de este repositorio (GitHub) la url es la siguiente: <a href="https://javiggpecas.github.io/documentacionBlancaJavi">DocumetnacionBlancaJavi</a></p>
 <h2 id="empezando">Empezando</h2>
-<p>Es necesario tener instalado <a href="https://nodejs.org/es/">Node JS</a>, luego se instala <a href="https://cli.angular.io/">Angular CLI</a> (<code>npm i @angular/cli</code>) y a continuacion se ejecuta <code>npm i</code> para instalar las librerias que necesita la PWA.</p>
+<p>Es necesario tener instalado GIT en nuestro PC/MAC para poder realzar el <em>clone</em> del repositorio.</p>
+<div><pre class="line-numbers"><code class="language-none">git clone https://github.com/javiggpecas/documentacionBlancaJavi.git</code></pre></div><p>Tambien necesitamos instalar <a href="https://nodejs.org/es/">Node JS</a>, luego se instala <a href="https://cli.angular.io/">Angular CLI</a> (<code>npm i @angular/cli</code>) y a continuacion se ejecuta <code>npm i</code> para instalar las librerias que necesita la PWA.</p>
 <p>Ejecute <code>ng serve</code> para iniciar el servidor de desarrollo y navege a <code>http://localhost:4200/</code>.</p>
 <h3 id="building-the-project">Building the project</h3>
 <p>Ejecute <code>ng build</code> para obtener un compilado del proyecto. El proyecto generado se almacenará en la carpeta <code>/dist</code>. Use la flag <code>-prod</code> para realizar la compilación en modo producción.</p>
@@ -55,7 +56,8 @@
 <h2 id="internet-explorer">Internet Explorer</h2>
 <p>Estan habilitados todos los polyfills necesarios para que la PWA funcione en IE.</p>
 <p>Para poder iniciar la aplicacion en Internet Explorer es necesario ejecutarla en ECMAScript 5 (ES5) mediante el comando:</p>
-<div><pre class="line-numbers"><code class="language-none">ng serve --configuration es5</code></pre></div><h2 id="compilar-y-subir-a-web-site">Compilar y subir a Web Site</h2>
+<div><pre class="line-numbers"><code class="language-none">ng serve --configuration es5</code></pre></div><p>P.D. Internet Explorer no es compatible con PWA pero la aplicacón se ejecuta con sus limitaciones.</p>
+<h2 id="compilar-y-subir-a-web-site">Compilar y subir a Web Site</h2>
 <p><a href="https://pages.github.com/"><img src="https://github.com/javiggpecas/documentacionBlancaJavi/blob/master/src/assets/images/githubpageslogo.png?raw=true" data-canonical-src="https://github.com/javiggpecas/documentacionBlancaJavi/blob/master/src/assets/images/githubpageslogo.png?raw=true" alt="GitHub Pages" title="GitHub Pages" width="100"/></a></p>
 <p>Para poder realizar la subida y despliegue de la aplicación en la ruta <a href="https://javiggpecas.github.io/documentacionBlancaJavi">DocumentacionBlancaJavi</a> es necesario modificar el archivo <code>manifest.webmanifest</code> y modificar 
 <code>&quot;start_url&quot;: &quot;/&quot;,</code> resultando <code>&quot;start_url&quot;: &quot;/documentacionBlancaJavi/&quot;,</code> .</p>
@@ -67,7 +69,9 @@
 <p>Compodoc es un generador de Documentación el cual va a leer los archivos de tu proyecto en Angular y va a generar una Documentación simple y elegante que va contener sus bloques de construcción junto con los comentarios que tengas en los mismos. <a href="https://blog.ng-classroom.com/blog/ionic/compodoc-documentacion_ionic_apps/">Fuente: NG ClassRoom</a></p>
 <p>Para poder realizar la documentación es necesario instalar la librería. (De manera global se instalará para poder usarlo en otros proyectos a futuro)</p>
 <div><pre class="line-numbers"><code class="language-none">npm install -g &#64;compodoc/compodoc</code></pre></div><p>Una vez instalado se ejecuta para generar la documentacion con el comando:</p>
-<div><pre class="line-numbers"><code class="language-none">compodoc -p src/tsconfig.app.json -s</code></pre></div><p>En la carpeta <code>documentation</code> se generará una página con toda la documentación generada por la herramienta compodoc.</p>
+<div><pre class="line-numbers"><code class="language-none">compodoc -p tsconfig.app.json -s</code></pre></div><p>Se ha creado un comando rapido en package.json <code>npm run compodoc-server</code> el cual ejecuta el comando anteriormente descrito.
+También ha creado un comando rapido en package.json <code>npm run compodoc</code> para generar la documentacion sin necesidad de serverizarlo.</p>
+<p>En la carpeta <code>documentation</code> se generará una página con toda la documentación generada por la herramienta compodoc.</p>
 <p>Hay 6 tipos de temas en compodoc (<a href="https://compodoc.app/guides/themes.html">Temas Compodoc</a>):</p>
 <ul>
 <li>Gitbook (default)</li>

@@ -13,7 +13,7 @@
 La web se encuentra alojada en un servidor propio de este repositorio (GitHub) la url es la siguiente: [DocumetnacionBlancaJavi](https://javiggpecas.github.io/documentacionBlancaJavi)
 
 ## Empezando
-Es necesario tener instalado GIT en nuestro PC/MAC para poder realzar el *clone* del repositorio.
+Es necesario tener instalado GIT en nuestro PC/ñMAC para poder realzar el *clone* del repositorio.
 
     git clone https://github.com/javiggpecas/documentacionBlancaJavi.git
 
@@ -73,9 +73,12 @@ Para poder realizar la documentación es necesario instalar la librería. (De ma
 
     npm install -g @compodoc/compodoc
 
-Una vez instalado se ejecuta para generar la documentacion con el comando:
+Una vez instalado se ejecuta para generar la documentacion con el comando (-s = server):
 
-    compodoc -p src/tsconfig.app.json -s
+    compodoc -p tsconfig.app.json -s
+
+Se ha creado un comando rapido en package.json `npm run compodoc-server` el cual ejecuta el comando anteriormente descrito.
+También el comando `npm run compodoc` para generar la documentacion sin necesidad de serverizarlo.
 
 En la carpeta `documentation` se generará una página con toda la documentación generada por la herramienta compodoc.
 
