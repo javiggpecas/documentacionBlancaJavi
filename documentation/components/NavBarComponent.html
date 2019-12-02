@@ -9,7 +9,6 @@
 
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 	      <link rel="stylesheet" href="../styles/style.css">
-        <link rel="stylesheet" href="../styles/readthedocs.css">
     </head>
     <body>
 
@@ -321,7 +320,14 @@ export class NavBarComponent {
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;nav&gt;
     &lt;ul&gt;
-        &lt;li *ngFor&#x3D;&quot;let item of navData&quot;&gt;&lt;a routerLink&#x3D;&quot;{{item.link}}&quot; class&#x3D;&quot;{{item.class}}&quot; routerLinkActive&#x3D;&quot;{{item.activateClass}}&quot; title&#x3D;&quot;{{item.title}}&quot;&gt;&lt;fa-icon *ngIf&#x3D;&quot;item.icon&quot; [icon]&#x3D;&quot;icons[item.icon]&quot;&gt;&lt;/fa-icon&gt;{{item.text}}&lt;/a&gt;&lt;/li&gt;
+        &lt;li *ngFor&#x3D;&quot;let item of navData&quot;&gt;
+            &lt;a routerLink&#x3D;&quot;{{item.link}}&quot; class&#x3D;&quot;{{item.class}}&quot; routerLinkActive&#x3D;&quot;{{item.activateClass}}&quot; title&#x3D;&quot;{{item.title}}&quot;&gt;
+                &lt;figure&gt;
+                    &lt;fa-icon *ngIf&#x3D;&quot;item.icon&quot; [icon]&#x3D;&quot;icons[item.icon]&quot;&gt;&lt;/fa-icon&gt;
+                &lt;/figure&gt;
+                &lt;span *ngIf&#x3D;&quot;item.text&quot;&gt;{{item.text}}&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
     &lt;/ul&gt;
 &lt;/nav&gt;
 </code></pre>
@@ -427,7 +433,7 @@ export class NavBarComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><nav>    <ul>        <li *ngFor="let item of navData"><a routerLink="{{item.link}}" class="{{item.class}}" routerLinkActive="{{item.activateClass}}" title="{{item.title}}"><fa-icon *ngIf="item.icon" [icon]="icons[item.icon]"></fa-icon>{{item.text}}</a></li>    </ul></nav></div>'
+        var COMPONENT_TEMPLATE = '<div><nav>    <ul>        <li *ngFor="let item of navData">            <a routerLink="{{item.link}}" class="{{item.class}}" routerLinkActive="{{item.activateClass}}" title="{{item.title}}">                <figure>                    <fa-icon *ngIf="item.icon" [icon]="icons[item.icon]"></fa-icon>                </figure>                <span *ngIf="item.text">{{item.text}}</span>            </a>        </li>    </ul></nav></div>'
     var COMPONENTS = [{'name': 'AccordionComponent', 'selector': 'app-accordion'},{'name': 'AngularLandingComponent', 'selector': 'app-angular-landing'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CssLandingComponent', 'selector': 'app-css-landing'},{'name': 'FormComponent', 'selector': 'app-form'},{'name': 'FormComponentsComponent', 'selector': 'app-form-components'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'HtmlLandingComponent', 'selector': 'app-html-landing'},{'name': 'JsLandingComponent', 'selector': 'app-js-landing'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'OthersComponent', 'selector': 'app-others'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'NavBarComponent'};

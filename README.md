@@ -13,8 +13,11 @@
 La web se encuentra alojada en un servidor propio de este repositorio (GitHub) la url es la siguiente: [DocumetnacionBlancaJavi](https://javiggpecas.github.io/documentacionBlancaJavi)
 
 ## Empezando
+Es necesario tener instalado GIT en nuestro PC/MAC para poder realzar el *clone* del repositorio.
 
-Es necesario tener instalado [Node JS](https://nodejs.org/es/), luego se instala [Angular CLI](https://cli.angular.io/) (`npm i @angular/cli`) y a continuacion se ejecuta `npm i` para instalar las librerias que necesita la PWA.
+    git clone https://github.com/javiggpecas/documentacionBlancaJavi.git
+
+Tambien necesitamos instalar [Node JS](https://nodejs.org/es/), luego se instala [Angular CLI](https://cli.angular.io/) (`npm i @angular/cli`) y a continuacion se ejecuta `npm i` para instalar las librerias que necesita la PWA.
 
 Ejecute `ng serve` para iniciar el servidor de desarrollo y navege a `http://localhost:4200/`.
 
@@ -39,6 +42,8 @@ Estan habilitados todos los polyfills necesarios para que la PWA funcione en IE.
 Para poder iniciar la aplicacion en Internet Explorer es necesario ejecutarla en ECMAScript 5 (ES5) mediante el comando:
     
     ng serve --configuration es5
+
+P.D. Internet Explorer no es compatible con PWA pero la aplicacón se ejecuta con sus limitaciones.
 
 ## Compilar y subir a Web Site
 [<img src="https://github.com/javiggpecas/documentacionBlancaJavi/blob/master/src/assets/images/githubpageslogo.png?raw=true" data-canonical-src="https://github.com/javiggpecas/documentacionBlancaJavi/blob/master/src/assets/images/githubpageslogo.png?raw=true" alt="GitHub Pages" title="GitHub Pages" width="100"/>](https://pages.github.com/)
