@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1575373221304,
+  "timestamp": 1575373519423,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -16,8 +16,8 @@
         "/11-es5.e0c946d26afb1a06de5f.js",
         "/12-es2015.bf62b913fef711bee858.js",
         "/12-es5.bf62b913fef711bee858.js",
-        "/13-es2015.823b5e940fcad6b868b7.js",
-        "/13-es5.823b5e940fcad6b868b7.js",
+        "/13-es2015.88be193ae5319106cd2f.js",
+        "/13-es5.88be193ae5319106cd2f.js",
         "/14-es2015.18f469c1678e4559442e.js",
         "/14-es5.18f469c1678e4559442e.js",
         "/2-es2015.c0424f0455e4839b10c2.js",
@@ -34,8 +34,8 @@
         "/main-es5.d9d974872da361786bf8.js",
         "/polyfills-es2015.24bab4ac483fe374b71c.js",
         "/polyfills-es5.0e26730735030785a732.js",
-        "/runtime-es2015.12c56cd04c686803c50e.js",
-        "/runtime-es5.12c56cd04c686803c50e.js",
+        "/runtime-es2015.f21bb893f67e26652e97.js",
+        "/runtime-es5.f21bb893f67e26652e97.js",
         "/styles.8731b70683f137bfbca3.css"
       ],
       "patterns": []
@@ -77,8 +77,8 @@
     "/11-es5.e0c946d26afb1a06de5f.js": "623f499023232275ef0910c1470187433b48f610",
     "/12-es2015.bf62b913fef711bee858.js": "7479847548c47c30b0d2512ec028293aee541f29",
     "/12-es5.bf62b913fef711bee858.js": "6e27b0a0e3a34e35ac6d1e94d90f8aeb22db107c",
-    "/13-es2015.823b5e940fcad6b868b7.js": "53044b7618c197e857aaa6a6ddceec5f478658ed",
-    "/13-es5.823b5e940fcad6b868b7.js": "30dbcd859970e0ce6cf0c12d7582a3c0d42d2f0b",
+    "/13-es2015.88be193ae5319106cd2f.js": "53044b7618c197e857aaa6a6ddceec5f478658ed",
+    "/13-es5.88be193ae5319106cd2f.js": "30dbcd859970e0ce6cf0c12d7582a3c0d42d2f0b",
     "/14-es2015.18f469c1678e4559442e.js": "77875820f6d1c920393ec0dff155d2380d0219ca",
     "/14-es5.18f469c1678e4559442e.js": "75a4e33709c596e24284988ee004001abcf896e4",
     "/2-es2015.c0424f0455e4839b10c2.js": "818b63cfa5883757fee93a09506ac16359d58800",
@@ -108,13 +108,13 @@
     "/assets/images/logo-front.png": "920201a76c3a0aa3c88c61d96f5ae90b445d149f",
     "/assets/images/solobombilla.png": "010a07febf00add54f3b48245a17747d8cb2c65b",
     "/favicon.ico": "9b742f8796d555f8219e658afbf8b256d469f137",
-    "/index.html": "bf3a55eeac8bbac95afcdecd3c9491452f9ded30",
+    "/index.html": "b2c4ff1bb59b9726dce65b438256f4b1b656f769",
     "/main-es2015.d9d974872da361786bf8.js": "88018859ba4cb78814387770af3b6ba989590f1a",
     "/main-es5.d9d974872da361786bf8.js": "a1ff4ada14bfd390ed0764c53da309e5479f63a1",
     "/polyfills-es2015.24bab4ac483fe374b71c.js": "cedfa69d74606f8e238583c77805aee643f3ba95",
     "/polyfills-es5.0e26730735030785a732.js": "bbc8228bbffcf3569266be1110a367d68d188a97",
-    "/runtime-es2015.12c56cd04c686803c50e.js": "ac3dcb0192ea200d9ba9dd9ff5beea9285dd11be",
-    "/runtime-es5.12c56cd04c686803c50e.js": "a31985c8b5ac8dc63cb05cb3f9c4429bd68a93ec",
+    "/runtime-es2015.f21bb893f67e26652e97.js": "1cc0b6b33ef1177f80c1b11b9005ac8c9eb703a2",
+    "/runtime-es5.f21bb893f67e26652e97.js": "e152feb7517004eebc9be4c343654aab99cf466b",
     "/styles.8731b70683f137bfbca3.css": "f2b575c54a0167f817876ba2c7ca9895d68a8bcf"
   },
   "navigationUrls": [
