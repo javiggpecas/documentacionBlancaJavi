@@ -27,7 +27,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "compodoc": "npx compodoc -p tsconfig.app.json",
-    "compodoc-server": "npx compodoc -p tsconfig.app.json -s && strat http://127.0.0.1:8080",
+    "compodoc-server": "npx compodoc -p tsconfig.app.json -s",
     "build-upload": "ng build --prod --base-href='#' && ngh --dir=dist/documentacion-blanca-javi",
     "upload-build": "ngh --dir=dist/documentacion-blanca-javi"
   },
