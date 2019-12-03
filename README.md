@@ -45,6 +45,10 @@ Para poder iniciar la aplicacion en Internet Explorer es necesario ejecutarla en
 
 P.D. Internet Explorer no es compatible con PWA pero la aplicacón se ejecuta con sus limitaciones.
 
+Con el siguiente comando almacenado en package.json se ejecuta el codigo descrito anteriormente.
+
+    npm run start-ie
+
 ## Compilar y subir a Web Site
 [<img src="https://github.com/javiggpecas/documentacionBlancaJavi/blob/master/src/assets/images/githubpageslogo.png?raw=true" data-canonical-src="https://github.com/javiggpecas/documentacionBlancaJavi/blob/master/src/assets/images/githubpageslogo.png?raw=true" alt="GitHub Pages" title="GitHub Pages" width="100"/>](https://pages.github.com/)
 

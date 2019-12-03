@@ -1,11 +1,11 @@
 {
   "name": "Documentación Blanca/Javi",
-  "short_name": "Documentación Blanca/Javi",
+  "short_name": "Doc Blanca/Javi",
   "theme_color": "#575757",
   "background_color": "#575757",
   "display": "standalone",
   "scope": "/",
-  "start_url": "/documentacionBlancaJavi/",
+  "start_url": "",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
