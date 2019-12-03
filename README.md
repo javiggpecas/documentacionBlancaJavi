@@ -13,7 +13,7 @@
 La web se encuentra alojada en un servidor propio de este repositorio (GitHub) la url es la siguiente: [DocumetnacionBlancaJavi](https://javiggpecas.github.io/documentacionBlancaJavi)
 
 ## Empezando
-Es necesario tener instalado GIT en nuestro PC/ñMAC para poder realzar el *clone* del repositorio.
+Es necesario tener instalado GIT en nuestro PC/MAC para poder realzar el *clone* del repositorio.
 
     git clone https://github.com/javiggpecas/documentacionBlancaJavi.git
 
@@ -35,7 +35,7 @@ Una vez iniciado google chrome se selecciona la opccion instalar en la barra de 
 
 ![Ejemplo instalar Google Chrome](https://github.com/javiggpecas/documentacionBlancaJavi/blob/master/src/assets/images/install-chrome-pwa.jpg?raw=true "Boton Instalar Chrome")
 
-## Internet Explorer <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Internet_Explorer_10%2B11_computer_icon.png" data-canonical-src="https://github.com/javiggpecas/documentacionBlancaJavi/blob/master/src/assets/images/compodoc-vectorise.png?raw=true" alt="Compodoc" title="Compodoc" width="25"/>
+## Internet Explorer <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Internet_Explorer_10%2B11_computer_icon.png" data-canonical-src="https://github.com/javiggpecas/documentacionBlancaJavi/blob/master/src/assets/images/compodoc-vectorise.png?raw=true" alt="Internet Explorer" title="Internet Explorer" width="25"/>
 
 Estan habilitados todos los polyfills necesarios para que la PWA funcione en IE.
 
