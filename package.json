@@ -1,6 +1,23 @@
 {
   "name": "documentacion-blanca-javi",
-  "version": "0.0.0",
+  "contributors": [
+    {
+      "name": "Blanca Ros San Juan",
+      "email": "blanca.ros.san.juan@everis.com",
+      "url": "https://github.com/BlancaRos"
+    },
+    {
+      "name": "Javier García González",
+      "email": "javier.garcia.gonzalez1@everis.com",
+      "url": "https://github.com/javiggpecas"
+    }
+  ],
+  "homepage": "https://javiggpecas.github.io/documentacionBlancaJavi/",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/javiggpecas/documentacionBlancaJavi.git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -10,7 +27,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "compodoc": "npx compodoc -p tsconfig.app.json",
-    "compodoc-server": "npx compodoc -p tsconfig.app.json -s",
+    "compodoc-server": "npx compodoc -p tsconfig.app.json -s && strat http://127.0.0.1:8080",
     "build-upload": "ng build --prod --base-href='#' && ngh --dir=dist/documentacion-blanca-javi",
     "upload-build": "ngh --dir=dist/documentacion-blanca-javi"
   },
