@@ -4,7 +4,6 @@
   "theme_color": "#575757",
   "background_color": "#575757",
   "display": "standalone",
-  "scope": "https://javiggpecas.github.io/",
   "start_url": "/documentacionBlancaJavi/#/home",
   "icons": [
     {
