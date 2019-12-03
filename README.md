@@ -1,5 +1,5 @@
 # Documentación Blanca Javi
-> ### Página con documentación sobre tecnologías FRONT 
+## Página con documentación sobre tecnologías FRONT 
 
 ![Front Logo](https://github.com/javiggpecas/documentacionBlancaJavi/blob/master/src/assets/images/logo-front.png?raw=true "Front Logo")
 
