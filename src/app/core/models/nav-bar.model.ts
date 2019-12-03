@@ -24,6 +24,6 @@ export interface IconsFa {
     faCSSLanding: any;
     /** Angular icon */
     faAngularLanding: any;
-    /** JavaScript icon */ 
+    /** JavaScript icon */
     faJsLanding: any;
 }
