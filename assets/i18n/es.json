@@ -1,0 +1,76 @@
+{
+    "home": {
+        "title":"Home"
+    },
+    "angular": {
+        "title":"Angular",
+        "nav_bar" : {
+            "form_components": "Form components",
+            "form": "Formulario",
+            "others": "Otros"
+        },
+        "form_components": {
+            "datepicker": "Datepicker",
+            "functioning_datep": "Funcionamiento datepicker",
+            "select_date": "Seleccione una fecha",
+            "radio_button": "Radio Button",
+            "susc_radio_button": "Suscripción al radio button",
+            "indicate_reason": "Indique la razón de la pérdida de la tarjeta",
+            "lost": "Pérdida",
+            "stole": "robo",
+            "want_new_card": "¿Desea una nueva tarjeta?",
+            "yes": "Sí",
+            "later": "Más tarde",
+            "address": "Dirección: {{address}}",
+            "numeric_value": "Campo numérico",
+            "validation_numeric_value": "Validaciones campo numérico",
+            "enter_pass_send_mobile": "Introduzca la clave enviada al móvil {{mobileNumber}}",
+            "pass_lenght_error": "La clave tiene que ser numérica y de 4 números",
+            "validations": "Validaciones",
+            "check_entered_data": "Comprobación datos introducidos",
+            "user_name": "Nombre de usuario (debe contener al menos una letra):",
+            "create": "Crear",
+            "omit": "Omitir",
+            "not_now": "Ahora no",
+            "do_not_show_again": "No volver a mostrar este mensaje"
+        },
+        "form": {
+            "fill_your_data": "Rellena tus datos",
+            "birthDate": "Fecha nacimiento",
+            "name": "Nombre",
+            "name_placeholder": "Introduzca su nombre",
+            "lastnames": "Apellidos",
+            "lastnames_placeholder": "Introduzca sus apellidos",
+            "email": "E-mail",
+            "email_placeholder": "Introduzca su email",
+            "id_card": "DNI",
+            "id_card_placeholder": "Introduzca su DNI",
+            "password": "Contraseña",
+            "gender": "Sexo",
+            "women": "Mujer",
+            "man": "Hombre",
+            "marital_status": "Indique su situación actual",
+            "single": "Soltero",
+            "maried": "Casado",
+            "include_foto": "Incluir foto",
+            "validate": "Validar",
+            "user_data": "Datos usuario:"
+        }
+    },
+    "html": {
+        "title":"HTML5"
+    },
+    "css": {
+        "title":"CSS3"
+    },
+    "js": {
+        "title":"JavaScript"
+    },
+    "error": {
+        "minLength": "Campo con menos caracteres de los necesarios",
+        "maxlength": "Campo con más caracteres de los necesarios",
+        "pattern": "Campo con caracteres inválidos",
+        "required": "Campo requerido",
+        "default": "Lo sentimos, se ha producido un error inesperado. Por favor, reintente más tarde."
+    }
+}

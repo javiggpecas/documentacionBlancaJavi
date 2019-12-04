@@ -1,0 +1,76 @@
+{
+    "home": {
+        "title":"Home"
+    },
+    "angular": {
+        "title":"Angular",
+        "nav_bar" : {
+            "form_components": "Form components",
+            "form": "Form",
+            "others": "Others"
+        },
+        "form_components": {
+            "datepicker": "Datepicker",
+            "functioning_datep": "Datepicker operation",
+            "select_date": "Select a date",
+            "radio_button": "Radio Button",
+            "susc_radio_button": "Radio button subscription",
+            "indicate_reason": "Indicate the reason for the card loss",
+            "lost": "Lost",
+            "stole": "Stole",
+            "want_new_card": "Do you want a new card?",
+            "yes": "Yes",
+            "later": "Later",
+            "address": "Address: {{address}}",
+            "numeric_value": "Numeric field",
+            "validation_numeric_value": "Validations numeric field",
+            "enter_pass_send_mobile": "Enter the password sent to the mobile {{mobileNumber}}",
+            "pass_lenght_error": "The key has to be numeric and 4 numbers",
+            "validations": "Validations",
+            "check_entered_data": "Check entered data",
+            "user_name": "Username (must contain at least one letter):",
+            "create": "Create",
+            "omit": "Omit",
+            "not_now": "Not now",
+            "do_not_show_again": "Do not show this message again"
+        },
+        "form": {
+            "fill_your_data": "Fill in your data",
+            "birthDate": "Birth date",
+            "name": "Name",
+            "name_placeholder": "Enter your name",
+            "lastnames": "Lastnames",
+            "lastnames_placeholder": "Enter your lastnames",
+            "email": "E-mail",
+            "email_placeholder": "Enter your E-mail",
+            "id_card": "DNI",
+            "id_card_placeholder": "Enter your id card",
+            "password": "Password",
+            "gender": "Gender",
+            "women": "Women",
+            "man": "Man",
+            "marital_status": "Indicate your current situation",
+            "single": "Single",
+            "maried": "Maried",
+            "include_foto": "Include foto",
+            "validate": "Validate",
+            "user_data": "User data:"
+        }
+    },
+    "html": {
+        "title":"HTML5"
+    },
+    "css": {
+        "title":"CSS3"
+    },
+    "js": {
+        "title":"JavaScript"
+    },
+    "error": {
+        "minLength": "Field with fewer characters than necessary",
+        "maxlength": "Field with more characters than necessary",
+        "pattern": "Campo con caracteres inválidos",
+        "required": "Field with invalid characters",
+        "default": "Sorry, an unexpected error has occurred. Please try again later."
+    }
+}
