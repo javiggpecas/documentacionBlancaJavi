@@ -31,21 +31,21 @@ export class AngularLandingComponent {
       link: '/angular-landing/form-components',
       class: 'nav-enlace',
       activateClass: 'activated-tab',
-      text: 'Form Components',
+      text: 'angular.nav_bar.form_components',
       title: 'Componentes de formularios'
     },
     {
       link: '/angular-landing/form',
       class: 'nav-enlace',
       activateClass: 'activated-tab',
-      text: 'Formulario',
+      text: 'angular.nav_bar.form',
       title: 'Formulario'
     },
     {
       link: '/angular-landing/others',
       class: 'nav-enlace',
       activateClass: 'activated-tab',
-      text: 'Otros',
+      text: 'angular.nav_bar.others',
       title: 'Otros'
     }
   ];

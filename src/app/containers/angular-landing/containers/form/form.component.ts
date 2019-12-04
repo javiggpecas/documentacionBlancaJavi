@@ -88,13 +88,13 @@ export class FormComponent implements OnInit {
     const formError = Object.keys(formControl.errors)[0];
     switch (formError) {
       case 'minlength':
-        return 'Campo con menos caracteres de los necesarios';
+        return 'error.minLength';
       case 'pattern':
-        return 'Campo con caracteres inválidos';
+        return 'error.pattern';
       case 'required':
-        return 'Campo requerido';
+        return 'error.required';
       default:
-        return 'Lo sentimos, se ha producido un error inesperado. Por favor, reintente más tarde.';
+        return 'error.default';
     }
   }
 }

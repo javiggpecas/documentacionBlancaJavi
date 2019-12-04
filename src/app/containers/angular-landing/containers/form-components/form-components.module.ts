@@ -6,6 +6,7 @@ import { FormComponentsComponent } from './form-components.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../../../../shared/shared.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [FormComponentsComponent],
@@ -22,7 +23,8 @@ import { SharedModule } from '../../../../shared/shared.module';
     MatInputModule,
     MatFormFieldModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TranslateModule
   ]
 })
 export class FormComponentsModule { }

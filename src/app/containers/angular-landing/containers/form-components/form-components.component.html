@@ -1,82 +1,81 @@
 <mat-accordion>
-    <app-accordion [title]="'Datepicker'" [description]="'Funcionamiento datepicker'">
+    <app-accordion [title]="'angular.form_components.datepicker' | translate" [description]="'angular.form_components.functioning_datep' | translate">
         <ng-container class="accordion-body">
             <mat-form-field>
-                <input matInput placeholder="Seleccione una fecha" [matDatepickerFilter]="myFilter"
+                <input matInput placeholder="{{'angular.form_components.select_date' | translate}}" [matDatepickerFilter]="myFilter"
                     [matDatepicker]="picker" [min]="minDate" [max]="maxDate">
                 <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
             </mat-form-field>
         </ng-container>
     </app-accordion>
-    <app-accordion [title]="'Radio Button'" [description]="'Suscripción al radio button'">
+    <app-accordion [title]="'angular.form_components.radio_button' | translate" [description]="'angular.form_components.susc_radio_button' | translate">
         <ng-container class="accordion-body">
             <form class="accordion" [formGroup]="cancelAnRequestForm">
                 <fieldset>
-                    <span class="step-content__title">Indique la razón de la pérdida de la tarjeta</span>
+                    <span class="step-content__title">{{'angular.form_components.indicate_reason' | translate}}</span>
                     <div class="step-content__radio">
                         <input id="indAnulacionPerdida" type="radio" formControlName="indAnulacion"
-                            value="perdida" /><label for="indAnulacionPerdida">Pérdida</label>
+                            value="perdida" /><label for="indAnulacionPerdida">{{'angular.form_components.lost' | translate}}</label>
                         <input id="indAnulacionRobo" type="radio" formControlName="indAnulacion" value="robo"><label
-                            for="indAnulacionRobo">Robo</label>
+                            for="indAnulacionRobo">{{'angular.form_components.stole' | translate}}</label>
                     </div>
-                    <span class="step-content__title">¿Desea una nueva tarjeta?</span>
+                    <span class="step-content__title">{{'angular.form_components.want_new_card' | translate}}</span>
                     <div class="step-content__radio">
                         <input id="indNewCardYes" type="radio" formControlName="indRenovacion" value="1"><label
-                            for="indNewCardYes">Si</label>
+                            for="indNewCardYes">{{'angular.form_components.yes' | translate}}</label>
                         <input id="indNewCardLater" type="radio" formControlName="indRenovacion" value="0"><label
-                            for="indNewCardLater">Más tarde</label>
+                            for="indNewCardLater">{{'angular.form_components.later' | translate}}</label>
                     </div>
                     <div *ngIf="cancelAnRequestForm.value.indRenovacion === '1'">
-                        <p class="step-content__subtitle">Dirección: Calle Félix Candela 81</p>
+                        <p class="step-content__subtitle" translate [translateParams]="{address: 'Calle Félix Candela 81'}">angular.form_components.address</p>
                     </div>
                 </fieldset>
             </form>
         </ng-container>
     </app-accordion>
 
-    <app-accordion [title]="'Campo numérico'" [description]="'Validaciones campo numérico'">
+    <app-accordion [title]="'angular.form_components.numeric_value' | translate" [description]="'angular.form_components.validation_numeric_value' | translate">
         <ng-container class="accordion-body">
             <div class="modal-body">
                 <form action="" [formGroup]="confirmForm" autocomplete="off">
                     <fieldset>
-                        <span class="modal-body--confirm-text">Introduzca la clave enviada al móvil</span>
-                        <span class="modal-body--phone">*** *** *54</span>
+                        <span class="modal-body--confirm-text">{{'angular.form_components.enter_pass_send_mobile' | translate:mobileSend}}</span>
+                        <!-- <span class="modal-body--phone">*** *** *54</span> -->
                         <div class="modal-body__input input-wrapper">
                             <input id="confirm-code" type="password" name="codesms" #codesms maxlength="4"
                                 formControlName="code" autocomplete="off" [value]=""
                                 class="modal-edit-transfer__input" />
                         </div>
-                        <span class="notification__text" *ngIf="confirmForm.invalid">La clave tiene que ser numérica y
-                            de 4 números</span>
+                        <span class="notification__text" *ngIf="confirmForm.invalid">{{'angular.form_components.pass_lenght_error' | translate}}</span>
                     </fieldset>
                 </form>
             </div>
         </ng-container>
     </app-accordion>
-    <app-accordion [title]="'Validaciones'" [description]="'Comprobación datos introducidos'">
+    <app-accordion [title]="'angular.form_components.validations' | translate" [description]="'angular.form_components.check_entered_data' | translate">
         <ng-container class="accordion-body">
             <form grace-form [formGroup]="aliasForm" novalidate>
                 <div>
-                    <label for="aliasForm-alias">Nombre de usuario (debe contener al menos una letra): </label>
+                    <label for="aliasForm-alias">{{'angular.form_components.user_name' | translate}}</label>
                     <input id="aliasForm-alias" type="text" maxlength="40" formControlName="alias">
                     <span *ngIf="showError(aliasForm.get('alias'))"
-                        class="error-msg">{{getError(aliasForm.get('alias'))}}</span>
+                        class="error-msg">{{getError(aliasForm.get('alias')) | translate}}</span>
                 </div>
                 <div>
                     <br>
                     <button type="button"
                         (click)="sendForm(aliasForm.get('neverAgain').value ? 'neverAgain' : 'setAlias')"
                         [disabled]="aliasForm.invalid && !aliasForm.get('neverAgain').value">
-                        {{(aliasForm.get('neverAgain').value ? 'Omitir' : 'Crear')}}
+                        {{(aliasForm.get('neverAgain').value ? 'angular.form_components.omit' : 'angular.form_components.create') | translate}}
                     </button>
-                    <button type="button" *ngIf="!aliasForm.get('neverAgain').value" (click)="goToIndex()">Ahora no
+                    <button type="button" *ngIf="!aliasForm.get('neverAgain').value" (click)="goToIndex()">{{'angular.form_components.not_now' | translate}}
                     </button>
                 </div>
                 <div>
                     <input type="checkbox" name="aliasForm-never_again" id="aliasForm-never_again"
                         formControlName="neverAgain">
-                    <label for="aliasForm-never_again">No volver a mostrar este mensaje</label>
+                    <label for="aliasForm-never_again">{{'angular.form_components.do_not_show_again' | translate}}</label>
                 </div>
             </form>
         </ng-container>

@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { MatExpansionModule } from '@angular/material';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { MatExpansionModule } from '@angular/material';
     FontAwesomeModule,
     MatProgressSpinnerModule,
     MatExpansionModule,
-    RouterModule
+    RouterModule,
+    TranslateModule
   ],
   declarations: [
     NavBarComponent,

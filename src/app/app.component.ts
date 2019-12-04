@@ -3,6 +3,7 @@ import { Router, RouterEvent, RouteConfigLoadStart, RouteConfigLoadEnd } from '@
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5, faCss3Alt, faAngular, faJsSquare } from '@fortawesome/free-brands-svg-icons';
 import { NavData } from './core/models/nav-bar.model';
+import { TranslateService } from '@ngx-translate/core';
 
 /**
  * Base and init app component
@@ -33,35 +34,35 @@ export class AppComponent {
       class: 'nav-enlace',
       activateClass: 'activated-tab',
       icon: 'faHomeLanding',
-      title: 'Home'
+      title: 'home.title'
     },
     {
       link: '/angular-landing',
       class: 'nav-enlace angColor',
       activateClass: 'activated-tab angColorActive',
       icon: 'faAngularLanding',
-      title: 'Angular'
+      title: 'angular.title'
     },
     {
       link: '/html-landing',
       class: 'nav-enlace htmlColor',
       activateClass: 'activated-tab htmlColorActive',
       icon: 'faHTMLLanding',
-      title: 'HTML'
+      title: 'html.title'
     },
     {
       link: '/css-landing',
       class: 'nav-enlace cssColor',
       activateClass: 'activated-tab cssColorActive',
       icon: 'faCSSLanding',
-      title: 'CSS'
+      title: 'css.title'
     },
     {
       link: '/js-landing',
       class: 'nav-enlace jsColor',
       activateClass: 'activated-tab jsColorActive',
       icon: 'faJsLanding',
-      title: 'JavaScript'
+      title: 'js.title'
     }
   ];
   /** Booleano que indica si está mostrandose la url que se ha solicitado */
@@ -73,8 +74,10 @@ export class AppComponent {
    * @param router Init angular routes
    */
   constructor(
-    private router: Router
+    private router: Router,
+    private translate: TranslateService
   ) {
+    this.translate.setDefaultLang('es');
     this.isPageLoading();
   }
 

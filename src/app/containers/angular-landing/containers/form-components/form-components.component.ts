@@ -28,6 +28,10 @@ export class FormComponentsComponent implements OnInit {
   private subscriptions: Array<Subscription>;
   /** Form alias data */
   public aliasForm: FormGroup;
+  /** Tlfn. Number to show in params on the translate */
+  public mobileSend: {mobileNumber: string} = {
+    mobileNumber: '*** *** *54'
+  };
 
   // @Output() submitForm: EventEmitter<any> = new EventEmitter<any>();
 
@@ -145,15 +149,15 @@ export class FormComponentsComponent implements OnInit {
     const formError = Object.keys(formControl.errors)[0];
     switch (formError) {
       case 'minlength':
-        return 'Campo con menos caracteres de los necesarios';
+        return 'error.minLength';
       case 'maxlength':
-        return 'Campo con más caracteres de los necesarios';
+        return 'error.maxlength';
       case 'pattern':
-        return 'Campo con caracteres inválidos';
+        return 'error.pattern';
       case 'required':
-        return 'Campo requerido';
+        return 'error.required';
       default:
-        return 'Lo sentimos, se ha producido un error inesperado. Por favor, reintente más tarde.';
+        return 'error.default';
     }
   }
 
