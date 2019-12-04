@@ -72,7 +72,8 @@ export class FormComponent implements OnInit {
 
   /**
    * If the are an error in the form
-   * @param formControl Contains the form data
+   * @param formControl Object of the angular form
+   * @returns boolean if it's a valid form
    */
   showError(formControl: AbstractControl): boolean {
     return formControl.invalid && formControl.dirty;
@@ -80,11 +81,10 @@ export class FormComponent implements OnInit {
 
   /**
    * Obtains the error text
-   * @param formControl Contains the form data
+   * @param formControl Object of the angular form
    * @returns The error text to show
    */
   public getError(formControl: AbstractControl): string {
-
     const formError = Object.keys(formControl.errors)[0];
     switch (formError) {
       case 'minlength':

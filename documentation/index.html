@@ -44,9 +44,9 @@
 <p>Es necesario tener instalado GIT en nuestro PC/MAC para poder realzar el <em>clone</em> del repositorio.</p>
 <div><pre class="line-numbers"><code class="language-none">git clone https://github.com/javiggpecas/documentacionBlancaJavi.git</code></pre></div><p>Tambien necesitamos instalar <a href="https://nodejs.org/es/">Node JS</a>, luego se instala <a href="https://cli.angular.io/">Angular CLI</a> (<code>npm i @angular/cli</code>) y a continuacion se ejecuta <code>npm i</code> para instalar las librerias que necesita la PWA.</p>
 <p>Ejecute <code>ng serve</code> para iniciar el servidor de desarrollo y navege a <code>http://localhost:4200/</code>.</p>
-<h3 id="building-the-project">Building the project</h3>
+<h4 id="building-the-project">Building the project</h4>
 <p>Ejecute <code>ng build</code> para obtener un compilado del proyecto. El proyecto generado se almacenará en la carpeta <code>/dist</code>. Use la flag <code>-prod</code> para realizar la compilación en modo producción.</p>
-<h3 id="http-server-instalar-pwa">HTTP-SERVER instalar PWA</h3>
+<h4 id="http-server-instalar-pwa">HTTP-SERVER instalar PWA</h4>
 <p>Es necesario tener instalado <a href="https://www.npmjs.com/package/http-server">http-server</a> <code>npm i http-server -g</code> y haber compilado el proyecto en modo producción <code>ng build --prod</code>.</p>
 <p>En la carpeta creada en <code>/dist/nombre-proyecto</code> se ejecuta el siguiente comando para crear un servidor en el pc capaz de ejecutar el compilado:</p>
 <div><pre class="line-numbers"><code class="language-none">http-server -p 8080</code></pre></div><p>Una vez iniciado google chrome se selecciona la opccion instalar en la barra de navegación:</p>

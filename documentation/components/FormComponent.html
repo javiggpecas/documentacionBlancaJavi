@@ -326,8 +326,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="86"
-                            class="link-to-prism">src/app/containers/angular-landing/containers/form/form.component.ts:86</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="87"
+                            class="link-to-prism">src/app/containers/angular-landing/containers/form/form.component.ts:87</a></div>
                 </td>
             </tr>
 
@@ -361,7 +361,7 @@
 
 
                                     <td>
-                                        <p>Contains the form data</p>
+                                        <p>Object of the angular form</p>
 
                                     </td>
                                 </tr>
@@ -488,8 +488,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="77"
-                            class="link-to-prism">src/app/containers/angular-landing/containers/form/form.component.ts:77</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="78"
+                            class="link-to-prism">src/app/containers/angular-landing/containers/form/form.component.ts:78</a></div>
                 </td>
             </tr>
 
@@ -523,7 +523,7 @@
 
 
                                     <td>
-                                        <p>Contains the form data</p>
+                                        <p>Object of the angular form</p>
 
                                     </td>
                                 </tr>
@@ -537,7 +537,8 @@
 
                     </div>
                     <div class="io-description">
-                        
+                        <p>boolean if it&#39;s a valid form</p>
+
                     </div>
                 </td>
             </tr>
@@ -724,7 +725,8 @@ export class FormComponent implements OnInit {
 
   /**
    * If the are an error in the form
-   * @param formControl Contains the form data
+   * @param formControl Object of the angular form
+   * @returns boolean if it&#x27;s a valid form
    */
   showError(formControl: AbstractControl): boolean {
     return formControl.invalid &amp;&amp; formControl.dirty;
@@ -732,11 +734,10 @@ export class FormComponent implements OnInit {
 
   /**
    * Obtains the error text
-   * @param formControl Contains the form data
+   * @param formControl Object of the angular form
    * @returns The error text to show
    */
   public getError(formControl: AbstractControl): string {
-
     const formError &#x3D; Object.keys(formControl.errors)[0];
     switch (formError) {
       case &#x27;minlength&#x27;:
