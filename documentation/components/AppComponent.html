@@ -188,12 +188,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+<code>constructor(router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, translate: TranslateService)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/app/app.component.ts:68</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/app/app.component.ts:69</a></div>
                             </td>
                         </tr>
 
@@ -227,6 +227,20 @@
                                                         <td>
                                                                 <code><p>Init angular routes</p>
 </code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
                                                         </td>
                                                 </tr>
                                         </tbody>
@@ -269,8 +283,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="84"
-                            class="link-to-prism">src/app/app.component.ts:84</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="87"
+                            class="link-to-prism">src/app/app.component.ts:87</a></div>
                 </td>
             </tr>
 
@@ -313,7 +327,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/app.component.ts:23</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/app.component.ts:24</a></div>
                             </td>
                         </tr>
 
@@ -345,7 +359,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/app.component.ts:21</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/app.component.ts:22</a></div>
                             </td>
                         </tr>
 
@@ -377,7 +391,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/app.component.ts:17</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/app.component.ts:18</a></div>
                             </td>
                         </tr>
 
@@ -409,7 +423,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/app.component.ts:19</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/app.component.ts:20</a></div>
                             </td>
                         </tr>
 
@@ -441,7 +455,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/app.component.ts:25</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/app.component.ts:26</a></div>
                             </td>
                         </tr>
 
@@ -475,7 +489,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/app/app.component.ts:68</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/app/app.component.ts:69</a></div>
                             </td>
                         </tr>
 
@@ -514,42 +528,42 @@
       class: &#x27;nav-enlace&#x27;,
       activateClass: &#x27;activated-tab&#x27;,
       icon: &#x27;faHomeLanding&#x27;,
-      title: &#x27;Home&#x27;
+      title: &#x27;home.title&#x27;
     },
     {
       link: &#x27;/angular-landing&#x27;,
       class: &#x27;nav-enlace angColor&#x27;,
       activateClass: &#x27;activated-tab angColorActive&#x27;,
       icon: &#x27;faAngularLanding&#x27;,
-      title: &#x27;Angular&#x27;
+      title: &#x27;angular.title&#x27;
     },
     {
       link: &#x27;/html-landing&#x27;,
       class: &#x27;nav-enlace htmlColor&#x27;,
       activateClass: &#x27;activated-tab htmlColorActive&#x27;,
       icon: &#x27;faHTMLLanding&#x27;,
-      title: &#x27;HTML&#x27;
+      title: &#x27;html.title&#x27;
     },
     {
       link: &#x27;/css-landing&#x27;,
       class: &#x27;nav-enlace cssColor&#x27;,
       activateClass: &#x27;activated-tab cssColorActive&#x27;,
       icon: &#x27;faCSSLanding&#x27;,
-      title: &#x27;CSS&#x27;
+      title: &#x27;css.title&#x27;
     },
     {
       link: &#x27;/js-landing&#x27;,
       class: &#x27;nav-enlace jsColor&#x27;,
       activateClass: &#x27;activated-tab jsColorActive&#x27;,
       icon: &#x27;faJsLanding&#x27;,
-      title: &#x27;JavaScript&#x27;
+      title: &#x27;js.title&#x27;
     }
   ]</code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/app.component.ts:30</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/app.component.ts:31</a></div>
                             </td>
                         </tr>
 
@@ -587,7 +601,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/app.component.ts:27</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/app.component.ts:28</a></div>
                             </td>
                         </tr>
 
@@ -611,6 +625,7 @@ import { Router, RouterEvent, RouteConfigLoadStart, RouteConfigLoadEnd } from &#
 import { faHome } from &#x27;@fortawesome/free-solid-svg-icons&#x27;;
 import { faHtml5, faCss3Alt, faAngular, faJsSquare } from &#x27;@fortawesome/free-brands-svg-icons&#x27;;
 import { NavData } from &#x27;./core/models/nav-bar.model&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
 
 /**
  * Base and init app component
@@ -641,35 +656,35 @@ export class AppComponent {
       class: &#x27;nav-enlace&#x27;,
       activateClass: &#x27;activated-tab&#x27;,
       icon: &#x27;faHomeLanding&#x27;,
-      title: &#x27;Home&#x27;
+      title: &#x27;home.title&#x27;
     },
     {
       link: &#x27;/angular-landing&#x27;,
       class: &#x27;nav-enlace angColor&#x27;,
       activateClass: &#x27;activated-tab angColorActive&#x27;,
       icon: &#x27;faAngularLanding&#x27;,
-      title: &#x27;Angular&#x27;
+      title: &#x27;angular.title&#x27;
     },
     {
       link: &#x27;/html-landing&#x27;,
       class: &#x27;nav-enlace htmlColor&#x27;,
       activateClass: &#x27;activated-tab htmlColorActive&#x27;,
       icon: &#x27;faHTMLLanding&#x27;,
-      title: &#x27;HTML&#x27;
+      title: &#x27;html.title&#x27;
     },
     {
       link: &#x27;/css-landing&#x27;,
       class: &#x27;nav-enlace cssColor&#x27;,
       activateClass: &#x27;activated-tab cssColorActive&#x27;,
       icon: &#x27;faCSSLanding&#x27;,
-      title: &#x27;CSS&#x27;
+      title: &#x27;css.title&#x27;
     },
     {
       link: &#x27;/js-landing&#x27;,
       class: &#x27;nav-enlace jsColor&#x27;,
       activateClass: &#x27;activated-tab jsColorActive&#x27;,
       icon: &#x27;faJsLanding&#x27;,
-      title: &#x27;JavaScript&#x27;
+      title: &#x27;js.title&#x27;
     }
   ];
   /** Booleano que indica si está mostrandose la url que se ha solicitado */
@@ -681,8 +696,10 @@ export class AppComponent {
    * @param router Init angular routes
    */
   constructor(
-    private router: Router
+    private router: Router,
+    private translate: TranslateService
   ) {
+    this.translate.setDefaultLang(&#x27;es&#x27;);
     this.isPageLoading();
   }
 

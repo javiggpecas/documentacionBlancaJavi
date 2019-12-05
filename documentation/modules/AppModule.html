@@ -217,6 +217,9 @@ import { SharedModule } from &#x27;./shared/shared.module&#x27;;
 import { BrowserAnimationsModule } from &#x27;@angular/platform-browser/animations&#x27;;
 import { ServiceWorkerModule } from &#x27;@angular/service-worker&#x27;;
 import { environment } from &#x27;../environments/environment&#x27;;
+import { HttpClientModule, HttpClient } from &#x27;@angular/common/http&#x27;;
+import { TranslateLoader, TranslateModule } from &#x27;@ngx-translate/core&#x27;;
+import { TranslateHttpLoader } from &#x27;@ngx-translate/http-loader&#x27;;
 
 @NgModule({
   imports: [
@@ -225,7 +228,16 @@ import { environment } from &#x27;../environments/environment&#x27;;
     MatProgressSpinnerModule,
     SharedModule.forRoot(),
     AppRoutingModule,
-    ServiceWorkerModule.register(&#x27;ngsw-worker.js&#x27;, { enabled: environment.production })
+    ServiceWorkerModule.register(&#x27;ngsw-worker.js&#x27;, { enabled: environment.production }),
+    // ngx-translate and the loader module
+    HttpClientModule,
+    TranslateModule.forRoot({
+        loader: {
+            provide: TranslateLoader,
+            useFactory: HttpLoaderFactory,
+            deps: [HttpClient]
+        }
+    })
   ],
   declarations: [
     AppComponent
@@ -234,6 +246,11 @@ import { environment } from &#x27;../environments/environment&#x27;;
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+/** Required for AOT compilation */
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 </code></pre>
     </div>
 </div>

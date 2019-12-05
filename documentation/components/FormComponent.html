@@ -741,13 +741,13 @@ export class FormComponent implements OnInit {
     const formError &#x3D; Object.keys(formControl.errors)[0];
     switch (formError) {
       case &#x27;minlength&#x27;:
-        return &#x27;Campo con menos caracteres de los necesarios&#x27;;
+        return &#x27;error.minLength&#x27;;
       case &#x27;pattern&#x27;:
-        return &#x27;Campo con caracteres inválidos&#x27;;
+        return &#x27;error.pattern&#x27;;
       case &#x27;required&#x27;:
-        return &#x27;Campo requerido&#x27;;
+        return &#x27;error.required&#x27;;
       default:
-        return &#x27;Lo sentimos, se ha producido un error inesperado. Por favor, reintente más tarde.&#x27;;
+        return &#x27;error.default&#x27;;
     }
   }
 }
@@ -756,58 +756,58 @@ export class FormComponent implements OnInit {
 
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;form grace-form [formGroup]&#x3D;&quot;formExample&quot;&gt;
-    &lt;h2&gt;Rellena tus datos&lt;/h2&gt;
+    &lt;h2&gt;{{&#x27;angular.form.fill_your_data&#x27; | translate}}&lt;/h2&gt;
     &lt;div&gt;
-        &lt;label for&#x3D;&quot;registeredOn&quot;&gt;Fecha nacimiento &lt;/label&gt;
+        &lt;label for&#x3D;&quot;registeredOn&quot;&gt;{{&#x27;angular.form.birthDate&#x27; | translate}}&lt;/label&gt;
         &lt;input name&#x3D;&quot;registeredOn&quot; formControlName&#x3D;&quot;registeredOn&quot; type&#x3D;&quot;date&quot; /&gt;
     &lt;/div&gt;
     &lt;div&gt;
-        &lt;label for&#x3D;&quot;name&quot;&gt;Nombre &lt;/label&gt;
-        &lt;input name&#x3D;&quot;name&quot; formControlName&#x3D;&quot;name&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Introduzca su nombre&quot; /&gt;
+        &lt;label for&#x3D;&quot;name&quot;&gt;{{&#x27;angular.form.name&#x27; | translate}}&lt;/label&gt;
+        &lt;input name&#x3D;&quot;name&quot; formControlName&#x3D;&quot;name&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;{{&#x27;angular.form.name_placeholder&#x27; | translate}}&quot; /&gt;
     &lt;/div&gt;
     &lt;div&gt;
-        &lt;label for&#x3D;&quot;lastName&quot;&gt;Apellidos &lt;/label&gt;
-        &lt;input name&#x3D;&quot;lastName&quot; formControlName&#x3D;&quot;lastName&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Introduzca sus apellidos&quot; /&gt;
+        &lt;label for&#x3D;&quot;lastName&quot;&gt;{{&#x27;angular.form.lastnames&#x27; | translate}}&lt;/label&gt;
+        &lt;input name&#x3D;&quot;lastName&quot; formControlName&#x3D;&quot;lastName&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;{{&#x27;angular.form.lastnames_placeholder&#x27; | translate}}&quot; /&gt;
     &lt;/div&gt;
     &lt;div&gt;
-        &lt;label for&#x3D;&quot;email&quot;&gt;E-mail &lt;/label&gt;
-        &lt;input name&#x3D;&quot;email&quot; formControlName&#x3D;&quot;email&quot; type&#x3D;&quot;email&quot; placeholder&#x3D;&quot;Introduzca su email&quot; /&gt;
+        &lt;label for&#x3D;&quot;email&quot;&gt;{{&#x27;angular.form.email&#x27; | translate}}&lt;/label&gt;
+        &lt;input name&#x3D;&quot;email&quot; formControlName&#x3D;&quot;email&quot; type&#x3D;&quot;email&quot; placeholder&#x3D;&quot;{{&#x27;angular.form.email_placeholder&#x27; | translate}}&quot; /&gt;
     &lt;/div&gt;
     &lt;div&gt;
-        &lt;label for&#x3D;&quot;dni&quot;&gt;DNI &lt;/label&gt;
-        &lt;input name&#x3D;&quot;dni&quot; formControlName&#x3D;&quot;dni&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;Introduzca su DNI&quot; /&gt;
+        &lt;label for&#x3D;&quot;dni&quot;&gt;{{&#x27;angular.form.id_card&#x27; | translate}}&lt;/label&gt;
+        &lt;input name&#x3D;&quot;dni&quot; formControlName&#x3D;&quot;dni&quot; type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;{{&#x27;angular.form.id_card_placeholder&#x27; | translate}}&quot; /&gt;
     &lt;/div&gt;
     &lt;div&gt;
-        &lt;label for&#x3D;&quot;password&quot;&gt;Contraseña &lt;/label&gt;
+        &lt;label for&#x3D;&quot;password&quot;&gt;{{&#x27;angular.form.password&#x27; | translate}}&lt;/label&gt;
         &lt;input id&#x3D;&quot;password&quot; name&#x3D;&quot;password&quot; formControlName&#x3D;&quot;password&quot; type&#x3D;&quot;password&quot; /&gt;
-        &lt;span class&#x3D;&quot;error-msg&quot; *ngIf&#x3D;&quot;showError(formExample.get(&#x27;password&#x27;))&quot;&gt;{{ getError(formExample.get(&#x27;password&#x27;))}}&lt;/span&gt;
+        &lt;span class&#x3D;&quot;error-msg&quot; *ngIf&#x3D;&quot;showError(formExample.get(&#x27;password&#x27;))&quot;&gt;{{ getError(formExample.get(&#x27;password&#x27;)) | translate}}&lt;/span&gt;
     &lt;/div&gt;
 
     &lt;div&gt;
-        &lt;span&gt;Sexo &lt;/span&gt;
-        &lt;input id&#x3D;&quot;mujer&quot; type&#x3D;&quot;radio&quot; formControlName&#x3D;&quot;sexo&quot; value&#x3D;&quot;mujer&quot; /&gt;&lt;label for&#x3D;&quot;sexoMujer&quot;&gt;Mujer&lt;/label&gt;
-        &lt;input id&#x3D;&quot;hombre&quot; type&#x3D;&quot;radio&quot; formControlName&#x3D;&quot;sexo&quot; value&#x3D;&quot;hombre&quot;&gt;&lt;label for&#x3D;&quot;sexoHombre&quot;&gt;Hombre&lt;/label&gt;
+        &lt;span&gt;{{&#x27;angular.form.gender&#x27; | translate}}&lt;/span&gt;
+        &lt;input id&#x3D;&quot;mujer&quot; type&#x3D;&quot;radio&quot; formControlName&#x3D;&quot;sexo&quot; value&#x3D;&quot;mujer&quot; /&gt;&lt;label for&#x3D;&quot;sexoMujer&quot;&gt;{{&#x27;angular.form.women&#x27; | translate}}&lt;/label&gt;
+        &lt;input id&#x3D;&quot;hombre&quot; type&#x3D;&quot;radio&quot; formControlName&#x3D;&quot;sexo&quot; value&#x3D;&quot;hombre&quot;&gt;&lt;label for&#x3D;&quot;sexoHombre&quot;&gt;{{&#x27;angular.form.man&#x27; | translate}}&lt;/label&gt;
     &lt;/div&gt;
 
     &lt;div&gt;
-        &lt;span&gt;Indique su situación actual &lt;/span&gt;
+        &lt;span&gt;{{&#x27;angular.form.marital_status&#x27; | translate}}&lt;/span&gt;
         &lt;select name&#x3D;&quot;genero&quot; formControlName&#x3D;&quot;state&quot;&gt;
-            &lt;option&gt;Soltero&lt;/option&gt;
-            &lt;option&gt;Casado&lt;/option&gt;
+            &lt;option&gt;{{&#x27;angular.form.single&#x27; | translate}}&lt;/option&gt;
+            &lt;option&gt;{{&#x27;angular.form.maried&#x27; | translate}}&lt;/option&gt;
         &lt;/select&gt;
     &lt;/div&gt;
     &lt;div&gt;
-        &lt;span&gt;Incluir foto &lt;/span&gt;
+        &lt;span&gt;{{&#x27;angular.form.include_foto&#x27; | translate}}&lt;/span&gt;
         &lt;input type&#x3D;&quot;file&quot; name&#x3D;&quot;photo&quot; formControlName&#x3D;&quot;photo&quot; /&gt;
     &lt;/div&gt;
 
     &lt;div&gt;
-        &lt;button (click)&#x3D;&quot;register()&quot; [disabled]&#x3D;&quot;formExample.invalid&quot;&gt;Validar&lt;/button&gt;
+        &lt;button (click)&#x3D;&quot;register()&quot; [disabled]&#x3D;&quot;formExample.invalid&quot;&gt;{{&#x27;angular.form.validate&#x27; | translate}}&lt;/button&gt;
     &lt;/div&gt;
 &lt;/form&gt;
 
 &lt;div *ngIf&#x3D;&quot;isClicked&quot;&gt;
-    &lt;h3&gt;Datos usuario:&lt;/h3&gt;
+    &lt;h3&gt;{{&#x27;angular.form.user_data&#x27; | translate}}&lt;/h3&gt;
     &lt;p&gt;{{user.name}} {{user.lastName}}&lt;/p&gt;
     &lt;p&gt;{{user.email}}&lt;/p&gt;
     &lt;p&gt;{{user.dni}}&lt;/p&gt;
@@ -868,7 +868,7 @@ label {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><form grace-form [formGroup]="formExample">    <h2>Rellena tus datos</h2>    <div>        <label for="registeredOn">Fecha nacimiento </label>        <input name="registeredOn" formControlName="registeredOn" type="date" />    </div>    <div>        <label for="name">Nombre </label>        <input name="name" formControlName="name" type="text" placeholder="Introduzca su nombre" />    </div>    <div>        <label for="lastName">Apellidos </label>        <input name="lastName" formControlName="lastName" type="text" placeholder="Introduzca sus apellidos" />    </div>    <div>        <label for="email">E-mail </label>        <input name="email" formControlName="email" type="email" placeholder="Introduzca su email" />    </div>    <div>        <label for="dni">DNI </label>        <input name="dni" formControlName="dni" type="text" placeholder="Introduzca su DNI" />    </div>    <div>        <label for="password">Contraseña </label>        <input id="password" name="password" formControlName="password" type="password" />        <span class="error-msg" *ngIf="showError(formExample.get(\'password\'))">{{ getError(formExample.get(\'password\'))}}</span>    </div>    <div>        <span>Sexo </span>        <input id="mujer" type="radio" formControlName="sexo" value="mujer" /><label for="sexoMujer">Mujer</label>        <input id="hombre" type="radio" formControlName="sexo" value="hombre"><label for="sexoHombre">Hombre</label>    </div>    <div>        <span>Indique su situación actual </span>        <select name="genero" formControlName="state">            <option>Soltero</option>            <option>Casado</option>        </select>    </div>    <div>        <span>Incluir foto </span>        <input type="file" name="photo" formControlName="photo" />    </div>    <div>        <button (click)="register()" [disabled]="formExample.invalid">Validar</button>    </div></form><div *ngIf="isClicked">    <h3>Datos usuario:</h3>    <p>{{user.name}} {{user.lastName}}</p>    <p>{{user.email}}</p>    <p>{{user.dni}}</p>    <p>{{user.password}}</p>    <p>{{user.registeredOn}}</p>    <p>{{user.sexo}}</p>    <!-- <img src="{{user.photo}}"> -->    <p>{{user.state}}</p></div></div>'
+        var COMPONENT_TEMPLATE = '<div><form grace-form [formGroup]="formExample">    <h2>{{\'angular.form.fill_your_data\' | translate}}</h2>    <div>        <label for="registeredOn">{{\'angular.form.birthDate\' | translate}}</label>        <input name="registeredOn" formControlName="registeredOn" type="date" />    </div>    <div>        <label for="name">{{\'angular.form.name\' | translate}}</label>        <input name="name" formControlName="name" type="text" placeholder="{{\'angular.form.name_placeholder\' | translate}}" />    </div>    <div>        <label for="lastName">{{\'angular.form.lastnames\' | translate}}</label>        <input name="lastName" formControlName="lastName" type="text" placeholder="{{\'angular.form.lastnames_placeholder\' | translate}}" />    </div>    <div>        <label for="email">{{\'angular.form.email\' | translate}}</label>        <input name="email" formControlName="email" type="email" placeholder="{{\'angular.form.email_placeholder\' | translate}}" />    </div>    <div>        <label for="dni">{{\'angular.form.id_card\' | translate}}</label>        <input name="dni" formControlName="dni" type="text" placeholder="{{\'angular.form.id_card_placeholder\' | translate}}" />    </div>    <div>        <label for="password">{{\'angular.form.password\' | translate}}</label>        <input id="password" name="password" formControlName="password" type="password" />        <span class="error-msg" *ngIf="showError(formExample.get(\'password\'))">{{ getError(formExample.get(\'password\')) | translate}}</span>    </div>    <div>        <span>{{\'angular.form.gender\' | translate}}</span>        <input id="mujer" type="radio" formControlName="sexo" value="mujer" /><label for="sexoMujer">{{\'angular.form.women\' | translate}}</label>        <input id="hombre" type="radio" formControlName="sexo" value="hombre"><label for="sexoHombre">{{\'angular.form.man\' | translate}}</label>    </div>    <div>        <span>{{\'angular.form.marital_status\' | translate}}</span>        <select name="genero" formControlName="state">            <option>{{\'angular.form.single\' | translate}}</option>            <option>{{\'angular.form.maried\' | translate}}</option>        </select>    </div>    <div>        <span>{{\'angular.form.include_foto\' | translate}}</span>        <input type="file" name="photo" formControlName="photo" />    </div>    <div>        <button (click)="register()" [disabled]="formExample.invalid">{{\'angular.form.validate\' | translate}}</button>    </div></form><div *ngIf="isClicked">    <h3>{{\'angular.form.user_data\' | translate}}</h3>    <p>{{user.name}} {{user.lastName}}</p>    <p>{{user.email}}</p>    <p>{{user.dni}}</p>    <p>{{user.password}}</p>    <p>{{user.registeredOn}}</p>    <p>{{user.sexo}}</p>    <!-- <img src="{{user.photo}}"> -->    <p>{{user.state}}</p></div></div>'
     var COMPONENTS = [{'name': 'AccordionComponent', 'selector': 'app-accordion'},{'name': 'AngularLandingComponent', 'selector': 'app-angular-landing'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CssLandingComponent', 'selector': 'app-css-landing'},{'name': 'FormComponent', 'selector': 'app-form'},{'name': 'FormComponentsComponent', 'selector': 'app-form-components'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'HtmlLandingComponent', 'selector': 'app-html-landing'},{'name': 'JsLandingComponent', 'selector': 'app-js-landing'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'OthersComponent', 'selector': 'app-others'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'FormComponent'};

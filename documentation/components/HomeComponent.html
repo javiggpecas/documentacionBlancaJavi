@@ -191,28 +191,28 @@ export class HomeComponent {
     &lt;nav&gt;
         &lt;ul&gt;
             &lt;li&gt;
-                &lt;a [routerLink]&#x3D;&quot;[&#x27;/angular-landing&#x27;]&quot; title&#x3D;&quot;Angular&quot;&gt;
+                &lt;a [routerLink]&#x3D;&quot;[&#x27;/angular-landing&#x27;]&quot; title&#x3D;&quot;{{&#x27;angular.title&#x27; | translate}}&quot;&gt;
                     &lt;figure&gt;
                         &lt;img class&#x3D;&quot;img-home&quot; src&#x3D;&quot;./assets/images/angular.svg&quot; alt&#x3D;&quot;Angular&quot;&gt;
                     &lt;/figure&gt;
                 &lt;/a&gt;
             &lt;/li&gt;
             &lt;li&gt;
-                &lt;a [routerLink]&#x3D;&quot;[&#x27;/html-landing&#x27;]&quot; title&#x3D;&quot;HTML5&quot;&gt;
+                &lt;a [routerLink]&#x3D;&quot;[&#x27;/html-landing&#x27;]&quot; title&#x3D;&quot;{{&#x27;html.title&#x27; | translate}}&quot;&gt;
                     &lt;figure&gt;
                         &lt;img class&#x3D;&quot;img-home&quot; src&#x3D;&quot;./assets/images/HTML5_logo_black.svg&quot; alt&#x3D;&quot;HTML5&quot;&gt;
                     &lt;/figure&gt;
                 &lt;/a&gt;
             &lt;/li&gt;
             &lt;li&gt;
-                &lt;a [routerLink]&#x3D;&quot;[&#x27;/js-landing&#x27;]&quot; title&#x3D;&quot;JavaScript&quot;&gt;
+                &lt;a [routerLink]&#x3D;&quot;[&#x27;/js-landing&#x27;]&quot; title&#x3D;&quot;{{&#x27;js.title&#x27; | translate}}&quot;&gt;
                     &lt;figure&gt;
                         &lt;img class&#x3D;&quot;img-home&quot; src&#x3D;&quot;./assets/images/javascript-1.svg&quot; alt&#x3D;&quot;JavaScript&quot;&gt;
                     &lt;/figure&gt;
                 &lt;/a&gt;
             &lt;/li&gt;
             &lt;li&gt;
-                &lt;a [routerLink]&#x3D;&quot;[&#x27;/css-landing&#x27;]&quot; title&#x3D;&quot;CSS3&quot;&gt;
+                &lt;a [routerLink]&#x3D;&quot;[&#x27;/css-landing&#x27;]&quot; title&#x3D;&quot;{{&#x27;css.title&#x27; | translate}}&quot;&gt;
                     &lt;figure&gt;
                         &lt;img class&#x3D;&quot;img-home&quot; src&#x3D;&quot;./assets/images/CSS3_logo.svg&quot; alt&#x3D;&quot;CSS3&quot;&gt;
                     &lt;/figure&gt;
@@ -282,7 +282,7 @@ nav {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><main>    <div class="front-logo">        <figure>            <img src="./assets/images/logo-front.png" alt="Front Logo">        </figure>       </div>        <nav>        <ul>            <li>                <a [routerLink]="[\'/angular-landing\']" title="Angular">                    <figure>                        <img class="img-home" src="./assets/images/angular.svg" alt="Angular">                    </figure>                </a>            </li>            <li>                <a [routerLink]="[\'/html-landing\']" title="HTML5">                    <figure>                        <img class="img-home" src="./assets/images/HTML5_logo_black.svg" alt="HTML5">                    </figure>                </a>            </li>            <li>                <a [routerLink]="[\'/js-landing\']" title="JavaScript">                    <figure>                        <img class="img-home" src="./assets/images/javascript-1.svg" alt="JavaScript">                    </figure>                </a>            </li>            <li>                <a [routerLink]="[\'/css-landing\']" title="CSS3">                    <figure>                        <img class="img-home" src="./assets/images/CSS3_logo.svg" alt="CSS3">                    </figure>                </a>            </li>        </ul>    </nav></main></div>'
+        var COMPONENT_TEMPLATE = '<div><main>    <div class="front-logo">        <figure>            <img src="./assets/images/logo-front.png" alt="Front Logo">        </figure>       </div>        <nav>        <ul>            <li>                <a [routerLink]="[\'/angular-landing\']" title="{{\'angular.title\' | translate}}">                    <figure>                        <img class="img-home" src="./assets/images/angular.svg" alt="Angular">                    </figure>                </a>            </li>            <li>                <a [routerLink]="[\'/html-landing\']" title="{{\'html.title\' | translate}}">                    <figure>                        <img class="img-home" src="./assets/images/HTML5_logo_black.svg" alt="HTML5">                    </figure>                </a>            </li>            <li>                <a [routerLink]="[\'/js-landing\']" title="{{\'js.title\' | translate}}">                    <figure>                        <img class="img-home" src="./assets/images/javascript-1.svg" alt="JavaScript">                    </figure>                </a>            </li>            <li>                <a [routerLink]="[\'/css-landing\']" title="{{\'css.title\' | translate}}">                    <figure>                        <img class="img-home" src="./assets/images/CSS3_logo.svg" alt="CSS3">                    </figure>                </a>            </li>        </ul>    </nav></main></div>'
     var COMPONENTS = [{'name': 'AccordionComponent', 'selector': 'app-accordion'},{'name': 'AngularLandingComponent', 'selector': 'app-angular-landing'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CssLandingComponent', 'selector': 'app-css-landing'},{'name': 'FormComponent', 'selector': 'app-form'},{'name': 'FormComponentsComponent', 'selector': 'app-form-components'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'HtmlLandingComponent', 'selector': 'app-html-landing'},{'name': 'JsLandingComponent', 'selector': 'app-js-landing'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'OthersComponent', 'selector': 'app-others'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'HomeComponent'};

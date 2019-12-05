@@ -171,6 +171,7 @@
 import { CommonModule } from &#x27;@angular/common&#x27;;
 import { HomeRoutingModule } from &#x27;./home-routing.module&#x27;;
 import { HomeComponent } from &#x27;./home.component&#x27;;
+import { TranslateModule } from &#x27;@ngx-translate/core&#x27;;
 
 @NgModule({
   declarations: [
@@ -178,7 +179,8 @@ import { HomeComponent } from &#x27;./home.component&#x27;;
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    TranslateModule
   ]
 })
 export class HomeModule { }

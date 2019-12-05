@@ -165,6 +165,10 @@
                                 <a href="#minDate">minDate</a>
                             </li>
                             <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#mobileSend">mobileSend</a>
+                            </li>
+                            <li>
                                 <a href="#myFilter">myFilter</a>
                             </li>
                             <li>
@@ -221,7 +225,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/containers/angular-landing/containers/form-components/form-components.component.ts:30</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/containers/angular-landing/containers/form-components/form-components.component.ts:34</a></div>
                             </td>
                         </tr>
 
@@ -297,8 +301,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="144"
-                            class="link-to-prism">src/app/containers/angular-landing/containers/form-components/form-components.component.ts:144</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="148"
+                            class="link-to-prism">src/app/containers/angular-landing/containers/form-components/form-components.component.ts:148</a></div>
                 </td>
             </tr>
 
@@ -375,8 +379,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="122"
-                            class="link-to-prism">src/app/containers/angular-landing/containers/form-components/form-components.component.ts:122</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="126"
+                            class="link-to-prism">src/app/containers/angular-landing/containers/form-components/form-components.component.ts:126</a></div>
                 </td>
             </tr>
 
@@ -416,8 +420,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="73"
-                            class="link-to-prism">src/app/containers/angular-landing/containers/form-components/form-components.component.ts:73</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="77"
+                            class="link-to-prism">src/app/containers/angular-landing/containers/form-components/form-components.component.ts:77</a></div>
                 </td>
             </tr>
 
@@ -457,8 +461,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="98"
-                            class="link-to-prism">src/app/containers/angular-landing/containers/form-components/form-components.component.ts:98</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="102"
+                            class="link-to-prism">src/app/containers/angular-landing/containers/form-components/form-components.component.ts:102</a></div>
                 </td>
             </tr>
 
@@ -534,8 +538,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="135"
-                            class="link-to-prism">src/app/containers/angular-landing/containers/form-components/form-components.component.ts:135</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="139"
+                            class="link-to-prism">src/app/containers/angular-landing/containers/form-components/form-components.component.ts:139</a></div>
                 </td>
             </tr>
 
@@ -807,6 +811,47 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
+                        <a name="mobileSend"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            mobileSend</b>
+                            <a href="#mobileSend"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>literal type</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    mobileNumber: &#x27;*** *** *54&#x27;
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/containers/angular-landing/containers/form-components/form-components.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Tlfn. Number to show in params on the translate </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
                         <a name="myFilter"></a>
                         <span class="name">
                             <b>
@@ -822,7 +867,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="89" class="link-to-prism">src/app/containers/angular-landing/containers/form-components/form-components.component.ts:89</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="93" class="link-to-prism">src/app/containers/angular-landing/containers/form-components/form-components.component.ts:93</a></div>
                             </td>
                         </tr>
 
@@ -905,6 +950,10 @@ export class FormComponentsComponent implements OnInit {
   private subscriptions: Array&lt;Subscription&gt;;
   /** Form alias data */
   public aliasForm: FormGroup;
+  /** Tlfn. Number to show in params on the translate */
+  public mobileSend: {mobileNumber: string} &#x3D; {
+    mobileNumber: &#x27;*** *** *54&#x27;
+  };
 
   // @Output() submitForm: EventEmitter&lt;any&gt; &#x3D; new EventEmitter&lt;any&gt;();
 
@@ -1022,15 +1071,15 @@ export class FormComponentsComponent implements OnInit {
     const formError &#x3D; Object.keys(formControl.errors)[0];
     switch (formError) {
       case &#x27;minlength&#x27;:
-        return &#x27;Campo con menos caracteres de los necesarios&#x27;;
+        return &#x27;error.minLength&#x27;;
       case &#x27;maxlength&#x27;:
-        return &#x27;Campo con más caracteres de los necesarios&#x27;;
+        return &#x27;error.maxlength&#x27;;
       case &#x27;pattern&#x27;:
-        return &#x27;Campo con caracteres inválidos&#x27;;
+        return &#x27;error.pattern&#x27;;
       case &#x27;required&#x27;:
-        return &#x27;Campo requerido&#x27;;
+        return &#x27;error.required&#x27;;
       default:
-        return &#x27;Lo sentimos, se ha producido un error inesperado. Por favor, reintente más tarde.&#x27;;
+        return &#x27;error.default&#x27;;
     }
   }
 
@@ -1040,84 +1089,83 @@ export class FormComponentsComponent implements OnInit {
 
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;mat-accordion&gt;
-    &lt;app-accordion [title]&#x3D;&quot;&#x27;Datepicker&#x27;&quot; [description]&#x3D;&quot;&#x27;Funcionamiento datepicker&#x27;&quot;&gt;
+    &lt;app-accordion [title]&#x3D;&quot;&#x27;angular.form_components.datepicker&#x27; | translate&quot; [description]&#x3D;&quot;&#x27;angular.form_components.functioning_datep&#x27; | translate&quot;&gt;
         &lt;ng-container class&#x3D;&quot;accordion-body&quot;&gt;
             &lt;mat-form-field&gt;
-                &lt;input matInput placeholder&#x3D;&quot;Seleccione una fecha&quot; [matDatepickerFilter]&#x3D;&quot;myFilter&quot;
+                &lt;input matInput placeholder&#x3D;&quot;{{&#x27;angular.form_components.select_date&#x27; | translate}}&quot; [matDatepickerFilter]&#x3D;&quot;myFilter&quot;
                     [matDatepicker]&#x3D;&quot;picker&quot; [min]&#x3D;&quot;minDate&quot; [max]&#x3D;&quot;maxDate&quot;&gt;
                 &lt;mat-datepicker-toggle matSuffix [for]&#x3D;&quot;picker&quot;&gt;&lt;/mat-datepicker-toggle&gt;
                 &lt;mat-datepicker #picker&gt;&lt;/mat-datepicker&gt;
             &lt;/mat-form-field&gt;
         &lt;/ng-container&gt;
     &lt;/app-accordion&gt;
-    &lt;app-accordion [title]&#x3D;&quot;&#x27;Radio Button&#x27;&quot; [description]&#x3D;&quot;&#x27;Suscripción al radio button&#x27;&quot;&gt;
+    &lt;app-accordion [title]&#x3D;&quot;&#x27;angular.form_components.radio_button&#x27; | translate&quot; [description]&#x3D;&quot;&#x27;angular.form_components.susc_radio_button&#x27; | translate&quot;&gt;
         &lt;ng-container class&#x3D;&quot;accordion-body&quot;&gt;
             &lt;form class&#x3D;&quot;accordion&quot; [formGroup]&#x3D;&quot;cancelAnRequestForm&quot;&gt;
                 &lt;fieldset&gt;
-                    &lt;span class&#x3D;&quot;step-content__title&quot;&gt;Indique la razón de la pérdida de la tarjeta&lt;/span&gt;
+                    &lt;span class&#x3D;&quot;step-content__title&quot;&gt;{{&#x27;angular.form_components.indicate_reason&#x27; | translate}}&lt;/span&gt;
                     &lt;div class&#x3D;&quot;step-content__radio&quot;&gt;
                         &lt;input id&#x3D;&quot;indAnulacionPerdida&quot; type&#x3D;&quot;radio&quot; formControlName&#x3D;&quot;indAnulacion&quot;
-                            value&#x3D;&quot;perdida&quot; /&gt;&lt;label for&#x3D;&quot;indAnulacionPerdida&quot;&gt;Pérdida&lt;/label&gt;
+                            value&#x3D;&quot;perdida&quot; /&gt;&lt;label for&#x3D;&quot;indAnulacionPerdida&quot;&gt;{{&#x27;angular.form_components.lost&#x27; | translate}}&lt;/label&gt;
                         &lt;input id&#x3D;&quot;indAnulacionRobo&quot; type&#x3D;&quot;radio&quot; formControlName&#x3D;&quot;indAnulacion&quot; value&#x3D;&quot;robo&quot;&gt;&lt;label
-                            for&#x3D;&quot;indAnulacionRobo&quot;&gt;Robo&lt;/label&gt;
+                            for&#x3D;&quot;indAnulacionRobo&quot;&gt;{{&#x27;angular.form_components.stole&#x27; | translate}}&lt;/label&gt;
                     &lt;/div&gt;
-                    &lt;span class&#x3D;&quot;step-content__title&quot;&gt;¿Desea una nueva tarjeta?&lt;/span&gt;
+                    &lt;span class&#x3D;&quot;step-content__title&quot;&gt;{{&#x27;angular.form_components.want_new_card&#x27; | translate}}&lt;/span&gt;
                     &lt;div class&#x3D;&quot;step-content__radio&quot;&gt;
                         &lt;input id&#x3D;&quot;indNewCardYes&quot; type&#x3D;&quot;radio&quot; formControlName&#x3D;&quot;indRenovacion&quot; value&#x3D;&quot;1&quot;&gt;&lt;label
-                            for&#x3D;&quot;indNewCardYes&quot;&gt;Si&lt;/label&gt;
+                            for&#x3D;&quot;indNewCardYes&quot;&gt;{{&#x27;angular.form_components.yes&#x27; | translate}}&lt;/label&gt;
                         &lt;input id&#x3D;&quot;indNewCardLater&quot; type&#x3D;&quot;radio&quot; formControlName&#x3D;&quot;indRenovacion&quot; value&#x3D;&quot;0&quot;&gt;&lt;label
-                            for&#x3D;&quot;indNewCardLater&quot;&gt;Más tarde&lt;/label&gt;
+                            for&#x3D;&quot;indNewCardLater&quot;&gt;{{&#x27;angular.form_components.later&#x27; | translate}}&lt;/label&gt;
                     &lt;/div&gt;
                     &lt;div *ngIf&#x3D;&quot;cancelAnRequestForm.value.indRenovacion &#x3D;&#x3D;&#x3D; &#x27;1&#x27;&quot;&gt;
-                        &lt;p class&#x3D;&quot;step-content__subtitle&quot;&gt;Dirección: Calle Félix Candela 81&lt;/p&gt;
+                        &lt;p class&#x3D;&quot;step-content__subtitle&quot; translate [translateParams]&#x3D;&quot;{address: &#x27;Calle Félix Candela 81&#x27;}&quot;&gt;angular.form_components.address&lt;/p&gt;
                     &lt;/div&gt;
                 &lt;/fieldset&gt;
             &lt;/form&gt;
         &lt;/ng-container&gt;
     &lt;/app-accordion&gt;
 
-    &lt;app-accordion [title]&#x3D;&quot;&#x27;Campo numérico&#x27;&quot; [description]&#x3D;&quot;&#x27;Validaciones campo numérico&#x27;&quot;&gt;
+    &lt;app-accordion [title]&#x3D;&quot;&#x27;angular.form_components.numeric_value&#x27; | translate&quot; [description]&#x3D;&quot;&#x27;angular.form_components.validation_numeric_value&#x27; | translate&quot;&gt;
         &lt;ng-container class&#x3D;&quot;accordion-body&quot;&gt;
             &lt;div class&#x3D;&quot;modal-body&quot;&gt;
                 &lt;form action&#x3D;&quot;&quot; [formGroup]&#x3D;&quot;confirmForm&quot; autocomplete&#x3D;&quot;off&quot;&gt;
                     &lt;fieldset&gt;
-                        &lt;span class&#x3D;&quot;modal-body--confirm-text&quot;&gt;Introduzca la clave enviada al móvil&lt;/span&gt;
-                        &lt;span class&#x3D;&quot;modal-body--phone&quot;&gt;*** *** *54&lt;/span&gt;
+                        &lt;span class&#x3D;&quot;modal-body--confirm-text&quot;&gt;{{&#x27;angular.form_components.enter_pass_send_mobile&#x27; | translate:mobileSend}}&lt;/span&gt;
+                        &lt;!-- &lt;span class&#x3D;&quot;modal-body--phone&quot;&gt;*** *** *54&lt;/span&gt; --&gt;
                         &lt;div class&#x3D;&quot;modal-body__input input-wrapper&quot;&gt;
                             &lt;input id&#x3D;&quot;confirm-code&quot; type&#x3D;&quot;password&quot; name&#x3D;&quot;codesms&quot; #codesms maxlength&#x3D;&quot;4&quot;
                                 formControlName&#x3D;&quot;code&quot; autocomplete&#x3D;&quot;off&quot; [value]&#x3D;&quot;&quot;
                                 class&#x3D;&quot;modal-edit-transfer__input&quot; /&gt;
                         &lt;/div&gt;
-                        &lt;span class&#x3D;&quot;notification__text&quot; *ngIf&#x3D;&quot;confirmForm.invalid&quot;&gt;La clave tiene que ser numérica y
-                            de 4 números&lt;/span&gt;
+                        &lt;span class&#x3D;&quot;notification__text&quot; *ngIf&#x3D;&quot;confirmForm.invalid&quot;&gt;{{&#x27;angular.form_components.pass_lenght_error&#x27; | translate}}&lt;/span&gt;
                     &lt;/fieldset&gt;
                 &lt;/form&gt;
             &lt;/div&gt;
         &lt;/ng-container&gt;
     &lt;/app-accordion&gt;
-    &lt;app-accordion [title]&#x3D;&quot;&#x27;Validaciones&#x27;&quot; [description]&#x3D;&quot;&#x27;Comprobación datos introducidos&#x27;&quot;&gt;
+    &lt;app-accordion [title]&#x3D;&quot;&#x27;angular.form_components.validations&#x27; | translate&quot; [description]&#x3D;&quot;&#x27;angular.form_components.check_entered_data&#x27; | translate&quot;&gt;
         &lt;ng-container class&#x3D;&quot;accordion-body&quot;&gt;
             &lt;form grace-form [formGroup]&#x3D;&quot;aliasForm&quot; novalidate&gt;
                 &lt;div&gt;
-                    &lt;label for&#x3D;&quot;aliasForm-alias&quot;&gt;Nombre de usuario (debe contener al menos una letra): &lt;/label&gt;
+                    &lt;label for&#x3D;&quot;aliasForm-alias&quot;&gt;{{&#x27;angular.form_components.user_name&#x27; | translate}}&lt;/label&gt;
                     &lt;input id&#x3D;&quot;aliasForm-alias&quot; type&#x3D;&quot;text&quot; maxlength&#x3D;&quot;40&quot; formControlName&#x3D;&quot;alias&quot;&gt;
                     &lt;span *ngIf&#x3D;&quot;showError(aliasForm.get(&#x27;alias&#x27;))&quot;
-                        class&#x3D;&quot;error-msg&quot;&gt;{{getError(aliasForm.get(&#x27;alias&#x27;))}}&lt;/span&gt;
+                        class&#x3D;&quot;error-msg&quot;&gt;{{getError(aliasForm.get(&#x27;alias&#x27;)) | translate}}&lt;/span&gt;
                 &lt;/div&gt;
                 &lt;div&gt;
                     &lt;br&gt;
                     &lt;button type&#x3D;&quot;button&quot;
                         (click)&#x3D;&quot;sendForm(aliasForm.get(&#x27;neverAgain&#x27;).value ? &#x27;neverAgain&#x27; : &#x27;setAlias&#x27;)&quot;
                         [disabled]&#x3D;&quot;aliasForm.invalid &amp;&amp; !aliasForm.get(&#x27;neverAgain&#x27;).value&quot;&gt;
-                        {{(aliasForm.get(&#x27;neverAgain&#x27;).value ? &#x27;Omitir&#x27; : &#x27;Crear&#x27;)}}
+                        {{(aliasForm.get(&#x27;neverAgain&#x27;).value ? &#x27;angular.form_components.omit&#x27; : &#x27;angular.form_components.create&#x27;) | translate}}
                     &lt;/button&gt;
-                    &lt;button type&#x3D;&quot;button&quot; *ngIf&#x3D;&quot;!aliasForm.get(&#x27;neverAgain&#x27;).value&quot; (click)&#x3D;&quot;goToIndex()&quot;&gt;Ahora no
+                    &lt;button type&#x3D;&quot;button&quot; *ngIf&#x3D;&quot;!aliasForm.get(&#x27;neverAgain&#x27;).value&quot; (click)&#x3D;&quot;goToIndex()&quot;&gt;{{&#x27;angular.form_components.not_now&#x27; | translate}}
                     &lt;/button&gt;
                 &lt;/div&gt;
                 &lt;div&gt;
                     &lt;input type&#x3D;&quot;checkbox&quot; name&#x3D;&quot;aliasForm-never_again&quot; id&#x3D;&quot;aliasForm-never_again&quot;
                         formControlName&#x3D;&quot;neverAgain&quot;&gt;
-                    &lt;label for&#x3D;&quot;aliasForm-never_again&quot;&gt;No volver a mostrar este mensaje&lt;/label&gt;
+                    &lt;label for&#x3D;&quot;aliasForm-never_again&quot;&gt;{{&#x27;angular.form_components.do_not_show_again&#x27; | translate}}&lt;/label&gt;
                 &lt;/div&gt;
             &lt;/form&gt;
         &lt;/ng-container&gt;
@@ -1268,7 +1316,7 @@ export class FormComponentsComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><mat-accordion>    <app-accordion [title]="\'Datepicker\'" [description]="\'Funcionamiento datepicker\'">        <ng-container class="accordion-body">            <mat-form-field>                <input matInput placeholder="Seleccione una fecha" [matDatepickerFilter]="myFilter"                    [matDatepicker]="picker" [min]="minDate" [max]="maxDate">                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>                <mat-datepicker #picker></mat-datepicker>            </mat-form-field>        </ng-container>    </app-accordion>    <app-accordion [title]="\'Radio Button\'" [description]="\'Suscripción al radio button\'">        <ng-container class="accordion-body">            <form class="accordion" [formGroup]="cancelAnRequestForm">                <fieldset>                    <span class="step-content__title">Indique la razón de la pérdida de la tarjeta</span>                    <div class="step-content__radio">                        <input id="indAnulacionPerdida" type="radio" formControlName="indAnulacion"                            value="perdida" /><label for="indAnulacionPerdida">Pérdida</label>                        <input id="indAnulacionRobo" type="radio" formControlName="indAnulacion" value="robo"><label                            for="indAnulacionRobo">Robo</label>                    </div>                    <span class="step-content__title">¿Desea una nueva tarjeta?</span>                    <div class="step-content__radio">                        <input id="indNewCardYes" type="radio" formControlName="indRenovacion" value="1"><label                            for="indNewCardYes">Si</label>                        <input id="indNewCardLater" type="radio" formControlName="indRenovacion" value="0"><label                            for="indNewCardLater">Más tarde</label>                    </div>                    <div *ngIf="cancelAnRequestForm.value.indRenovacion === \'1\'">                        <p class="step-content__subtitle">Dirección: Calle Félix Candela 81</p>                    </div>                </fieldset>            </form>        </ng-container>    </app-accordion>    <app-accordion [title]="\'Campo numérico\'" [description]="\'Validaciones campo numérico\'">        <ng-container class="accordion-body">            <div class="modal-body">                <form action="" [formGroup]="confirmForm" autocomplete="off">                    <fieldset>                        <span class="modal-body--confirm-text">Introduzca la clave enviada al móvil</span>                        <span class="modal-body--phone">*** *** *54</span>                        <div class="modal-body__input input-wrapper">                            <input id="confirm-code" type="password" name="codesms" #codesms maxlength="4"                                formControlName="code" autocomplete="off" [value]=""                                class="modal-edit-transfer__input" />                        </div>                        <span class="notification__text" *ngIf="confirmForm.invalid">La clave tiene que ser numérica y                            de 4 números</span>                    </fieldset>                </form>            </div>        </ng-container>    </app-accordion>    <app-accordion [title]="\'Validaciones\'" [description]="\'Comprobación datos introducidos\'">        <ng-container class="accordion-body">            <form grace-form [formGroup]="aliasForm" novalidate>                <div>                    <label for="aliasForm-alias">Nombre de usuario (debe contener al menos una letra): </label>                    <input id="aliasForm-alias" type="text" maxlength="40" formControlName="alias">                    <span *ngIf="showError(aliasForm.get(\'alias\'))"                        class="error-msg">{{getError(aliasForm.get(\'alias\'))}}</span>                </div>                <div>                    <br>                    <button type="button"                        (click)="sendForm(aliasForm.get(\'neverAgain\').value ? \'neverAgain\' : \'setAlias\')"                        [disabled]="aliasForm.invalid && !aliasForm.get(\'neverAgain\').value">                        {{(aliasForm.get(\'neverAgain\').value ? \'Omitir\' : \'Crear\')}}                    </button>                    <button type="button" *ngIf="!aliasForm.get(\'neverAgain\').value" (click)="goToIndex()">Ahora no                    </button>                </div>                <div>                    <input type="checkbox" name="aliasForm-never_again" id="aliasForm-never_again"                        formControlName="neverAgain">                    <label for="aliasForm-never_again">No volver a mostrar este mensaje</label>                </div>            </form>        </ng-container>    </app-accordion></mat-accordion></div>'
+        var COMPONENT_TEMPLATE = '<div><mat-accordion>    <app-accordion [title]="\'angular.form_components.datepicker\' | translate" [description]="\'angular.form_components.functioning_datep\' | translate">        <ng-container class="accordion-body">            <mat-form-field>                <input matInput placeholder="{{\'angular.form_components.select_date\' | translate}}" [matDatepickerFilter]="myFilter"                    [matDatepicker]="picker" [min]="minDate" [max]="maxDate">                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>                <mat-datepicker #picker></mat-datepicker>            </mat-form-field>        </ng-container>    </app-accordion>    <app-accordion [title]="\'angular.form_components.radio_button\' | translate" [description]="\'angular.form_components.susc_radio_button\' | translate">        <ng-container class="accordion-body">            <form class="accordion" [formGroup]="cancelAnRequestForm">                <fieldset>                    <span class="step-content__title">{{\'angular.form_components.indicate_reason\' | translate}}</span>                    <div class="step-content__radio">                        <input id="indAnulacionPerdida" type="radio" formControlName="indAnulacion"                            value="perdida" /><label for="indAnulacionPerdida">{{\'angular.form_components.lost\' | translate}}</label>                        <input id="indAnulacionRobo" type="radio" formControlName="indAnulacion" value="robo"><label                            for="indAnulacionRobo">{{\'angular.form_components.stole\' | translate}}</label>                    </div>                    <span class="step-content__title">{{\'angular.form_components.want_new_card\' | translate}}</span>                    <div class="step-content__radio">                        <input id="indNewCardYes" type="radio" formControlName="indRenovacion" value="1"><label                            for="indNewCardYes">{{\'angular.form_components.yes\' | translate}}</label>                        <input id="indNewCardLater" type="radio" formControlName="indRenovacion" value="0"><label                            for="indNewCardLater">{{\'angular.form_components.later\' | translate}}</label>                    </div>                    <div *ngIf="cancelAnRequestForm.value.indRenovacion === \'1\'">                        <p class="step-content__subtitle" translate [translateParams]="{address: \'Calle Félix Candela 81\'}">angular.form_components.address</p>                    </div>                </fieldset>            </form>        </ng-container>    </app-accordion>    <app-accordion [title]="\'angular.form_components.numeric_value\' | translate" [description]="\'angular.form_components.validation_numeric_value\' | translate">        <ng-container class="accordion-body">            <div class="modal-body">                <form action="" [formGroup]="confirmForm" autocomplete="off">                    <fieldset>                        <span class="modal-body--confirm-text">{{\'angular.form_components.enter_pass_send_mobile\' | translate:mobileSend}}</span>                        <!-- <span class="modal-body--phone">*** *** *54</span> -->                        <div class="modal-body__input input-wrapper">                            <input id="confirm-code" type="password" name="codesms" #codesms maxlength="4"                                formControlName="code" autocomplete="off" [value]=""                                class="modal-edit-transfer__input" />                        </div>                        <span class="notification__text" *ngIf="confirmForm.invalid">{{\'angular.form_components.pass_lenght_error\' | translate}}</span>                    </fieldset>                </form>            </div>        </ng-container>    </app-accordion>    <app-accordion [title]="\'angular.form_components.validations\' | translate" [description]="\'angular.form_components.check_entered_data\' | translate">        <ng-container class="accordion-body">            <form grace-form [formGroup]="aliasForm" novalidate>                <div>                    <label for="aliasForm-alias">{{\'angular.form_components.user_name\' | translate}}</label>                    <input id="aliasForm-alias" type="text" maxlength="40" formControlName="alias">                    <span *ngIf="showError(aliasForm.get(\'alias\'))"                        class="error-msg">{{getError(aliasForm.get(\'alias\')) | translate}}</span>                </div>                <div>                    <br>                    <button type="button"                        (click)="sendForm(aliasForm.get(\'neverAgain\').value ? \'neverAgain\' : \'setAlias\')"                        [disabled]="aliasForm.invalid && !aliasForm.get(\'neverAgain\').value">                        {{(aliasForm.get(\'neverAgain\').value ? \'angular.form_components.omit\' : \'angular.form_components.create\') | translate}}                    </button>                    <button type="button" *ngIf="!aliasForm.get(\'neverAgain\').value" (click)="goToIndex()">{{\'angular.form_components.not_now\' | translate}}                    </button>                </div>                <div>                    <input type="checkbox" name="aliasForm-never_again" id="aliasForm-never_again"                        formControlName="neverAgain">                    <label for="aliasForm-never_again">{{\'angular.form_components.do_not_show_again\' | translate}}</label>                </div>            </form>        </ng-container>    </app-accordion></mat-accordion></div>'
     var COMPONENTS = [{'name': 'AccordionComponent', 'selector': 'app-accordion'},{'name': 'AngularLandingComponent', 'selector': 'app-angular-landing'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CssLandingComponent', 'selector': 'app-css-landing'},{'name': 'FormComponent', 'selector': 'app-form'},{'name': 'FormComponentsComponent', 'selector': 'app-form-components'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'HtmlLandingComponent', 'selector': 'app-html-landing'},{'name': 'JsLandingComponent', 'selector': 'app-js-landing'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'OthersComponent', 'selector': 'app-others'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'FormComponentsComponent'};

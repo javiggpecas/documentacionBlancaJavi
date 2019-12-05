@@ -172,13 +172,15 @@ import { CommonModule } from &#x27;@angular/common&#x27;;
 import { FormComponent } from &#x27;./form.component&#x27;;
 import { FormRoutingModule } from &#x27;./form-routing.module&#x27;;
 import { ReactiveFormsModule } from &#x27;@angular/forms&#x27;;
+import { TranslateModule } from &#x27;@ngx-translate/core&#x27;;
 
 @NgModule({
   declarations: [FormComponent],
   imports: [
     CommonModule,
     FormRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TranslateModule
   ]
 })
 export class FormModule { }

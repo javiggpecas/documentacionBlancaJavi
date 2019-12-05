@@ -38,7 +38,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 })
 export class AppModule { }
 
-// required for AOT compilation
+/** Required for AOT compilation */
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
