@@ -75,6 +75,7 @@
     },
     "language": {
         "spanish": "Español",
-        "english": "Inglés"
+        "english": "Inglés",
+        "language": "Idioma:"
     }
 }
