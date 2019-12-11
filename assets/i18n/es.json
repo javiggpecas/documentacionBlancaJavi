@@ -72,5 +72,9 @@
         "pattern": "Campo con caracteres inválidos",
         "required": "Campo requerido",
         "default": "Lo sentimos, se ha producido un error inesperado. Por favor, reintente más tarde."
+    },
+    "language": {
+        "spanish": "Español",
+        "english": "Inglés"
     }
 }

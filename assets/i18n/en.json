@@ -72,5 +72,9 @@
         "pattern": "Campo con caracteres inválidos",
         "required": "Field with invalid characters",
         "default": "Sorry, an unexpected error has occurred. Please try again later."
+    },
+    "language": {
+        "spanish": "Spanish",
+        "english": "English"
     }
 }
