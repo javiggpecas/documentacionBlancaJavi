@@ -5,7 +5,7 @@
                 <fa-icon *ngIf="item.icon" [icon]="icons[item.icon]"></fa-icon>
                 <span *ngIf="item.text">{{item.text | translate}}</span>
             </a>
-            <label for="langSelect" *ngIf="item.language" style="display: none;">{{'language.language' | translate}}</label>
+            <label for="langSelect" *ngIf="item.language" style="position: absolute; top: -50px;">{{'language.language' | translate}}</label>
             <select id="langSelect" *ngIf="item.language" (change)="changeLanguage($event.target.value)">
                 <option *ngFor="let lang of item.language" value="{{lang.code}}">{{lang.text | translate}}</option>
             </select>
