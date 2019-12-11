@@ -4,7 +4,11 @@
  */
 export const environment = {
 
-  production: false
+  production: false,
+  i18nUrl: {
+    prefix: './assets/i18n/',
+    sufix: '.json'
+  }
 };
 
 /*

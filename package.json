@@ -26,10 +26,11 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "node-server": "node ./index.js",
     "compodoc": "npx compodoc -p tsconfig.app.json",
     "compodoc-server": "npx compodoc -p tsconfig.app.json -s",
     "compodoc-server-open": "npx compodoc -p tsconfig.app.json -s -o",
-    "build-upload": "ng build --prod --base-href='#' && ngh --dir=dist/documentacion-blanca-javi && start https://javiggpecas.github.io/documentacionBlancaJavi/",
+    "build-upload": "ng build --prod --base-href=\"#\" && ngh --dir=dist/documentacion-blanca-javi && start https://javiggpecas.github.io/documentacionBlancaJavi/",
     "upload-build": "ngh --dir=dist/documentacion-blanca-javi && start https://javiggpecas.github.io/documentacionBlancaJavi/"
   },
   "private": true,

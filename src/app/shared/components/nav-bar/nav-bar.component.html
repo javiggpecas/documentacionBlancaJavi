@@ -1,10 +1,13 @@
 <nav>
     <ul>
         <li *ngFor="let item of navData">
-            <a routerLink="{{item.link}}" class="{{item.class}}" routerLinkActive="{{item.activateClass}}" title="{{item.title | translate}}">
+            <a *ngIf="!item.language" routerLink="{{item.link}}" class="{{item.class}}" routerLinkActive="{{item.activateClass}}" title="{{item.title | translate}}">
                 <fa-icon *ngIf="item.icon" [icon]="icons[item.icon]"></fa-icon>
                 <span *ngIf="item.text">{{item.text | translate}}</span>
             </a>
+            <select *ngIf="item.language " (change)="changeLanguage($event.target.value)">
+                <option *ngFor="let lang of item.language" value="{{lang.code}}">{{lang.text | translate}}</option>
+            </select>
         </li>
     </ul>
 </nav>

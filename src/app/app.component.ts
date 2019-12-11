@@ -63,6 +63,18 @@ export class AppComponent {
       activateClass: 'activated-tab jsColorActive',
       icon: 'faJsLanding',
       title: 'js.title'
+    },
+    {
+      language: [
+        {
+          text: 'language.spanish',
+          code: 'es'
+        },
+        {
+          text: 'language.english',
+          code: 'en'
+        }
+      ]
     }
   ];
   /** Booleano que indica si está mostrandose la url que se ha solicitado */

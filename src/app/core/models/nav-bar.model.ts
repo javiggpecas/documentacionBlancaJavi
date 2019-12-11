@@ -1,17 +1,24 @@
 /** Link of the nav bar */
 export interface NavData {
     /** Lnk to go on the web site */
-    link: string;
+    link?: string;
     /** Class to add style */
-    class: string;
+    class?: string;
     /** Class to add style on active link */
-    activateClass: string;
+    activateClass?: string;
     /** Optional icon if there are icon */
     icon?: string;
     /** Optional text if there are text */
     text?: string;
     /** Title of the link */
-    title: string;
+    title?: string;
+    /** List of languajes avaibles in the web site */
+    language?: Array<{
+        /** Text to show in the selector  */
+        text: string;
+        /** LangCode to use in the selector  */
+        code: string;
+    }>;
 }
 
 /** Icons from FontAwesome */
@@ -26,4 +33,6 @@ export interface IconsFa {
     faAngularLanding: any;
     /** JavaScript icon */
     faJsLanding: any;
+    /** Languaje icon */
+    faLanguage?: any;
 }

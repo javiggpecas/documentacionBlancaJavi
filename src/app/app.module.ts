@@ -23,11 +23,13 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
     // ngx-translate and the loader module
     HttpClientModule,
     TranslateModule.forRoot({
-        loader: {
-            provide: TranslateLoader,
-            useFactory: HttpLoaderFactory,
-            deps: [HttpClient]
-        }
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (http: HttpClient) => {
+          return new TranslateHttpLoader(http, environment.i18nUrl.prefix, environment.i18nUrl.sufix);
+        },
+        deps: [HttpClient]
+      }
     })
   ],
   declarations: [

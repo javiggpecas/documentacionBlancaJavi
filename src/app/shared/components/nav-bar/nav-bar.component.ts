@@ -1,7 +1,8 @@
 import { Component, Input } from '@angular/core';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faLanguage } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5, faCss3Alt, faAngular, faJsSquare } from '@fortawesome/free-brands-svg-icons';
 import { NavData, IconsFa } from '../../../core/models/nav-bar.model';
+import { TranslateService } from '@ngx-translate/core';
 
 /**
  * Nav Bar component contains the navigation bar of the web page
@@ -27,6 +28,12 @@ export class NavBarComponent {
   /**
    * The "constructor"
    */
-  constructor() { }
+  constructor(
+    private translate: TranslateService
+  ) { }
+
+  changeLanguage(lang: string) {
+    this.translate.setDefaultLang(lang);
+  }
 
 }
