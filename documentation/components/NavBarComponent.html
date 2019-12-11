@@ -145,6 +145,20 @@
                     </td>
                 </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#changeLanguage">changeLanguage</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
 
                 <tr>
                     <td class="col-md-4">
@@ -174,12 +188,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor()</code>
+<code>constructor(translate: TranslateService)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/shared/components/nav-bar/nav-bar.component.ts:25</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/shared/components/nav-bar/nav-bar.component.ts:26</a></div>
                             </td>
                         </tr>
 
@@ -187,6 +201,32 @@
                     <td class="col-md-4">
                             <div class="io-description"><p>The &quot;constructor&quot;</p>
 </div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
                     </td>
                 </tr>
             </tbody>
@@ -211,7 +251,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/shared/components/nav-bar/nav-bar.component.ts:17</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/shared/components/nav-bar/nav-bar.component.ts:18</a></div>
                             </td>
                         </tr>
                 <tr>
@@ -226,7 +266,84 @@
 
 
 
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeLanguage"></a>
+                    <span class="name">
+                        <b>
+                            changeLanguage
+                        </b>
+                        <a href="#changeLanguage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeLanguage(lang: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
 
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="39"
+                            class="link-to-prism">src/app/shared/components/nav-bar/nav-bar.component.ts:39</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Change the web languaje to the item selected</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>lang</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
     <section>
     
         <h3 id="inputs">
@@ -263,7 +380,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/shared/components/nav-bar/nav-bar.component.ts:19</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/shared/components/nav-bar/nav-bar.component.ts:20</a></div>
                             </td>
                         </tr>
 
@@ -283,9 +400,10 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Input } from &#x27;@angular/core&#x27;;
-import { faHome } from &#x27;@fortawesome/free-solid-svg-icons&#x27;;
+import { faHome, faLanguage } from &#x27;@fortawesome/free-solid-svg-icons&#x27;;
 import { faHtml5, faCss3Alt, faAngular, faJsSquare } from &#x27;@fortawesome/free-brands-svg-icons&#x27;;
 import { NavData, IconsFa } from &#x27;../../../core/models/nav-bar.model&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
 
 /**
  * Nav Bar component contains the navigation bar of the web page
@@ -311,7 +429,17 @@ export class NavBarComponent {
   /**
    * The &quot;constructor&quot;
    */
-  constructor() { }
+  constructor(
+    private translate: TranslateService
+  ) { }
+
+  /**
+   * Change the web languaje to the item selected
+   * @param string language selected
+   */
+  changeLanguage(lang: string) {
+    this.translate.setDefaultLang(lang);
+  }
 
 }
 </code></pre>
@@ -321,10 +449,14 @@ export class NavBarComponent {
         <pre class="line-numbers"><code class="language-html">&lt;nav&gt;
     &lt;ul&gt;
         &lt;li *ngFor&#x3D;&quot;let item of navData&quot;&gt;
-            &lt;a routerLink&#x3D;&quot;{{item.link}}&quot; class&#x3D;&quot;{{item.class}}&quot; routerLinkActive&#x3D;&quot;{{item.activateClass}}&quot; title&#x3D;&quot;{{item.title | translate}}&quot;&gt;
+            &lt;a *ngIf&#x3D;&quot;!item.language&quot; routerLink&#x3D;&quot;{{item.link}}&quot; class&#x3D;&quot;{{item.class}}&quot; routerLinkActive&#x3D;&quot;{{item.activateClass}}&quot; title&#x3D;&quot;{{item.title | translate}}&quot;&gt;
                 &lt;fa-icon *ngIf&#x3D;&quot;item.icon&quot; [icon]&#x3D;&quot;icons[item.icon]&quot;&gt;&lt;/fa-icon&gt;
                 &lt;span *ngIf&#x3D;&quot;item.text&quot;&gt;{{item.text | translate}}&lt;/span&gt;
             &lt;/a&gt;
+            &lt;label for&#x3D;&quot;langSelect&quot; *ngIf&#x3D;&quot;item.language&quot;&gt;Idioma:&lt;/label&gt;
+            &lt;select id&#x3D;&quot;langSelect&quot; *ngIf&#x3D;&quot;item.language&quot; (change)&#x3D;&quot;changeLanguage($event.target.value)&quot;&gt;
+                &lt;option *ngFor&#x3D;&quot;let lang of item.language&quot; value&#x3D;&quot;{{lang.code}}&quot;&gt;&lt;/option&gt;
+            &lt;/select&gt;
         &lt;/li&gt;
     &lt;/ul&gt;
 &lt;/nav&gt;
@@ -431,7 +563,7 @@ export class NavBarComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><nav>    <ul>        <li *ngFor="let item of navData">            <a routerLink="{{item.link}}" class="{{item.class}}" routerLinkActive="{{item.activateClass}}" title="{{item.title | translate}}">                <fa-icon *ngIf="item.icon" [icon]="icons[item.icon]"></fa-icon>                <span *ngIf="item.text">{{item.text | translate}}</span>            </a>        </li>    </ul></nav></div>'
+        var COMPONENT_TEMPLATE = '<div><nav>    <ul>        <li *ngFor="let item of navData">            <a *ngIf="!item.language" routerLink="{{item.link}}" class="{{item.class}}" routerLinkActive="{{item.activateClass}}" title="{{item.title | translate}}">                <fa-icon *ngIf="item.icon" [icon]="icons[item.icon]"></fa-icon>                <span *ngIf="item.text">{{item.text | translate}}</span>            </a>            <label for="langSelect" *ngIf="item.language">Idioma:</label>            <select id="langSelect" *ngIf="item.language" (change)="changeLanguage($event.target.value)">                <option *ngFor="let lang of item.language" value="{{lang.code}}"></option>            </select>        </li>    </ul></nav></div>'
     var COMPONENTS = [{'name': 'AccordionComponent', 'selector': 'app-accordion'},{'name': 'AngularLandingComponent', 'selector': 'app-angular-landing'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CssLandingComponent', 'selector': 'app-css-landing'},{'name': 'FormComponent', 'selector': 'app-form'},{'name': 'FormComponentsComponent', 'selector': 'app-form-components'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'HtmlLandingComponent', 'selector': 'app-html-landing'},{'name': 'JsLandingComponent', 'selector': 'app-js-landing'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'OthersComponent', 'selector': 'app-others'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'NavBarComponent'};

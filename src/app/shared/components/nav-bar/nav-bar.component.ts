@@ -32,6 +32,10 @@ export class NavBarComponent {
     private translate: TranslateService
   ) { }
 
+  /**
+   * Change the web languaje to the item selected
+   * @param string language selected
+   */
   changeLanguage(lang: string) {
     this.translate.setDefaultLang(lang);
   }

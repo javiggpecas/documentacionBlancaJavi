@@ -11,6 +11,7 @@ import { environment } from '../environments/environment';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { MAT_DATE_LOCALE } from '@angular/material';
 
 @NgModule({
   imports: [
@@ -35,7 +36,9 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
   declarations: [
     AppComponent
   ],
-  providers: [],
+  providers: [
+    {provide: MAT_DATE_LOCALE, useValue: 'es'},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -86,9 +86,11 @@
                         <td class="col-md-4">
                             <ul class="index-list">
                                 <li>
+                                            <span class="modifier">Optional</span>
                                         <a href="#activateClass">activateClass</a>
                                 </li>
                                 <li>
+                                            <span class="modifier">Optional</span>
                                         <a href="#class">class</a>
                                 </li>
                                 <li>
@@ -96,6 +98,11 @@
                                         <a href="#icon">icon</a>
                                 </li>
                                 <li>
+                                            <span class="modifier">Optional</span>
+                                        <a href="#language">language</a>
+                                </li>
+                                <li>
+                                            <span class="modifier">Optional</span>
                                         <a href="#link">link</a>
                                 </li>
                                 <li>
@@ -103,6 +110,7 @@
                                         <a href="#text">text</a>
                                 </li>
                                 <li>
+                                            <span class="modifier">Optional</span>
                                         <a href="#title">title</a>
                                 </li>
                             </ul>
@@ -139,6 +147,11 @@
                                         </td>
                                     </tr>
 
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Optional</i>
+                                        </td>
+                                    </tr>
 
 
 
@@ -174,6 +187,11 @@
                                         </td>
                                     </tr>
 
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Optional</i>
+                                        </td>
+                                    </tr>
 
 
 
@@ -230,6 +248,46 @@
                         <tbody>
                                 <tr>
                                     <td class="col-md-4">
+                                        <a name="language"></a>
+                                        <span class="name"><b>language</b><a href="#language"><span class="icon ion-ios-link"></span></a></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>language:     <code>Array&lt;literal type&gt;</code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>Array&lt;literal type&gt;</code>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Optional</i>
+                                        </td>
+                                    </tr>
+
+
+
+
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-description"><p>List of languajes avaibles in the web site </p>
+</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
                                         <a name="link"></a>
                                         <span class="name"><b>link</b><a href="#link"><span class="icon ion-ios-link"></span></a></span>
                                     </td>
@@ -249,6 +307,11 @@
                                         </td>
                                     </tr>
 
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Optional</i>
+                                        </td>
+                                    </tr>
 
 
 
@@ -324,6 +387,11 @@
                                         </td>
                                     </tr>
 
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Optional</i>
+                                        </td>
+                                    </tr>
 
 
 
@@ -343,17 +411,24 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">export interface NavData {
     /** Lnk to go on the web site */
-    link: string;
+    link?: string;
     /** Class to add style */
-    class: string;
+    class?: string;
     /** Class to add style on active link */
-    activateClass: string;
+    activateClass?: string;
     /** Optional icon if there are icon */
     icon?: string;
     /** Optional text if there are text */
     text?: string;
     /** Title of the link */
-    title: string;
+    title?: string;
+    /** List of languajes avaibles in the web site */
+    language?: Array&lt;{
+        /** Text to show in the selector  */
+        text: string;
+        /** LangCode to use in the selector  */
+        code: string;
+    }&gt;;
 }
 
 /** Icons from FontAwesome */
@@ -368,6 +443,8 @@ export interface IconsFa {
     faAngularLanding: any;
     /** JavaScript icon */
     faJsLanding: any;
+    /** Languaje icon */
+    faLanguage?: any;
 }
 </code></pre>
     </div>

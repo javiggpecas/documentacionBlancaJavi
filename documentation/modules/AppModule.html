@@ -220,6 +220,7 @@ import { environment } from &#x27;../environments/environment&#x27;;
 import { HttpClientModule, HttpClient } from &#x27;@angular/common/http&#x27;;
 import { TranslateLoader, TranslateModule } from &#x27;@ngx-translate/core&#x27;;
 import { TranslateHttpLoader } from &#x27;@ngx-translate/http-loader&#x27;;
+import { MAT_DATE_LOCALE } from &#x27;@angular/material&#x27;;
 
 @NgModule({
   imports: [
@@ -232,17 +233,21 @@ import { TranslateHttpLoader } from &#x27;@ngx-translate/http-loader&#x27;;
     // ngx-translate and the loader module
     HttpClientModule,
     TranslateModule.forRoot({
-        loader: {
-            provide: TranslateLoader,
-            useFactory: HttpLoaderFactory,
-            deps: [HttpClient]
-        }
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (http: HttpClient) &#x3D;&gt; {
+          return new TranslateHttpLoader(http, environment.i18nUrl.prefix, environment.i18nUrl.sufix);
+        },
+        deps: [HttpClient]
+      }
     })
   ],
   declarations: [
     AppComponent
   ],
-  providers: [],
+  providers: [
+    {provide: MAT_DATE_LOCALE, useValue: &#x27;es&#x27;},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
